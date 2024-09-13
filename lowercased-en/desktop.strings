@@ -304,6 +304,13 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_sure_ban_admin" = "this user is an admin. are you sure you want to go ahead and restrict them?";
 "lng_sure_enable_socks" = "are you sure you want to enable this proxy?\n\nserver: {server}\nport: {port}\n\nyou can change your proxy server later in settings > advanced > connection type.";
 "lng_sure_enable" = "enable";
+"lng_proxy_box_title" = "enable proxy";
+"lng_proxy_box_server" = "server";
+"lng_proxy_box_port" = "port";
+"lng_proxy_box_secret" = "secret";
+"lng_proxy_box_status" = "status";
+"lng_proxy_box_username" = "username";
+"lng_proxy_box_password" = "password";
 "lng_proxy_invalid" = "the proxy link is invalid.";
 "lng_proxy_unsupported" = "your telegram desktop version doesn't support this proxy type or the proxy link is invalid. please update telegram desktop to the latest version.";
 
@@ -676,6 +683,14 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_privacy_premium_link" = "telegram premium";
 "lng_settings_passcode_disable" = "disable passcode";
 "lng_settings_passcode_disable_sure" = "are you sure you want to disable passcode?";
+"lng_settings_use_winhello" = "unlock with windows hello";
+"lng_settings_use_winhello_about" = "you need to enter your passcode once before unlocking telegram with windows hello.";
+"lng_settings_use_touchid" = "unlock with touch id";
+"lng_settings_use_touchid_about" = "you need to enter your passcode once before unlocking telegram with touch id.";
+"lng_settings_use_applewatch" = "unlock with apple watch";
+"lng_settings_use_applewatch_about" = "you need to enter your passcode once before unlocking telegram with apple watch.";
+"lng_settings_use_systempwd" = "unlock with system password";
+"lng_settings_use_systempwd_about" = "you need to enter your passcode once before unlocking telegram with system password.";
 "lng_settings_password_disable" = "disable cloud password";
 "lng_settings_password_abort" = "abort two-step verification setup";
 "lng_settings_about_bio" = "any details such as age, occupation or city.\nexample: 23 y.o. designer from san francisco";
@@ -743,8 +758,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_top_peers_suggest" = "suggest frequent contacts";
 "lng_settings_top_peers_about" = "display people you message frequently at the top of the search section for quick access.";
 "lng_settings_sensitive_title" = "sensitive content";
-"lng_settings_sensitive_disable_filtering" = "disable filtering";
-"lng_settings_sensitive_about" = "display sensitive media in public channels on all your telegram devices.";
+"lng_settings_sensitive_disable_filtering" = "show 18+ content";
+"lng_settings_sensitive_about" = "do not hide media that contains content suitable only for adults.";
 "lng_settings_security_bots" = "bots and websites";
 "lng_settings_file_confirmations" = "file open confirmations";
 "lng_settings_edit_extensions" = "extensions whitelist";
@@ -778,6 +793,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_power_chat" = "animations in chats";
 "lng_settings_power_chat_background" = "wallpaper rotation";
 "lng_settings_power_chat_spoiler" = "animated spoiler effect";
+"lng_settings_power_chat_effects" = "effects in messages";
 "lng_settings_power_calls" = "animations in calls";
 "lng_settings_power_ui" = "interface animations";
 "lng_settings_power_auto" = "save power on low battery";
@@ -889,6 +905,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_gift_premium_users_confirm" = "proceed";
 "lng_settings_gift_premium_users_error#one" = "you can select maximum {count} user.";
 "lng_settings_gift_premium_users_error#other" = "you can select maximum {count} users.";
+"lng_settings_gift_premium_choose" = "please choose at least one recipient.";
 
 "lng_backgrounds_header" = "choose a wallpaper";
 "lng_theme_sure_keep" = "keep this theme?";
@@ -983,6 +1000,12 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_passcode_ph" = "your passcode";
 "lng_passcode_submit" = "submit";
 "lng_passcode_logout" = "log out";
+"lng_passcode_winhello" = "you need to enter your passcode\nbefore you can use windows hello.";
+"lng_passcode_touchid" = "you need to enter your passcode\nbefore you can use touch id.";
+"lng_passcode_applewatch" = "you need to enter your passcode\nbefore you can use watch to unlock.";
+"lng_passcode_systempwd" = "you need to enter your passcode\nbefore you can use system password.";
+"lng_passcode_winhello_unlock" = "telegram wants to unlock with windows hello.";
+"lng_passcode_touchid_unlock" = "unlock";
 "lng_passcode_create_button" = "save passcode";
 "lng_passcode_check_button" = "submit";
 "lng_passcode_change_button" = "save passcode";
@@ -1092,12 +1115,13 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_faq" = "telegram faq";
 "lng_settings_faq_link" = "https://telegram.org/faq#general-questions";
 "lng_settings_features" = "telegram features";
+"lng_settings_credits" = "my stars";
 "lng_settings_logout" = "log out";
 "lng_sure_logout" = "are you sure you want to log out?";
 
 "lng_settings_need_restart" = "you need to restart for applying some of the new settings. restart now?";
 "lng_settings_restart_now" = "restart";
-
+"lng_settings_restart_later" = "later";
 
 "lng_sessions_header" = "this device";
 "lng_sessions_other_header" = "active devices";
@@ -1291,6 +1315,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_profile_bot_settings" = "bot settings";
 "lng_profile_bot_help" = "bot help";
 "lng_profile_bot_privacy" = "bot privacy policy";
+"lng_profile_bot_privacy_url" = "https://telegram.org/privacy-tpa";
 "lng_profile_common_groups#one" = "{count} group in common";
 "lng_profile_common_groups#other" = "{count} groups in common";
 "lng_profile_similar_channels#one" = "{count} similar channel";
@@ -1424,6 +1449,9 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_info_topic_title" = "topic info";
 "lng_profile_enable_notifications" = "notifications";
 "lng_profile_send_message" = "send message";
+"lng_profile_open_app" = "open app";
+"lng_profile_open_app_about" = "by launching this mini app, you agree to the {terms}.";
+"lng_profile_open_app_terms" = "terms of service for mini apps";
 "lng_info_add_as_contact" = "add to contacts";
 "lng_profile_shared_media" = "shared media";
 "lng_profile_suggest_photo" = "suggest profile photo";
@@ -1523,6 +1551,10 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_manage_peer_reactions_max_slider#other" = "{count} reactions per post";
 "lng_manage_peer_reactions_max_about" = "limit the number of different reactions that can be added to a post, including already published ones.";
 
+"lng_manage_peer_reactions_paid" = "enable paid reactions";
+"lng_manage_peer_reactions_paid_about" = "switch this on to let your subscribers react to posts with telegram stars, which you will be able to withdraw as ton. {link}";
+"lng_manage_peer_reactions_paid_link" = "learn more >";
+
 "lng_manage_peer_antispam" = "aggressive anti-spam";
 "lng_manage_peer_antispam_about" = "telegram will filter more spam but may occasionally affect ordinary messages. you can report false positives in recent actions.";
 "lng_manage_peer_antispam_not_enough#one" = "aggressive filtering can be enabled only in groups with more than **{count} member**.";
@@ -1552,6 +1584,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 
 "lng_manage_peer_bot_public_link" = "public link";
 "lng_manage_peer_bot_public_links" = "public links";
+"lng_manage_peer_bot_balance" = "balance";
 "lng_manage_peer_bot_edit_intro" = "edit intro";
 "lng_manage_peer_bot_edit_commands" = "edit commands";
 "lng_manage_peer_bot_edit_settings" = "change bot settings";
@@ -1820,6 +1853,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_action_webview_data_done" = "data from the \"{text}\" button was transferred to the bot.";
 "lng_action_gift_received" = "{user} sent you a gift for {cost}";
 "lng_action_gift_received_me" = "you sent to {user} a gift for {cost}";
+"lng_action_gift_received_anonymous" = "unknown user sent you a gift for {cost}";
 "lng_action_suggested_photo_me" = "you suggested this photo for {user}'s telegram profile.";
 "lng_action_suggested_photo" = "{user} suggests this photo for your telegram profile.";
 "lng_action_suggested_photo_button" = "view photo";
@@ -1857,13 +1891,21 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_action_story_mention_unavailable" = "the story where {user} mentioned you is no longer available.";
 "lng_action_giveaway_started_group" = "{from} just started a giveaway of telegram premium subscriptions to its members.";
 "lng_action_giveaway_started" = "{from} just started a giveaway of telegram premium subscriptions for its followers.";
+"lng_action_giveaway_credits_started_amount#one" = "{count} star";
+"lng_action_giveaway_credits_started_amount#other" = "{count} stars";
+"lng_action_giveaway_credits_started_group" = "{from} just started a giveaway of {amount} to its members.";
+"lng_action_giveaway_credits_started" = "{from} just started a giveaway of {amount} to its followers.";
 "lng_action_giveaway_results#one" = "{count} winner of the giveaway was randomly selected by telegram and received private messages with giftcodes.";
 "lng_action_giveaway_results#other" = "{count} winners of the giveaway were randomly selected by telegram and received private messages with giftcodes.";
 "lng_action_giveaway_results_some" = "some winners of the giveaway were randomly selected by telegram and received private messages with giftcodes.";
+"lng_action_giveaway_results_credits#one" = "{count} winner of the giveaway was randomly selected by telegram and received their prize.";
+"lng_action_giveaway_results_credits#other" = "{count} winners of the giveaway were randomly selected by telegram and received their prize.";
+"lng_action_giveaway_results_credits_some" = "some winners of the giveaway were randomly selected by telegram and received their prize.";
 "lng_action_giveaway_results_none" = "no winners of the giveaway could be selected.";
 "lng_action_boost_apply#one" = "{from} boosted the group";
 "lng_action_boost_apply#other" = "{from} boosted the group {count} times";
 "lng_action_set_chat_intro" = "{from} added the message below for all empty chats. how?";
+"lng_action_payment_refunded" = "{peer} refunded {amount}";
 
 "lng_similar_channels_title" = "similar channels";
 "lng_similar_channels_view_all" = "view all";
@@ -1912,6 +1954,11 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_group_invite_members#one" = "{count} member, among them:";
 "lng_group_invite_members#other" = "{count} members, among them:";
 "lng_channel_invite_private" = "this channel is private.\nplease join it to continue viewing its content.";
+
+"lng_channel_invite_subscription_button" = "subscribe";
+"lng_channel_invite_subscription_title" = "subscribe to the channel";
+"lng_channel_invite_subscription_about" = "do you want to subscribe for {channel} for {price} per month?";
+"lng_channel_invite_subscription_terms" = "by subscribing you agree to the {link}.";
 
 "lng_group_invite_create" = "create an invite link";
 "lng_group_invite_about_new" = "your previous link will be deactivated and we'll generate a new invite link for you.";
@@ -1987,6 +2034,21 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_group_invite_about_no_approve" = "turn this on if you want users to join only after they are approved by an admin.";
 "lng_group_invite_about_approve_channel" = "turn this on if you want users to join only after they are approved by an admin.";
 "lng_group_invite_about_no_approve_channel" = "turn this on if you want users to join only after they are approved by an admin.";
+"lng_group_invite_subscription" = "require monthly fee";
+"lng_group_invite_subscription_ph" = "stars amount per month";
+"lng_group_invite_subscription_price" = "~{cost} / month";
+"lng_group_invite_subscription_toast" = "to change the subscription fee, create a new invite link with a different price.";
+"lng_group_invite_subscription_about" = "charge a subscription fee from people who join your channel via this link. {link}";
+"lng_group_invite_subscription_about_link" = "learn more {emoji}";
+"lng_group_invite_subscription_about_url" = "https://telegram.org/tos/stars";
+"lng_group_invite_subscription_info_subtitle" = "subscription fee";
+"lng_group_invite_subscription_info_title" = "{emoji} {price} / month {multiplier} {total}";
+"lng_group_invite_subscription_info_title_none" = "{emoji} {price} / month";
+"lng_group_invite_subscription_info_about" = "you get approximately {total} monthly";
+"lng_group_invite_joined_right" = "per month";
+"lng_group_invite_joined_status" = "joined {date}";
+"lng_group_invite_joined_row_subscriber" = "subscriber";
+"lng_group_invite_joined_row_date" = "subscribed";
 
 "lng_group_request_to_join" = "request to join";
 "lng_group_request_about" = "this group accepts new members only after they are approved by its admins.";
@@ -2177,6 +2239,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_premium_summary_about_translation" = "real-time translation of channels and chats into other languages.";
 "lng_premium_summary_subtitle_business" = "telegram business";
 "lng_premium_summary_about_business" = "upgrade your account with business features such as location, opening hours and quick replies.";
+"lng_premium_summary_subtitle_effects" = "message effects";
+"lng_premium_summary_about_effects" = "add over 500 animated effects to private messages.";
 "lng_premium_summary_bottom_subtitle" = "about telegram premium";
 "lng_premium_summary_bottom_about" = "while the free version of telegram already gives its users more than any other messaging application, **telegram premium** pushes its capabilities even further.\n\n**telegram premium** is a paid option, because most premium features require additional expenses from telegram to third parties such as data center providers and server manufacturers. contributions from **telegram premium** users allow us to cover such costs and also help telegram stay free for everyone.";
 "lng_premium_summary_button" = "subscribe for {cost} per month";
@@ -2308,33 +2372,106 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_credits_summary_options_more" = "more options";
 "lng_credits_summary_options_about" = "by proceeding and purchasing stars, you agree with the {link}.";
 "lng_credits_summary_options_about_link" = "terms and conditions";
+"lng_credits_summary_options_about_url" = "https://telegram.org/tos/stars";
 "lng_credits_summary_history_tab_full" = "all transactions";
 "lng_credits_summary_history_tab_in" = "incoming";
 "lng_credits_summary_history_tab_out" = "outgoing";
 "lng_credits_summary_history_entry_inner_in" = "in-app purchase";
 "lng_credits_summary_balance" = "balance";
+"lng_credits_gift_button" = "gift stars to friends";
 "lng_credits_box_out_title" = "confirm your purchase";
 "lng_credits_box_out_sure#one" = "do you want to buy **\"{text}\"** in **{bot}** for **{count} star**?";
 "lng_credits_box_out_sure#other" = "do you want to buy **\"{text}\"** in **{bot}** for **{count} stars**?";
+"lng_credits_box_out_media#one" = "do you want to unlock {media} in {chat} for **{count} star**?";
+"lng_credits_box_out_media#other" = "do you want to unlock {media} in {chat} for **{count} stars**?";
+"lng_credits_box_out_media_user#one" = "do you want to unlock {media} from {user} for **{count} star**?";
+"lng_credits_box_out_media_user#other" = "do you want to unlock {media} from {user} for **{count} stars**?";
+"lng_credits_box_out_photo" = "a photo";
+"lng_credits_box_out_photos#one" = "{count} photo";
+"lng_credits_box_out_photos#other" = "{count} photos";
+"lng_credits_box_out_video" = "a video";
+"lng_credits_box_out_videos#one" = "{count} video";
+"lng_credits_box_out_videos#other" = "{count} videos";
+"lng_credits_box_out_both" = "{photo} and {video}";
 "lng_credits_box_out_confirm#one" = "confirm and pay {emoji} {count} star";
 "lng_credits_box_out_confirm#other" = "confirm and pay {emoji} {count} stars";
 "lng_credits_box_out_about" = "review the {link} for stars.";
+"lng_credits_box_out_about_link" = "https://telegram.org/tos/stars";
+"lng_credits_media_done_title" = "media unlocked";
+"lng_credits_media_done_text#one" = "**{count} star** transferred to {chat}.";
+"lng_credits_media_done_text#other" = "**{count} stars** transferred to {chat}.";
+"lng_credits_media_done_text_user#one" = "**{count} star** transferred to {user}.";
+"lng_credits_media_done_text_user#other" = "**{count} stars** transferred to {user}.";
 "lng_credits_summary_in_toast_title" = "stars acquired";
 "lng_credits_summary_in_toast_about#one" = "**{count}** star added to your balance.";
 "lng_credits_summary_in_toast_about#other" = "**{count}** stars added to your balance.";
 "lng_credits_box_history_entry_peer" = "recipient";
+"lng_credits_box_history_entry_peer_in" = "from";
+"lng_credits_box_history_entry_via" = "via";
+"lng_credits_box_history_entry_play_market" = "play store";
+"lng_credits_box_history_entry_app_store" = "app store";
+"lng_credits_box_history_entry_fragment" = "fragment";
+"lng_credits_box_history_entry_anonymous" = "unknown user";
+"lng_credits_box_history_entry_gift_name" = "received gift";
+"lng_credits_box_history_entry_giveaway_name" = "received prize";
+"lng_credits_box_history_entry_gift_sent" = "sent gift";
+"lng_credits_box_history_entry_gift_out_about" = "with stars, **{user}** will be able to unlock content and services on telegram.\n{link}";
+"lng_credits_box_history_entry_gift_in_about" = "use stars to unlock content and services on telegram. {link}";
+"lng_credits_box_history_entry_gift_about_link" = "see examples {emoji}";
+"lng_credits_box_history_entry_gift_examples" = "examples";
+"lng_credits_box_history_entry_ads" = "ads platform";
+"lng_credits_box_history_entry_premium_bot" = "stars top-up";
+"lng_credits_box_history_entry_via_premium_bot" = "premium bot";
 "lng_credits_box_history_entry_id" = "transaction id";
 "lng_credits_box_history_entry_id_copied" = "transaction id copied to clipboard.";
+"lng_credits_box_history_entry_success_date" = "transaction date";
+"lng_credits_box_history_entry_success_url" = "transaction link";
+"lng_credits_box_history_entry_media" = "media";
 "lng_credits_box_history_entry_about" = "you can dispute this transaction {link}.";
 "lng_credits_box_history_entry_about_link" = "here";
+"lng_credits_box_history_entry_reaction_name" = "star reaction";
+"lng_credits_box_history_entry_subscription" = "monthly subscription fee";
+
+"lng_credits_subscription_section" = "my subscriptions";
+"lng_credits_box_subscription_title" = "subscription";
+"lng_credits_subscription_subtitle" = "{emoji} {cost} / month";
+"lng_credits_subscriber_subtitle" = "appx. {total} per month";
+
+"lng_credits_subscription_row_to" = "subscription";
+"lng_credits_subscription_row_from" = "subscribed";
+
+"lng_credits_subscription_row_next_on" = "renews";
+"lng_credits_subscription_row_next_off" = "expires";
+"lng_credits_subscription_row_next_none" = "expired";
+
+"lng_credits_subscription_on_button" = "cancel subscription";
+"lng_credits_subscription_on_about" = "if you cancel now, you will still be able to access your subscription until {date}.";
+
+"lng_credits_subscription_off_button" = "renew subscription";
+"lng_credits_subscription_off_about" = "you have canceled your subscription.";
+
+"lng_credits_subscription_status_on" = "renews on {date}";
+"lng_credits_subscription_status_off" = "expires on {date}";
+"lng_credits_subscription_status_none" = "expired on {date}";
+"lng_credits_subscription_status_off_right" = "canceled";
+"lng_credits_subscription_status_none_right" = "expired";
+
 "lng_credits_small_balance_title#one" = "{count} star needed";
 "lng_credits_small_balance_title#other" = "{count} stars needed";
 "lng_credits_small_balance_about" = "buy **stars** and use them on **{bot}** and other miniapps.";
+"lng_credits_small_balance_reaction" = "buy **stars** and send them to {channel} to support their posts.";
+"lng_credits_small_balance_subscribe" = "buy **stars** and subscribe to **{channel}** and other channels.";
+"lng_credits_small_balance_fallback" = "buy **stars** to unlock content and services on telegram.";
 "lng_credits_purchase_blocked" = "sorry, you can't purchase this item with telegram stars.";
+"lng_credits_enough" = "you have enough stars at the moment. {link}";
+"lng_credits_enough_link" = "buy anyway";
+
+"lng_credits_gift_title" = "gift telegram stars";
 
 "lng_location_title" = "location";
 "lng_location_about" = "display the location of your business on your account.";
 "lng_location_address" = "enter address";
+"lng_location_set_map" = "set location on map";
 "lng_location_fallback" = "you can set your location on the map from your mobile device.";
 
 "lng_hours_title" = "business hours";
@@ -2613,6 +2750,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_giveaway_new_title" = "boosts via gifts";
 "lng_giveaway_new_about" = "get more boosts for your channel by gifting premium to your subscribers.";
 "lng_giveaway_new_about_group" = "get more boosts for your group by gifting premium to your members.";
+"lng_giveaway_credits_new_about" = "get more boosts and subscribers for your channel by giving away prizes.";
+"lng_giveaway_credits_new_about_group" = "get more boosts and members for your group by giving away prizes.";
 "lng_giveaway_create_option" = "create giveaway";
 "lng_giveaway_create_subtitle" = "winners are chosen randomly";
 "lng_giveaway_award_option" = "award specific users";
@@ -2643,6 +2782,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_giveaway_users_about_group" = "choose if you want to limit the giveaway only to those who joined the group after the giveaway started or to members from specific countries.";
 "lng_giveaway_start" = "start giveaway";
 "lng_giveaway_award" = "gift premium";
+"lng_giveaway_random_button" = "choose randomly";
 "lng_giveaway_start_sure" = "are you sure you want to start this prepaid giveaway now? this action cannot be undone.";
 "lng_giveaway_date_title" = "date when giveaway ends";
 "lng_giveaway_date" = "date and time";
@@ -2672,6 +2812,13 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_giveaway_prizes_just_premium#other" = "all prizes: **{count}** telegram premium subscriptions {duration}.";
 "lng_giveaway_prizes_additional#one" = "all prizes: **{count}** {prize} with telegram premium subscription {duration}.";
 "lng_giveaway_prizes_additional#other" = "all prizes: **{count}** {prize} with telegram premium subscriptions {duration}.";
+"lng_giveaway_additional_credits_about" = "turn this on if you want to give the winners your own prizes in addition to stars.";
+"lng_giveaway_prizes_just_credits#one" = "all prizes: **{count}** star.";
+"lng_giveaway_prizes_just_credits#other" = "all prizes: **{count}** stars.";
+"lng_giveaway_prizes_additional_credits#one" = "all prizes: **{count}** {prize} with {amount}.";
+"lng_giveaway_prizes_additional_credits#other" = "all prizes: **{count}** {prize} with {amount}.";
+"lng_giveaway_prizes_additional_credits_amount#one" = "{count} star";
+"lng_giveaway_prizes_additional_credits_amount#other" = "{count} stars";
 "lng_giveaway_show_winners" = "show winners";
 "lng_giveaway_show_winners_about" = "choose whether to make the list of winners public when the giveaway ends.";
 
@@ -2683,9 +2830,19 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_giveaway_awarded_body_group" = "check your groups' {link} to see how gifts boosted your group.";
 "lng_giveaway_created_link" = "statistics";
 
+"lng_giveaway_credits_options_title" = "stars to distribute";
+"lng_giveaway_credits_option_status#one" = "{count} per user";
+"lng_giveaway_credits_option_status#other" = "{count} per user";
+"lng_giveaway_credits_options_about" = "choose how many stars to give away and how many boosts to receive for 1 year.";
+"lng_giveaway_credits_quantity_title" = "number of winners";
+"lng_giveaway_credits_quantity_about" = "choose how many winners you want to distribute stars among.";
+
 "lng_prize_title" = "congratulations!";
 "lng_prize_about" = "you won a prize in a giveaway organized by {channel}.";
 "lng_prize_duration" = "your prize is a **telegram premium** subscription {duration}.";
+"lng_prize_credits" = "your prize is {amount}.";
+"lng_prize_credits_amount#one" = "{count} star";
+"lng_prize_credits_amount#other" = "{count} stars";
 "lng_prize_gift_about" = "you've received a gift from {channel}.";
 "lng_prize_gift_duration" = "your gift is a **telegram premium** subscription {duration}.";
 "lng_prize_open" = "open gift link";
@@ -2700,6 +2857,11 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_prizes_additional_with" = "with";
 "lng_prizes_about#one" = "**{count}** telegram premium subscription {duration}.";
 "lng_prizes_about#other" = "**{count}** telegram premium subscriptions {duration}.";
+"lng_prizes_credits_about_single" = "**{amount}** will be distributed to the **1** winner.";
+"lng_prizes_credits_about#one" = "**{amount}** will be distributed among {count} winner.";
+"lng_prizes_credits_about#other" = "**{amount}** will be distributed among {count} winners.";
+"lng_prizes_credits_about_amount#one" = "{count} star";
+"lng_prizes_credits_about_amount#other" = "{count} stars";
 "lng_prizes_participants" = "participants";
 "lng_prizes_participants_all#one" = "all subscribers of the channel:";
 "lng_prizes_participants_all#other" = "all subscribers of the channels:";
@@ -2726,6 +2888,10 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_prizes_admins#other" = "the admins of {channel}, who acquired **{count} telegram premium** subscriptions {duration} for its followers";
 "lng_prizes_admins_group#one" = "the admins of {channel}, who acquired **{count} telegram premium** subscription {duration} for its members";
 "lng_prizes_admins_group#other" = "the admins of {channel}, who acquired **{count} telegram premium** subscriptions {duration} for its members";
+"lng_prizes_credits_admins" = "the admins of {channel}, who aquired **{amount}** for its followers";
+"lng_prizes_credits_admins_group" = "the admins of {channel}, who aquired **{amount}** for its members";
+"lng_prizes_credits_admins_amount#one" = "{count} star";
+"lng_prizes_credits_admins_amount#other" = "{count} stars";
 "lng_prizes_additional_added#one" = "{channel} also included **{count} {prize}** in the prize. admins of the channel are responsible for delivering this prize.";
 "lng_prizes_additional_added#other" = "{channel} also included **{count} {prize}** in the prizes. admins of the channel are responsible for delivering these prizes.";
 "lng_prizes_additional_added_group#one" = "{channel} also included **{count} {prize}** in the prize. admins of the group are responsible for delivering this prize.";
@@ -2756,6 +2922,9 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_prizes_how_yes_joined_one" = "you are participating in this giveaway because you joined the channel {channel}.";
 "lng_prizes_how_yes_joined_many" = "you are participating in this giveaway because you joined the channel {channel} (and other listed groups and channels).";
 "lng_prizes_you_won" = "you won a prize in this giveaway {cup}";
+"lng_prizes_you_won_credits" = "you won {amount} in this giveaway {cup}";
+"lng_prizes_you_won_credits_amount#one" = "{count} star";
+"lng_prizes_you_won_credits_amount#other" = "{count} stars";
 "lng_prizes_view_prize" = "view my prize";
 "lng_prizes_you_didnt" = "you didn't win a prize in this giveaway.";
 "lng_prizes_cancelled" = "the channel canceled the prizes by refunding the payment for them.";
@@ -2763,13 +2932,20 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_prizes_badge" = "x{amount}";
 
 "lng_prizes_results_title" = "winners selected!";
+"lng_prizes_results_title_one" = "winner selected!";
 "lng_prizes_results_about#one" = "**{count}** winner of the {link} was randomly selected by telegram.";
 "lng_prizes_results_about#other" = "**{count}** winners of the {link} were randomly selected by telegram.";
 "lng_prizes_results_link" = "giveaway";
+"lng_prizes_results_winner" = "winner";
 "lng_prizes_results_winners" = "winners";
 "lng_prizes_results_more#one" = "and {count} more!";
 "lng_prizes_results_more#other" = "and {count} more!";
+"lng_prizes_results_one" = "the winner received their gift link in a private message.";
 "lng_prizes_results_all" = "all winners received gift links in private messages.";
+"lng_prizes_credits_results_one#one" = "the winner received {count} star.";
+"lng_prizes_credits_results_one#other" = "the winner received {count} stars.";
+"lng_prizes_credits_results_all#one" = "all winners received {count} star in total.";
+"lng_prizes_credits_results_all#other" = "all winners received {count} stars in total.";
 "lng_prizes_results_some" = "some winners couldn't be selected.";
 
 "lng_gift_link_title" = "gift link";
@@ -2797,6 +2973,12 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_gift_link_pending_about" = "this link allows {user} to activate\na **telegram premium** subscription.";
 "lng_gift_link_pending_toast" = "only the recipient can see the link.";
 "lng_gift_link_pending_footer" = "this link hasn't been activated yet.";
+
+"lng_gift_stars_title#one" = "{count} star";
+"lng_gift_stars_title#other" = "{count} stars";
+"lng_gift_stars_outgoing" = "with stars, {user} will be able to unlock content and services on telegram.";
+"lng_gift_stars_incoming" = "use stars to unlock content and services on telegram.";
+"lng_gift_until" = "until";
 
 "lng_accounts_limit_title" = "limit reached";
 "lng_accounts_limit1#one" = "you have reached the limit of **{count}** connected account.";
@@ -2873,6 +3055,13 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_masks_has_been_archived" = "mask pack has been archived.";
 "lng_masks_installed" = "mask pack has been installed.";
 "lng_emoji_nothing_found" = "no emoji found";
+"lng_stickers_context_reorder" = "reorder";
+"lng_stickers_context_edit_name" = "edit name";
+"lng_stickers_context_delete" = "delete sticker";
+"lng_stickers_context_delete_sure" = "are you sure you want to delete the sticker from your sticker set?";
+"lng_stickers_box_edit_name_title" = "edit sticker set name";
+"lng_stickers_box_edit_name_about" = "choose a name for your set.";
+"lng_stickers_creator_badge" = "edit";
 
 "lng_in_dlg_photo" = "photo";
 "lng_in_dlg_album" = "album";
@@ -2970,6 +3159,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_send_text_type_files" = "files";
 "lng_send_text_type_stickers" = "stickers & gifs";
 "lng_send_text_type_polls" = "polls";
+"lng_send_gif_with_caption" = "send gif with caption";
 
 "lng_send_as_title" = "send message as...";
 "lng_send_as_anonymous_admin" = "anonymous admin";
@@ -3104,6 +3294,11 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_bot_close_warning_sure" = "close anyway";
 "lng_bot_add_to_side_menu" = "{bot} asks your permission to be added as an option to your main menu so you can access it any time.";
 "lng_bot_add_to_side_menu_done" = "bot added to the main menu.";
+"lng_bot_no_scan_qr" = "qr codes for bots are not supported on desktop. please use one of telegram's mobile apps.";
+"lng_bot_no_share_story" = "sharing to stories is not supported on desktop. please use one of telegram's mobile apps.";
+
+"lng_bot_status_users#one" = "{count} monthly user";
+"lng_bot_status_users#other" = "{count} monthly users";
 
 "lng_typing" = "typing";
 "lng_user_typing" = "{user} is typing";
@@ -3139,6 +3334,14 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_unread_bar_some" = "unread messages";
 
 "lng_maps_point" = "location";
+"lng_maps_select_on_map" = "select on the map";
+"lng_maps_point_send" = "send this location";
+"lng_maps_point_set" = "set this location";
+"lng_maps_or_choose" = "or choose a venue";
+"lng_maps_places_in_area" = "places in this area";
+"lng_maps_no_places" = "no places found";
+"lng_maps_choose_to_search" = "choose location to see places nearby.";
+"lng_maps_venues_source" = "powered by foursquare";
 "lng_live_location" = "live location";
 "lng_live_location_now" = "updated just now";
 "lng_live_location_minutes#one" = "updated {count} minute ago";
@@ -3191,6 +3394,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_context_promote_admin" = "promote to admin";
 "lng_context_edit_permissions" = "edit admin rights";
 "lng_context_restrict_user" = "restrict user";
+"lng_context_ban_user" = "ban";
 "lng_context_remove_from_group" = "remove from group";
 "lng_context_add_to_group" = "add to group";
 
@@ -3296,6 +3500,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 
 "lng_context_spoiler_effect" = "hide with spoiler";
 "lng_context_disable_spoiler" = "remove spoiler";
+"lng_context_make_paid" = "make this content paid";
+"lng_context_change_price" = "change price";
 
 "lng_factcheck_title" = "fact check";
 "lng_factcheck_placeholder" = "add facts or context";
@@ -3306,6 +3512,37 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_factcheck_remove_done" = "fact check removed.";
 "lng_factcheck_bottom" = "this clarification was provided by a fact checking agency assigned by the department of the government of your country ({country}) responsible for combatting misinformation.";
 "lng_factcheck_links" = "only **t.me/** links are allowed.";
+
+"lng_paid_title" = "paid content";
+"lng_paid_enter_cost" = "enter unlock cost";
+"lng_paid_cost_placeholder" = "stars to unlock";
+"lng_paid_about" = "users will have to transfer this amount of stars to your channel in order to view this media. {link}";
+"lng_paid_about_link" = "more about stars >";
+"lng_paid_about_link_url" = "https://telegram.org/blog/telegram-stars";
+"lng_paid_price" = "unlock for {price}";
+
+"lng_paid_react_title" = "star reaction";
+"lng_paid_react_about" = "choose how many **stars** you want to send to {channel} to support this post.";
+"lng_paid_react_already#one" = "you sent **{count} star** to support this post.";
+"lng_paid_react_already#other" = "you sent **{count} stars** to support this post.";
+"lng_paid_react_top_title" = "top senders";
+"lng_paid_react_send" = "send {price}";
+"lng_paid_react_agree" = "by sending stars, you agree to the {link}.";
+"lng_paid_react_agree_link" = "terms of service";
+"lng_paid_react_toast#one" = "star sent!";
+"lng_paid_react_toast#other" = "stars sent!";
+"lng_paid_react_toast_text#one" = "you reacted with **{count} star**.";
+"lng_paid_react_toast_text#other" = "you reacted with **{count} stars**.";
+"lng_paid_react_undo" = "undo";
+"lng_paid_react_show_in_top" = "show me in top senders";
+"lng_paid_react_anonymous" = "anonymous";
+
+"lng_sensitive_tag" = "18+";
+"lng_sensitive_title" = "18+";
+"lng_sensitive_text" = "this media may contain sensitive content suitable only for adults. do you still want to view it?";
+"lng_sensitive_always" = "always show 18+ media";
+"lng_sensitive_view" = "view anyway";
+"lng_sensitive_toast" = "you can update the visibility of sensitive media in **settings > chat settings > sensitive content**";
 
 "lng_translate_show_original" = "show original";
 "lng_translate_bar_to" = "translate to {name}";
@@ -3411,6 +3648,9 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_edit_channel_title" = "edit channel";
 "lng_edit_bot_title" = "edit bot";
 "lng_edit_sign_messages" = "sign messages";
+"lng_edit_sign_messages_about" = "add names of admins to the messages they post.";
+"lng_edit_sign_profiles" = "show authors' profiles";
+"lng_edit_sign_profiles_about" = "add names and photos of admins to the messages they post, linking to their profiles.";
 "lng_edit_group" = "edit group";
 "lng_edit_channel_color" = "appearance";
 "lng_edit_channel_level_min" = "level 1+";
@@ -3573,6 +3813,9 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_formatting_link_text" = "text";
 "lng_formatting_link_url" = "url";
 "lng_formatting_link_create" = "create";
+"lng_formatting_code_title" = "code language";
+"lng_formatting_code_language" = "language for syntax highlighting.";
+"lng_formatting_code_auto" = "auto-detect";
 
 "lng_text_copied" = "text copied to clipboard.";
 "lng_code_copied" = "code copied to clipboard.";
@@ -3680,6 +3923,9 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_payments_card_declined" = "your card was declined.";
 "lng_payments_payment_failed" = "payment failed. your card has not been billed.";
 "lng_payments_precheckout_failed" = "the bot couldn't process your payment. your card has not been billed.";
+"lng_payments_precheckout_timeout" = "the bot didn't respond in time. your card has not been billed.";
+"lng_payments_precheckout_stars_failed" = "the bot couldn't process your payment.";
+"lng_payments_precheckout_stars_timeout" = "the bot didn't respond in time.";
 "lng_payments_already_paid" = "you have already paid for this item.";
 
 "lng_payments_terms_title" = "terms of service";
@@ -3954,7 +4200,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_group_call_rtmp_key_copy" = "copy stream key";
 "lng_group_call_rtmp_key_copied" = "stream key copied to clipboard.";
 "lng_group_call_rtmp_key_warning" = "**never share your stream key with anyone or show it on stream!**";
-"lng_group_call_rtmp_info" = "to stream video with another app, enter these server url and stream key in your streaming app. software encoding recommended (x264 in obs).\n\nonce you start broadcasting in your streaming app, click start streaming below.";
+"lng_group_call_rtmp_info" = "to stream video with another app, enter this server url and stream key in your streaming app. software encoding recommended (x264 in obs).\n\nonce you start broadcasting in your streaming app, click start streaming below.";
 "lng_group_call_rtmp_start" = "start streaming";
 "lng_group_call_rtmp_revoke" = "revoke stream key";
 "lng_group_call_rtmp_revoke_sure" = "are you sure you want to revoke your stream key?";
@@ -3980,6 +4226,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_rights_edit_admin_rank_about" = "a title that members will see instead of '{title}'.";
 "lng_rights_about_add_admins_yes" = "this admin will be able to add new admins with equal or fewer rights.";
 "lng_rights_about_add_admins_no" = "this admin will not be able to add new admins.";
+"lng_rights_about_by" = "this admin promoted by {user} at {date}.";
 
 "lng_rights_about_admin_cant_edit" = "you can't edit the rights of this admin.";
 "lng_rights_about_restriction_cant_edit" = "you cannot change the restrictions for this user.";
@@ -4057,6 +4304,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_rights_chat_files" = "files";
 "lng_rights_chat_voice_messages" = "voice messages";
 "lng_rights_chat_video_messages" = "video messages";
+"lng_rights_chat_restricted_by" = "restricted by {user} at {date}.";
+"lng_rights_chat_banned_by" = "banned by {user} at {date}.";
 "lng_rights_chat_banned_until_header" = "restricted until";
 "lng_rights_chat_banned_forever" = "forever";
 "lng_rights_chat_banned_day#one" = "for {count} day";
@@ -4123,6 +4372,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_restricted_send_polls_all" = "sorry, sending polls is not allowed in this group.";
 
 "lng_restricted_send_public_polls" = "sorry, polls with visible votes can't be forwarded to channels.";
+"lng_restricted_send_paid_media" = "sorry, paid media can't be sent to this channel.";
 
 "lng_restricted_send_voice_messages" = "{user} doesn't accept voice messages.";
 "lng_restricted_send_video_messages" = "{user} doesn't accept video messages.";
@@ -4144,11 +4394,15 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_admin_log_filter" = "filter";
 "lng_admin_log_filter_title" = "filter";
 "lng_admin_log_filter_all_actions" = "all actions";
+"lng_admin_log_filter_actions_type_subtitle" = "filter actions by type";
+"lng_admin_log_filter_actions_member_section" = "members and admins";
 "lng_admin_log_filter_restrictions" = "new restrictions";
 "lng_admin_log_filter_admins_new" = "admin rights";
 "lng_admin_log_filter_members_new" = "new members";
+"lng_admin_log_filter_actions_settings_section" = "group settings";
 "lng_admin_log_filter_info_group" = "group info";
 "lng_admin_log_filter_info_channel" = "channel info";
+"lng_admin_log_filter_actions_messages_section" = "messages";
 "lng_admin_log_filter_messages_deleted" = "deleted messages";
 "lng_admin_log_filter_messages_edited" = "edited messages";
 "lng_admin_log_filter_messages_pinned" = "pinned messages";
@@ -4157,7 +4411,10 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_admin_log_filter_invite_links" = "invite links";
 "lng_admin_log_filter_members_removed" = "members leaving";
 "lng_admin_log_filter_topics" = "topics";
+"lng_admin_log_filter_sub_extend" = "subscription renewals";
 "lng_admin_log_filter_all_admins" = "all users and admins";
+"lng_admin_log_filter_actions_admins_subtitle" = "filter actions by admins";
+"lng_admin_log_filter_actions_admins_section" = "show actions by all admins";
 "lng_admin_log_about" = "what is this?";
 "lng_admin_log_about_text" = "this is a list of all notable actions by group members and admins in the last 48 hours.";
 "lng_admin_log_about_text_channel" = "this is a list of all service actions taken by the channel's admins in the last 48 hours.";
@@ -4193,6 +4450,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_admin_log_invites_disabled" = "{from} disabled group invites";
 "lng_admin_log_signatures_enabled" = "{from} enabled signatures";
 "lng_admin_log_signatures_disabled" = "{from} disabled signatures";
+"lng_admin_log_signature_profiles_enabled" = "{from} enabled showing authors' profiles";
+"lng_admin_log_signature_profiles_disabled" = "{from} disabled showing authors' profiles";
 "lng_admin_log_forwards_enabled" = "{from} allowed saving content";
 "lng_admin_log_forwards_disabled" = "{from} restricted saving content";
 "lng_admin_log_history_made_hidden" = "{from} made the group history hidden for new members";
@@ -4269,6 +4528,10 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_admin_log_set_profile_background_emoji" = "{from} set channel profile background emoji to {emoji}";
 "lng_admin_log_change_profile_background_emoji" = "{from} changed channel profile background emoji from {previous} to {emoji}";
 "lng_admin_log_removed_profile_background_emoji" = "{from} removed channel profile background emoji {emoji}";
+"lng_admin_log_change_profile_color_group" = "{from} changed group profile color from {previous} to {color}";
+"lng_admin_log_set_profile_background_emoji_group" = "{from} set group profile background emoji to {emoji}";
+"lng_admin_log_change_profile_background_emoji_group" = "{from} changed group profile background emoji from {previous} to {emoji}";
+"lng_admin_log_removed_profile_background_emoji_group" = "{from} removed group profile background emoji {emoji}";
 "lng_admin_log_change_wallpaper" = "{from} changed channel wallpaper";
 "lng_admin_log_set_status" = "{from} set channel emoji status to {emoji}";
 "lng_admin_log_change_status" = "{from} changed channel emoji status from {previous} to {emoji}";
@@ -4330,6 +4593,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_admin_log_admin_manage_calls" = "manage video chats";
 "lng_admin_log_admin_manage_calls_channel" = "manage live streams";
 "lng_admin_log_admin_add_admins" = "add new admins";
+"lng_admin_log_subscription_extend" = "{name} renewed subscription until {date}";
 
 "lng_admin_log_antispam_menu_report" = "report false positive";
 "lng_admin_log_antispam_menu_report_toast" = "you can manage anti-spam settings in {link}.";
@@ -5067,11 +5331,15 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 
 "lng_stats_loading" = "loading stats...";
 "lng_stats_loading_subtext" = "please wait a few moments while we generate your stats.";
+"lng_stats_boosts_loading" = "loading boosts list...";
+"lng_stats_boosts_loading_subtext" = "please wait a few moments while we generate your stats.";
+"lng_stats_earn_loading" = "loading rewards info...";
+"lng_stats_earn_loading_subtext" = "please wait a few moments while we generate your stats.";
 
 "lng_chart_title_member_count" = "growth";
 "lng_chart_title_join" = "followers";
 "lng_chart_title_mute" = "notifications";
-"lng_chart_title_view_count_by_hour" = "views by hours";
+"lng_chart_title_view_count_by_hour" = "views by hours (utc)";
 "lng_chart_title_view_count_by_source" = "views by source";
 "lng_chart_title_join_by_source" = "new followers by source";
 "lng_chart_title_language" = "languages";
@@ -5124,6 +5392,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_boosts_prepaid_giveaway_moths#other" = "{count}-month subscriptions";
 "lng_boosts_prepaid_giveaway_status#one" = "{count} subscription {duration}";
 "lng_boosts_prepaid_giveaway_status#other" = "{count} subscriptions {duration}";
+"lng_boosts_prepaid_giveaway_credits_status#one" = "{amount} among {count} winner.";
+"lng_boosts_prepaid_giveaway_credits_status#other" = "{amount} among {count} winners.";
 
 "lng_channel_earn_title" = "monetization";
 "lng_channel_earn_about" = "telegram shares 50% of the revenue from ads displayed in your channel as rewards. {link}";
@@ -5150,6 +5420,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_channel_earn_history_return" = "refund";
 "lng_channel_earn_history_return_about" = "refunded back";
 "lng_channel_earn_history_pending" = "pending";
+"lng_channel_earn_history_failed" = "failed";
 "lng_channel_earn_history_show_more#one" = "show {count} more transaction";
 "lng_channel_earn_history_show_more#other" = "show {count} more transactions";
 "lng_channel_earn_off" = "switch off ads";
@@ -5172,6 +5443,30 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_channel_earn_chart_revenue" = "ad rewards";
 "lng_channel_earn_chart_overriden_detail_currency" = "rewards in ton";
 "lng_channel_earn_chart_overriden_detail_usd" = "rewards in usd";
+"lng_channel_earn_currency_history" = "ton transactions";
+"lng_channel_earn_credits_history" = "stars transactions";
+"lng_channel_earn_out_check_password_about" = "you can withdraw only if you have:";
+
+"lng_bot_earn_title" = "stars balance";
+"lng_bot_earn_chart_revenue" = "revenue";
+"lng_bot_earn_overview_title" = "proceeds overview";
+"lng_bot_earn_available" = "available balance";
+"lng_bot_earn_total" = "total lifetime proceeds";
+"lng_bot_earn_balance_title" = "available balance";
+"lng_bot_earn_balance_about" = "stars from your total balance can be used for ads or withdrawn as rewards 21 days after they are earned.";
+"lng_bot_earn_balance_about_url" = "https://telegram.org/tos/stars";
+"lng_bot_earn_balance_button#one" = "withdraw {emoji} {count}";
+"lng_bot_earn_balance_button#other" = "withdraw {emoji} {count}";
+"lng_bot_earn_balance_button_all" = "withdraw all stars";
+"lng_bot_earn_balance_button_locked" = "withdraw";
+"lng_bot_earn_balance_button_buy_ads" = "buy ads";
+"lng_bot_earn_learn_credits_out_about" = "you can withdraw stars using fragment, or use stars to advertise your bot. {link}";
+"lng_bot_earn_out_ph" = "enter amount to withdraw";
+"lng_bot_earn_balance_password_title" = "two-step verification";
+"lng_bot_earn_balance_password_description" = "please enter your password to collect.";
+"lng_bot_earn_credits_out_minimal" = "you cannot withdraw less than {link}.";
+"lng_bot_earn_credits_out_minimal_link#one" = "{count} star";
+"lng_bot_earn_credits_out_minimal_link#other" = "{count} stars";
 
 "lng_contact_add" = "add";
 "lng_contact_send_message" = "message";
@@ -5181,6 +5476,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_iv_join_channel" = "join";
 "lng_iv_window_title" = "instant view";
 "lng_iv_wrong_layout" = "wrong layout?";
+"lng_iv_not_supported" = "this link appears to be invalid.";
 
 "lng_limit_download_title" = "download speed limited";
 "lng_limit_download_subscribe" = "subscribe to {link} to increase download speed {increase}.";
@@ -5209,12 +5505,15 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_recent_none" = "recent search results\nwill appear here.";
 "lng_recent_chats" = "chats";
 "lng_recent_channels" = "channels";
+"lng_recent_apps" = "apps";
 "lng_channels_none_title" = "no channels yet...";
 "lng_channels_none_about" = "you are not currently subscribed to any channels.";
 "lng_channels_your_title" = "channels you joined";
 "lng_channels_your_more" = "show more";
 "lng_channels_your_less" = "show less";
 "lng_channels_recommended" = "similar channels";
+"lng_bot_apps_your" = "apps you use";
+"lng_bot_apps_popular" = "grossing apps";
 
 "lng_font_box_title" = "choose font family";
 "lng_font_default" = "default";
@@ -5231,6 +5530,26 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_search_tab_no_results_text" = "there were no results for \"{query}\".";
 "lng_search_tab_no_results_retry" = "try another hashtag.";
 "lng_search_tab_by_hashtag" = "enter a hashtag to find messages containing it.";
+
+"lng_contact_details_button" = "view contact";
+"lng_contact_details_title" = "contact details";
+"lng_contact_details_phone" = "phone";
+"lng_contact_details_phone_main" = "main phone";
+"lng_contact_details_phone_home" = "home phone";
+"lng_contact_details_phone_mobile" = "mobile phone";
+"lng_contact_details_phone_work" = "work phone";
+"lng_contact_details_phone_other" = "other phone";
+"lng_contact_details_email" = "email";
+"lng_contact_details_address" = "address";
+"lng_contact_details_url" = "url";
+"lng_contact_details_note" = "note";
+"lng_contact_details_birthday" = "birthday";
+"lng_contact_details_organization" = "organization";
+
+"lng_qr_box_quality" = "quality";
+"lng_qr_box_quality1" = "normal";
+"lng_qr_box_quality2" = "high";
+"lng_qr_box_quality3" = "very high";
 
 // Wnd specific
 
@@ -5399,6 +5718,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "cloud_lng_passport_in_vi" = "vietnamese";
 "cloud_lng_tooltip_psa_covid" = "this message provides you with a public service announcement in relation to the ongoing covid-19 pandemic. learn more about this initiative at https://telegram.org/blog/coronavirus";
 "cloud_lng_tooltip_psa_psa" = "this is an official message from the ceo of telegram regarding the ongoing conflict.";
+"cloud_lng_topup_purpose_subs" = "buy **stars** to keep your channel subscriptions.";
 "cloud_lng_translate_to_ar" = "arabic";
 "cloud_lng_translate_to_az" = "azerbaijani";
 "cloud_lng_translate_to_bg" = "bulgarian";
@@ -5470,10 +5790,18 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_action_game_you_scored_no_game#two" = "you scored {count}";
 "lng_action_game_you_scored_no_game#few" = "you scored {count}";
 "lng_action_game_you_scored_no_game#many" = "you scored {count}";
+"lng_action_giveaway_credits_started_amount#zero" = "{count} stars";
+"lng_action_giveaway_credits_started_amount#two" = "{count} stars";
+"lng_action_giveaway_credits_started_amount#few" = "{count} stars";
+"lng_action_giveaway_credits_started_amount#many" = "{count} stars";
 "lng_action_giveaway_results#zero" = "{count} winners of the giveaway were randomly selected by telegram and received private messages with giftcodes.";
 "lng_action_giveaway_results#two" = "{count} winners of the giveaway were randomly selected by telegram and received private messages with giftcodes.";
 "lng_action_giveaway_results#few" = "{count} winners of the giveaway were randomly selected by telegram and received private messages with giftcodes.";
 "lng_action_giveaway_results#many" = "{count} winners of the giveaway were randomly selected by telegram and received private messages with giftcodes.";
+"lng_action_giveaway_results_credits#zero" = "{count} winners of the giveaway were randomly selected by telegram and received their prize.";
+"lng_action_giveaway_results_credits#two" = "{count} winners of the giveaway were randomly selected by telegram and received their prize.";
+"lng_action_giveaway_results_credits#few" = "{count} winners of the giveaway were randomly selected by telegram and received their prize.";
+"lng_action_giveaway_results_credits#many" = "{count} winners of the giveaway were randomly selected by telegram and received their prize.";
 "lng_action_group_call_started" = "{from} started {chat}";
 "lng_action_group_migrate" = "the group was upgraded to a supergroup";
 "lng_action_proximity_distance_km#zero" = "{count} km";
@@ -5654,6 +5982,10 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_boosts_list_title#two" = "{count} boosts";
 "lng_boosts_list_title#few" = "{count} boosts";
 "lng_boosts_list_title#many" = "{count} boosts";
+"lng_boosts_prepaid_giveaway_credits_status#zero" = "{amount} among {count} winners.";
+"lng_boosts_prepaid_giveaway_credits_status#two" = "{amount} among {count} winners.";
+"lng_boosts_prepaid_giveaway_credits_status#few" = "{amount} among {count} winners.";
+"lng_boosts_prepaid_giveaway_credits_status#many" = "{amount} among {count} winners.";
 "lng_boosts_prepaid_giveaway_moths#zero" = "{count}-month subscriptions";
 "lng_boosts_prepaid_giveaway_moths#two" = "{count}-month subscriptions";
 "lng_boosts_prepaid_giveaway_moths#few" = "{count}-month subscriptions";
@@ -5675,6 +6007,18 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_boosts_show_more_gifts#two" = "show {count} more boosts";
 "lng_boosts_show_more_gifts#few" = "show {count} more boosts";
 "lng_boosts_show_more_gifts#many" = "show {count} more boosts";
+"lng_bot_earn_balance_button#zero" = "withdraw {emoji} {count}";
+"lng_bot_earn_balance_button#two" = "withdraw {emoji} {count}";
+"lng_bot_earn_balance_button#few" = "withdraw {emoji} {count}";
+"lng_bot_earn_balance_button#many" = "withdraw {emoji} {count}";
+"lng_bot_earn_credits_out_minimal_link#zero" = "{count} stars";
+"lng_bot_earn_credits_out_minimal_link#two" = "{count} stars";
+"lng_bot_earn_credits_out_minimal_link#few" = "{count} stars";
+"lng_bot_earn_credits_out_minimal_link#many" = "{count} stars";
+"lng_bot_status_users#zero" = "{count} monthly users";
+"lng_bot_status_users#two" = "{count} monthly users";
+"lng_bot_status_users#few" = "{count} monthly users";
+"lng_bot_status_users#many" = "{count} monthly users";
 "lng_bot_sure_add" = "add as admin";
 "lng_bot_sure_add_title" = "add bot as admin";
 "lng_business_limit_reached#zero" = "limit of {count} messages reached.";
@@ -5827,14 +6171,39 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_create_channel_crop" = "select an area for the profile photo";
 "lng_create_group_crop" = "select an area for group photo";
 "lng_create_group_ttl_about" = "automatically delete messages in this group for everyone after a period of time.";
+"lng_credits_box_history_entry_gift_about_url" = "https://telegram.org/blog/telegram-stars";
 "lng_credits_box_out_confirm#zero" = "confirm and pay {emoji} {count} stars";
 "lng_credits_box_out_confirm#two" = "confirm and pay {emoji} {count} stars";
 "lng_credits_box_out_confirm#few" = "confirm and pay {emoji} {count} stars";
 "lng_credits_box_out_confirm#many" = "confirm and pay {emoji} {count} stars";
+"lng_credits_box_out_media#zero" = "do you want to unlock {media} in {chat} for **{count} stars**?";
+"lng_credits_box_out_media#two" = "do you want to unlock {media} in {chat} for **{count} stars**?";
+"lng_credits_box_out_media#few" = "do you want to unlock {media} in {chat} for **{count} stars**?";
+"lng_credits_box_out_media#many" = "do you want to unlock {media} in {chat} for **{count} stars**?";
+"lng_credits_box_out_media_user#zero" = "do you want to unlock {media} from {user} for **{count} stars**?";
+"lng_credits_box_out_media_user#two" = "do you want to unlock {media} from {user} for **{count} stars**?";
+"lng_credits_box_out_media_user#few" = "do you want to unlock {media} from {user} for **{count} stars**?";
+"lng_credits_box_out_media_user#many" = "do you want to unlock {media} from {user} for **{count} stars**?";
+"lng_credits_box_out_photos#zero" = "{count} photos";
+"lng_credits_box_out_photos#two" = "{count} photos";
+"lng_credits_box_out_photos#few" = "{count} photos";
+"lng_credits_box_out_photos#many" = "{count} photos";
 "lng_credits_box_out_sure#zero" = "do you want to buy **\"{text}\"** in **{bot}** for **{count} stars**?";
 "lng_credits_box_out_sure#two" = "do you want to buy **\"{text}\"** in **{bot}** for **{count} stars**?";
 "lng_credits_box_out_sure#few" = "do you want to buy **\"{text}\"** in **{bot}** for **{count} stars**?";
 "lng_credits_box_out_sure#many" = "do you want to buy **\"{text}\"** in **{bot}** for **{count} stars**?";
+"lng_credits_box_out_videos#zero" = "{count} videos";
+"lng_credits_box_out_videos#two" = "{count} videos";
+"lng_credits_box_out_videos#few" = "{count} videos";
+"lng_credits_box_out_videos#many" = "{count} videos";
+"lng_credits_media_done_text#zero" = "**{count} stars** transferred to {chat}.";
+"lng_credits_media_done_text#two" = "**{count} stars** transferred to {chat}.";
+"lng_credits_media_done_text#few" = "**{count} stars** transferred to {chat}.";
+"lng_credits_media_done_text#many" = "**{count} stars** transferred to {chat}.";
+"lng_credits_media_done_text_user#zero" = "**{count} stars** transferred to {user}.";
+"lng_credits_media_done_text_user#two" = "**{count} stars** transferred to {user}.";
+"lng_credits_media_done_text_user#few" = "**{count} stars** transferred to {user}.";
+"lng_credits_media_done_text_user#many" = "**{count} stars** transferred to {user}.";
 "lng_credits_small_balance_title#zero" = "{count} stars needed";
 "lng_credits_small_balance_title#two" = "{count} stars needed";
 "lng_credits_small_balance_title#few" = "{count} stars needed";
@@ -6140,6 +6509,10 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_forwards_tooltip#few" = "shares: {count}";
 "lng_forwards_tooltip#many" = "shares: {count}";
 "lng_gif_error" = "an error occurred while reading gif";
+"lng_gift_stars_title#zero" = "{count} stars";
+"lng_gift_stars_title#two" = "{count} stars";
+"lng_gift_stars_title#few" = "{count} stars";
+"lng_gift_stars_title#many" = "{count} stars";
 "lng_giveaway_award_chosen#zero" = "{count} recipients >";
 "lng_giveaway_award_chosen#two" = "{count} recipients >";
 "lng_giveaway_award_chosen#few" = "{count} recipients >";
@@ -6158,6 +6531,10 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_giveaway_channels_this_group#two" = "this group will receive {count} boosts";
 "lng_giveaway_channels_this_group#few" = "this group will receive {count} boosts";
 "lng_giveaway_channels_this_group#many" = "this group will receive {count} boosts";
+"lng_giveaway_credits_option_status#zero" = "{count} per user";
+"lng_giveaway_credits_option_status#two" = "{count} per user";
+"lng_giveaway_credits_option_status#few" = "{count} per user";
+"lng_giveaway_credits_option_status#many" = "{count} per user";
 "lng_giveaway_date_about#zero" = "choose when {count} subscribers of your channel will be randomly selected to receive telegram premium.";
 "lng_giveaway_date_about#two" = "choose when {count} subscribers of your channel will be randomly selected to receive telegram premium.";
 "lng_giveaway_date_about#few" = "choose when {count} subscribers of your channel will be randomly selected to receive telegram premium.";
@@ -6188,6 +6565,18 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_giveaway_prizes_additional#two" = "all prizes: **{count}** {prize} with telegram premium subscriptions {duration}.";
 "lng_giveaway_prizes_additional#few" = "all prizes: **{count}** {prize} with telegram premium subscriptions {duration}.";
 "lng_giveaway_prizes_additional#many" = "all prizes: **{count}** {prize} with telegram premium subscriptions {duration}.";
+"lng_giveaway_prizes_additional_credits#zero" = "all prizes: **{count}** {prize} with {amount}.";
+"lng_giveaway_prizes_additional_credits#two" = "all prizes: **{count}** {prize} with {amount}.";
+"lng_giveaway_prizes_additional_credits#few" = "all prizes: **{count}** {prize} with {amount}.";
+"lng_giveaway_prizes_additional_credits#many" = "all prizes: **{count}** {prize} with {amount}.";
+"lng_giveaway_prizes_additional_credits_amount#zero" = "{count} stars";
+"lng_giveaway_prizes_additional_credits_amount#two" = "{count} stars";
+"lng_giveaway_prizes_additional_credits_amount#few" = "{count} stars";
+"lng_giveaway_prizes_additional_credits_amount#many" = "{count} stars";
+"lng_giveaway_prizes_just_credits#zero" = "all prizes: **{count}** stars.";
+"lng_giveaway_prizes_just_credits#two" = "all prizes: **{count}** stars.";
+"lng_giveaway_prizes_just_credits#few" = "all prizes: **{count}** stars.";
+"lng_giveaway_prizes_just_credits#many" = "all prizes: **{count}** stars.";
 "lng_giveaway_prizes_just_premium#zero" = "all prizes: **{count}** telegram premium subscriptions {duration}.";
 "lng_giveaway_prizes_just_premium#two" = "all prizes: **{count}** telegram premium subscriptions {duration}.";
 "lng_giveaway_prizes_just_premium#few" = "all prizes: **{count}** telegram premium subscriptions {duration}.";
@@ -6599,6 +6988,18 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_notification_exceptions#two" = "{count} exceptions";
 "lng_notification_exceptions#few" = "{count} exceptions";
 "lng_notification_exceptions#many" = "{count} exceptions";
+"lng_paid_react_already#zero" = "you sent **{count} stars** to support this post.";
+"lng_paid_react_already#two" = "you sent **{count} stars** to support this post.";
+"lng_paid_react_already#few" = "you sent **{count} stars** to support this post.";
+"lng_paid_react_already#many" = "you sent **{count} stars** to support this post.";
+"lng_paid_react_toast#zero" = "stars sent!";
+"lng_paid_react_toast#two" = "stars sent!";
+"lng_paid_react_toast#few" = "stars sent!";
+"lng_paid_react_toast#many" = "stars sent!";
+"lng_paid_react_toast_text#zero" = "you reacted with **{count} stars**.";
+"lng_paid_react_toast_text#two" = "you reacted with **{count} stars**.";
+"lng_paid_react_toast_text#few" = "you reacted with **{count} stars**.";
+"lng_paid_react_toast_text#many" = "you reacted with **{count} stars**.";
 "lng_participant_invite_sorry#zero" = "sorry, you can only add the first {count} subscribers to a channel personally.\n\nfrom now on, people will need to join via your invite link.";
 "lng_participant_invite_sorry#two" = "sorry, you can only add the first {count} subscribers to a channel personally.\n\nfrom now on, people will need to join via your invite link.";
 "lng_participant_invite_sorry#few" = "sorry, you can only add the first {count} subscribers to a channel personally.\n\nfrom now on, people will need to join via your invite link.";
@@ -6730,6 +7131,10 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_premium_summary_subtitle_gift_me#many" = "you gifted {user} a {count}-months subscription to telegram premium.";
 "lng_premium_summary_subtitle_unique_reactions" = "unique reactions";
 "lng_premium_summary_user_button" = "learn more";
+"lng_prize_credits_amount#zero" = "{count} stars";
+"lng_prize_credits_amount#two" = "{count} stars";
+"lng_prize_credits_amount#few" = "{count} stars";
+"lng_prize_credits_amount#many" = "{count} stars";
 "lng_prizes_about#zero" = "**{count}** telegram premium subscriptions {duration}.";
 "lng_prizes_about#two" = "**{count}** telegram premium subscriptions {duration}.";
 "lng_prizes_about#few" = "**{count}** telegram premium subscriptions {duration}.";
@@ -6754,6 +7159,26 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_prizes_admins_group#two" = "the admins of {channel}, who acquired **{count} telegram premium** subscriptions {duration} for its members";
 "lng_prizes_admins_group#few" = "the admins of {channel}, who acquired **{count} telegram premium** subscriptions {duration} for its members";
 "lng_prizes_admins_group#many" = "the admins of {channel}, who acquired **{count} telegram premium** subscriptions {duration} for its members";
+"lng_prizes_credits_about#zero" = "**{amount}** will be distributed among {count} winners.";
+"lng_prizes_credits_about#two" = "**{amount}** will be distributed among {count} winners.";
+"lng_prizes_credits_about#few" = "**{amount}** will be distributed among {count} winners.";
+"lng_prizes_credits_about#many" = "**{amount}** will be distributed among {count} winners.";
+"lng_prizes_credits_about_amount#zero" = "{count} stars";
+"lng_prizes_credits_about_amount#two" = "{count} stars";
+"lng_prizes_credits_about_amount#few" = "{count} stars";
+"lng_prizes_credits_about_amount#many" = "{count} stars";
+"lng_prizes_credits_admins_amount#zero" = "{count} stars";
+"lng_prizes_credits_admins_amount#two" = "{count} stars";
+"lng_prizes_credits_admins_amount#few" = "{count} stars";
+"lng_prizes_credits_admins_amount#many" = "{count} stars";
+"lng_prizes_credits_results_all#zero" = "all winners received {count} stars in total.";
+"lng_prizes_credits_results_all#two" = "all winners received {count} stars in total.";
+"lng_prizes_credits_results_all#few" = "all winners received {count} stars in total.";
+"lng_prizes_credits_results_all#many" = "all winners received {count} stars in total.";
+"lng_prizes_credits_results_one#zero" = "the winner received {count} stars.";
+"lng_prizes_credits_results_one#two" = "the winner received {count} stars.";
+"lng_prizes_credits_results_one#few" = "the winner received {count} stars.";
+"lng_prizes_credits_results_one#many" = "the winner received {count} stars.";
 "lng_prizes_end_activated#zero" = "**{count}** of the winners already used their gift links.";
 "lng_prizes_end_activated#two" = "**{count}** of the winners already used their gift links.";
 "lng_prizes_end_activated#few" = "**{count}** of the winners already used their gift links.";
@@ -6818,6 +7243,10 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_prizes_winners_new_of_one#two" = "{count} random users that joined {channel} after {start_date}";
 "lng_prizes_winners_new_of_one#few" = "{count} random users that joined {channel} after {start_date}";
 "lng_prizes_winners_new_of_one#many" = "{count} random users that joined {channel} after {start_date}";
+"lng_prizes_you_won_credits_amount#zero" = "{count} stars";
+"lng_prizes_you_won_credits_amount#two" = "{count} stars";
+"lng_prizes_you_won_credits_amount#few" = "{count} stars";
+"lng_prizes_you_won_credits_amount#many" = "{count} stars";
 "lng_profile_actions_section" = "actions";
 "lng_profile_add_more_after_upgrade#zero" = "you will be able to add up to {count} members after you upgrade your group to a supergroup.";
 "lng_profile_add_more_after_upgrade#one" = "you will be able to add up to {count} member after you upgrade your group to a supergroup.";
