@@ -80,3 +80,7 @@ URLs to avoid Telegram's stale export cache.
 
 The older `telegram_import_payload.py` and `telegram_android_live_check.py` scripts
 remain available for manual Android import diagnostics.
+
+## License
+
+Code (`main.py`, `scripts/`, `tests/`) is licensed under the MIT License (see `LICENSE`). Language strings in `en/` and `lowercased-en/` come from translations.telegram.org, belong to Telegram, and are not covered by the MIT License.
