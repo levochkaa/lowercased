@@ -1720,6 +1720,7 @@
 
     <string name="JoinToGroupErrorFull">sorry, this group is already full.</string>
     <string name="JoinToGroupErrorNotExist">sorry, this chat doesn\'t seem to exist.</string>
+    <string name="LinkHashExpired">link is no longer active</string>
 
 
 
@@ -2982,7 +2983,7 @@
 
 
 
-
+    <string name="SendSelectedLocation">send selected location</string>
 
 
 
@@ -4732,6 +4733,9 @@
     <string name="PhotoEditorText">text</string>
     <string name="PhotoEditorSticker">sticker</string>
     <string name="PaintShapes">shapes</string>
+    <string name="StoryCrop">crop</string>
+    <string name="DiscardChanges">discard changes</string>
+    <string name="PhotoEditorDiscardAlert">are you sure you want to discard all changes?</string>
     <string name="PaintShapeFilled">filled</string>
     <string name="PaintCircle">circle</string>
     <string name="PaintRectangle">rectangle</string>
@@ -5372,8 +5376,8 @@
     <string name="PremiumStickers">premium stickers</string>
     <string name="CaptionsLimitTitle">captions</string>
     <string name="CaptionsLimitSubtitle">use longer descriptions for your photos and videos</string>
-    <string name="CaptionPremiumTitle">maximum length reach</string>
-    <string name="CaptionPremiumSubtitle_other">increase this limit **{0}** times to **{1}** symbols by subscribing to __telegram premium.__</string>
+    <string name="CaptionPremiumTitle">maximum length reached</string>
+    <string name="CaptionPremiumSubtitle_other">increase this limit **{0}x** to **{1}** characters by subscribing to __telegram premium__.</string>
 
 
 
@@ -5633,6 +5637,7 @@
 
 
     <string name="AnonymousNumber">collectible number</string>
+    <string name="AnonymousNumbers">collectible numbers</string>
     <string name="AnonymousNumberNotice">this number is not tied to a sim card and was acquired on *fragment*.</string>
     <string name="AutoDeleteMessages">auto-delete messages</string>
     <string name="SetCustomTime">set custom time</string>
@@ -6158,7 +6163,7 @@
     <string name="StoryLinkNameHeader">customize link text</string>
     <string name="StoryLinkNamePlaceholder">link text</string>
     <string name="StoryLinkPremium">subscribe to **telegram premium** to add links to stories.</string>
-    <string name="StoryPremiumFormatting">subscribe to **telegram premium** to add links and text formatting to your stories.</string>
+    <string name="StoryPremiumFormatting">subscribe to **telegram premium** to add links and formatting to your story captions.</string>
     <string name="StoryLinkLimitMessage_other">you can’t add more than {0} links to a story.</string>
     <string name="LimitReachedStoriesCount2First_one">you can post **{0}** story in **24** hours.</string>
     <string name="LimitReachedStoriesCount2First_other">you can post **{0}** stories in **24** hours.</string>
@@ -7829,6 +7834,7 @@
 
 
     <string name="StarsNeededTextReactions">buy **stars** to send paid reactions to **{0}** and other channels.</string>
+    <string name="StarsNeededTextBuySubscription">buy **stars** and subscribe to **{0}** and other channels.</string>
 
 
 
@@ -8145,6 +8151,15 @@
     <string name="StarsSubscriptionCancel">cancel subscription</string>
     <string name="StarsSubscriptionCancelInfo">if you cancel now, you will still be able to access your subscription until {0}.</string>
     <string name="StarsSubscriptionExpiredInfo">your subscription expired on {0}.</string>
+    <string name="StarsSubscribeTitle">subscribe to the channel</string>
+    <string name="StarsSubscribeText_one">do you want to subscribe to **{1}** for **{0} star** per month?</string>
+    <string name="StarsSubscribeText_other">do you want to subscribe to **{1}** for **{0} stars** per month?</string>
+    <string name="StarsSubscribeButton">subscribe</string>
+    <string name="StarsSubscribeInfo">by subscribing you agree to the **terms of service**.</string>
+    <string name="StarsSubscribeInfoLink">https://telegram.org/tos/stars</string>
+    <string name="StarsSubscriptionCompleted">subscription successful!</string>
+    <string name="StarsSubscriptionCompletedText_one">{0} star transferred to **{1}**.</string>
+    <string name="StarsSubscriptionCompletedText_other">{0} stars transferred to **{1}**.</string>
 
 
 
@@ -8250,14 +8265,39 @@
 
     <string name="Gift2TitleReceived">received gift</string>
     <string name="TelegramPremiumShort">premium</string>
-    <string name="Gift2Info_one">you can add this gift to your profile or convert it to **{0}** star.</string>
-    <string name="Gift2Info_other">you can add this gift to your profile or convert it to **{0}** stars.</string>
     <string name="Gift2InfoOut_one">{1} can add this gift to their profile or convert it to **{0}** star.</string>
     <string name="Gift2InfoOut_other">{1} can add this gift to their profile or convert it to **{0}** stars.</string>
     <string name="Gift2InfoConverted_one">you converted this gift to **{0}** star.</string>
     <string name="Gift2InfoConverted_other">you converted this gift to **{0}** stars.</string>
-    <string name="Gift2InfoPinned">you added this gift to your profile.</string>
     <string name="Gift2Info2OutExpired">{0} can add this gift to their profile.</string>
+    <string name="Gift2TitleSaved">saved gift</string>
+    <string name="Gift2TitleProfile">gift</string>
+    <string name="Gift2SelfInfoUpgrade">you can add this gift to your profile or turn it into a unique transferable collectible.</string>
+    <string name="Gift2SelfInfoConvert_one">add this gift to your profile or convert it to **{0} star**.</string>
+    <string name="Gift2SelfInfoConvert_other">add this gift to your profile or convert it to **{0} stars**.</string>
+    <string name="Gift2SelfInfo">you can add this gift to your profile.</string>
+    <string name="Gift2Info2ChannelKeep">your channel can add this gift to its profile.</string>
+    <string name="Gift2Info2BotKeep">you can add this gift to your profile or hide it.</string>
+    <string name="Gift2Info2ChannelRemove">your channel can hide this gift from its profile.</string>
+    <string name="Gift2Info2BotRemove">you can remove this gift from your profile.</string>
+    <string name="Gift2Info2OutUpgrade">{0} can add this gift to their profile or upgrade it to a unique collectible.</string>
+    <string name="Gift2Info3_one">you can add this gift to your profile or convert it to **{0}** star.</string>
+    <string name="Gift2Info3_other">you can add this gift to your profile or convert it to **{0}** stars.</string>
+    <string name="Gift2Info3Channel_one">your channel can add this gift to its profile or convert it to **{0}** star.</string>
+    <string name="Gift2Info3Channel_other">your channel can add this gift to its profile or convert it to **{0}** stars.</string>
+    <string name="Gift2InfoOutPinned">{0} added this gift to their profile.</string>
+    <string name="Gift2Refunded">this gift was downgraded because a request to refund the payment related to this gift was made, and the money was returned.</string>
+    <string name="Gift2InSenderHidden2">only you can see the senderʼs name.</string>
+    <string name="Gift2InSenderMessageHidden2">only you can see the senderʼs name and message.</string>
+    <string name="Gift2OutSenderHidden2">only {0} can see the senderʼs name.</string>
+    <string name="Gift2OutSenderMessageHidden2">only {0} can see the senderʼs name and message.</string>
+    <string name="Gift2ButtonSendGift">send a gift</string>
+    <string name="Gift2ChannelMadePublicTitle">gift shown</string>
+    <string name="Gift2ChannelMadePublic">gift is now visible on your channel\'s profile.</string>
+    <string name="Gift2ChannelMadePrivateTitle">gift hidden</string>
+    <string name="Gift2ChannelMadePrivate">gift is now hidden from your channel\'s profile.</string>
+    <string name="Gift2ConvertedChannel_one">{0} star was sent to channel\'s balance</string>
+    <string name="Gift2ConvertedChannel_other">{0} stars were sent to channel\'s balance</string>
 
 
 
@@ -11118,6 +11158,7 @@
     <!-- new from translations.telegram.org -->
 
     <string name="AccDescrChatInfo">chat info</string>
+    <string name="AccDescrChatPinned">pinned</string>
     <string name="AccDescrCustomEmoji2">custom emoji</string>
     <string name="AccDescrExitFullScreen">exit full screen</string>
     <string name="AccDescrExitMiniPlayer">exit mini player</string>
@@ -11182,6 +11223,7 @@
     <string name="DiagnosticsShowPeerIds">show peer ids</string>
     <string name="DiagnosticsUseLayoutRounding">use layout rounding</string>
     <string name="DisableProxy">disable proxy</string>
+    <string name="DockedLayout">classic docked layout</string>
     <string name="DownloadFolder">download folder</string>
     <string name="DownloadFolderDefault">default</string>
     <string name="DownloadPath">download path</string>
@@ -11204,6 +11246,7 @@
     <string name="GroupUpgradedTo">group upgraded to supergroup.</string>
     <string name="InAppPreviewInfo">hover your cursor on a chat to preview the latest message.</string>
     <string name="InstallBetaUpdates">install beta updates</string>
+    <string name="InstanceNotResponding">telegram is already running, but it is not responding.\n\ndo you want to close it and start telegram again?</string>
     <string name="InterfaceScale">interface scale</string>
     <string name="LimitByPeriodCustom">custom</string>
     <string name="LimitNumberOfUsesCustom">custom</string>
@@ -11539,8 +11582,6 @@
 
     <string name="Gift2ConvertText2_one">do you want to convert this gift from **{1}** to **{2}**?\n\nconversion is available for the next **{0} day**.\n\nthis action cannot be undone. this will permanently destroy the gift.</string>
     <string name="Gift2ConvertText2_other">do you want to convert this gift from **{1}** to **{2}**?\n\nconversion is available for the next **{0} days**.\n\nthis action cannot be undone. this will permanently destroy the gift.</string>
-    <string name="Gift2Info2Expired_one">you can add this gift of {0} star to your profile.</string>
-    <string name="Gift2Info2Expired_other">you can add this gift of {0} stars to your profile.</string>
 
     <string name="NoResult">no results</string>
     <string name="NoResultFoundFor2">there were no results for \"{0}\".\ntry a new search.</string>
@@ -11865,6 +11906,7 @@
     <string name="ActionGiftSelf">you bought a gift for **un2**</string>
     <string name="Gift2UniqueRibbon">gift</string>
     <string name="Gift2UniqueTitle">gift from {0}</string>
+    <string name="Gift2UniqueTitle2">gift</string>
     <string name="Gift2UniqueView">view</string>
     <string name="Gift2AttributeModel">model</string>
     <string name="Gift2AttributeBackdrop">backdrop</string>
@@ -11875,6 +11917,11 @@
     <string name="Gift2QuantityIssuedNone_one">none of {0} left</string>
     <string name="Gift2QuantityIssuedNone_other">none of {0} left</string>
     <string name="Gift2Owner">owner</string>
+    <string name="Gift2Host">telegram</string>
+    <string name="Gift2HostAddress">owner</string>
+    <string name="Gift2InBlockchain">this gift is on the ton blockchain. **view &gt;**</string>
+    <string name="Gift2CantDoTitle">action locked</string>
+    <string name="Gift2CantDoText">move this gift from your wallet to your profile to unlock this action.</string>
     <string name="Gift2OwnerChange">change</string>
     <string name="Gift2CollectionNumber_one">collectible #{0}</string>
     <string name="Gift2CollectionNumber_other">collectible #{0}</string>
@@ -11915,18 +11962,28 @@
     <string name="Gift2UpgradeTitle">upgrade gift</string>
     <string name="Gift2UpgradeText">turn your gift into a unique collectible that you can transfer or auction.</string>
     <string name="Gift2UpgradeFeature1Title">unique</string>
-    <string name="Gift2UpgradeFeature1Text">get a unique number, model, backdrop and symbol for your gift.</string>
     <string name="Gift2UpgradeFeature1TextLearn">the recipient will get a unique number, model, backdrop and symbol for the gift.</string>
     <string name="Gift2UpgradeFeature2Title">transferable</string>
-    <string name="Gift2UpgradeFeature2Text">send your upgraded gift to any of your friends on telegram.</string>
     <string name="Gift2UpgradeFeature2TextLearn">the recipient will be able to send the gift to anyone on telegram.</string>
     <string name="Gift2UpgradeFeature3Title">tradable</string>
     <string name="Gift2UpgradeFeatureSoon">soon</string>
-    <string name="Gift2UpgradeFeature3Text">sell or auction your gift on third-party nft marketplaces.</string>
     <string name="Gift2UpgradeFeature3TextLearn">the recipient will be able to auction the gift on third-party nft marketplaces.</string>
     <string name="Gift2AddSenderName">add sender\'s name to the gift</string>
     <string name="Gift2AddSenderNameComment">add sender\'s name and comment</string>
     <string name="Gift2AddMyNameName">add my name to the gift</string>
+    <string name="Gift2AddMyNameNameChannel">add channel name to the gift</string>
+    <string name="GiftsFeature1Text">upgrade your gifts to get a unique number, model, backdrop and symbol.</string>
+    <string name="GiftsFeature2Text">sell your gift on telegram or on third-party nft marketplaces.</string>
+    <string name="GiftsFeature3Title">wearable</string>
+    <string name="GiftsFeature3Text">display gifts on your profile and set them as your cover or status.</string>
+    <string name="Gift2UpgradeCostsInfo">see how this price will decrease &gt;</string>
+    <string name="Gift2UpgradeCostsTitle">upgrade cost</string>
+    <string name="Gift2UpgradeCostsText">users who upgrade their gift first get collectibles with lower numbers.</string>
+    <string name="Gift2UpgradeCostsFooter">upgrade cost drops every minute.</string>
+    <string name="Gift2UpgradedTitle">gift upgraded</string>
+    <string name="Gift2UpgradedText">your gift **{0}** now has unique attributes and can be transferred to others.</string>
+    <string name="Gift2UpgradeNext">upgrade next gift</string>
+    <string name="GiftSkipAnimation">skip</string>
 
     <string name="Gift2TabInStock">in stock</string>
     <string name="Gift2TransferOption">transfer</string>
@@ -12013,6 +12070,12 @@
     <string name="Gift2ShowGift">show</string>
     <string name="Gift2PinnedSubtitle">now it will always be shown on top.</string>
     <string name="Gift2PinnedTitle">gift pinned</string>
+    <string name="Gift2Unpinned">gift unpinned</string>
+    <string name="Gift2ShowOnProfile">show on profile</string>
+    <string name="Gift2HideFromProfile">hide from profile</string>
+    <string name="Gift2DeleteOption">delete gift</string>
+    <string name="Gift2DeleteText">do you want to delete this gift?\n\nit will disappear from your profile and can\'t be restored.</string>
+    <string name="Gift2Deleted">gift deleted</string>
 
     <string name="ReportSpamUserEmojiStatusHint2">{0} is a mark for **premium subscribers &gt;**</string>
     <string name="MessageLockedStarsRemoveFee">{0} must pay &#11088;&#65039; {1} for each message to you.\n**remove fee**</string>
@@ -12321,6 +12384,7 @@
     <string name="Gift2ChangePrice">change price</string>
     <string name="Gift2ActionResell">sell</string>
     <string name="Gift2ActionUnlist">unlist</string>
+    <string name="Gift2ActionShare">share</string>
     <string name="Gift2UnlistTitle">unlist {0}</string>
     <string name="Gift2UnlistText">are you sure you want to unlist your gift?</string>
     <string name="Gift2AvailabilitySold_other">{0} sold</string>
@@ -12346,8 +12410,20 @@
     <string name="Gift2TransferTimeoutTitle">try later</string>
     <string name="Gift2TransferTimeout">you will be able to transfer this gift in {0}.</string>
     <string name="Gift2TransferTimeoutDate">you will be able to transfer this gift on {0}.</string>
-    <string name="Gift2Wear">wear</string>
-    <string name="Gift2Unwear">take off</string>
+    <string name="Gift2ActionWear">wear</string>
+    <string name="Gift2ActionWearOff">take off</string>
+    <string name="Gift2ActionWearDone">you put on **{0}**</string>
+    <string name="Gift2ActionWearOffDone">you took off **{0}**</string>
+    <string name="Gift2ActionWearNeededPremium">subscribe to **telegram premium** to wear collectibles.</string>
+    <string name="Gift2WearTitle">wear {0}</string>
+    <string name="Gift2WearSubtitle">and get these benefits</string>
+    <string name="Gift2WearFeature1Title">radiant badge</string>
+    <string name="Gift2WearFeature1Text">this gift will be displayed next to your name with a glittering icon.</string>
+    <string name="Gift2WearFeature2Title">unique profile design</string>
+    <string name="Gift2WearFeature2Text">your profile will have the same backdrop and symbol as this gift.</string>
+    <string name="Gift2WearFeature3Title">proof of ownership</string>
+    <string name="Gift2WearFeature3Text">tapping the icon next to your name will show the gift\'s owner and attributes.</string>
+    <string name="Gift2WearStart">start wearing</string>
     <string name="Gift2ActionTransfer">transfer</string>
     <string name="BoostFeatureAutotranslation">auto-translation of messages</string>
     <string name="ChannelAutotranslation">auto-translate messages</string>
@@ -12374,6 +12450,8 @@
     <string name="TopicsLayoutInfo">choose how topics appear for all members.</string>
     <string name="TopicsLayoutList">list</string>
     <string name="TopicsLayoutTabs">tabs</string>
+    <string name="TopicsPanelAllMessages">all messages</string>
+    <string name="TopicsSidebar">sidebar</string>
     <string name="TopicsTitle">topics</string>
     <string name="TopicsEnabled">enabled</string>
     <string name="TopicsDisabled">disabled</string>
@@ -12948,6 +13026,7 @@
     <string name="Gift2PrepayUpgradeTitle">make unique</string>
     <string name="StarsGiftUpgradeCompleted">gift upgrade sent!</string>
     <string name="StarsGiftUpgradeCompletedText">{0} can now upgrade this gift for free.</string>
+    <string name="StarsGiftUpgradeCompletedMoreButton">gift more</string>
     <string name="ActionPrepaidGiftInbound">un1 sent an upgrade worth **un2** for your gift</string>
     <string name="ActionPrepaidGiftOutbound">you sent an upgrade worth **un2** for **un1**\'s gift</string>
 
@@ -13437,6 +13516,13 @@
     <string name="GiftCraftButtonEmpty">tap + to add your first gift</string>
     <string name="GiftCraftButtonFailed">craft new gift</string>
     <string name="GiftCraftSuccessChance">**{0}** success chance</string>
+    <string name="GiftCraftLaterTitle">try later</string>
+    <string name="GiftCraftLaterText">you will be able to craft this gift on {0}.</string>
+    <string name="GiftCraftUnavailableTitle">crafting unavailable</string>
+    <string name="GiftCraftUnavailableText">these gifts currently can\'t be crafted.</string>
+    <string name="GiftCraftUnavailableTextTime">this gift will become available for crafting on **{0}**.</string>
+    <string name="GiftCraftCantChooseFirstTitle">can\'t choose as first</string>
+    <string name="GiftCraftCantChooseFirst">this gift can\'t be used as the first one in crafting because it has been recorded on the blockchain.</string>
 
     <string name="DisableSharing">disable sharing</string>
     <string name="DisableSharingInfoButton">disable sharing</string>
@@ -13754,6 +13840,13 @@
     <string name="PollV2PollDurationOptionCustom">custom</string>
     <string name="PollV2HideResults">hide results</string>
     <string name="PollV2HideResultsInfo">when enabled, results will not be visible until the poll closes.</string>
+    <string name="PollEndsIn">ends in {0}</string>
+    <string name="PollResultsIn">results in {0}</string>
+    <string name="PollResultsWillLater">results will appear after the poll ends</string>
+    <string name="PollViewBack">&lt; vote</string>
+    <string name="PollViewVotesAsAdmin_one">{0} vote &gt;</string>
+    <string name="PollViewVotesAsAdmin_other">{0} votes &gt;</string>
+    <string name="PollViewVotesX">view votes ({0})</string>
 
     <string name="UserRestrictionsSendReactions">send reactions</string>
     <string name="EventLogRestrictedSendReactions">send reactions</string>
@@ -14183,6 +14276,7 @@
     <string name="WalletTermsOfService">by using this service you agree to its **terms**.</string>
 
     <string name="WalletCopyAddress">copy address</string>
+    <string name="WalletAddressCopied">wallet address copied to clipboard</string>
     <string name="WalletAddressCopiedShort">address copied</string>
     <string name="WalletShowMyQR">show my qr</string>
     <string name="WalletReceiveInfo">share your address or this\nqr code to receive gram.</string>
@@ -14368,6 +14462,13 @@
     <string name="WalletSecretPhraseExpired">the new secret phrase expired. nothing was changed.</string>
     <string name="WalletSecretPhraseUpdatePartial">the backup was disabled, but your secret phrase could not be updated. your previous phrase still works.</string>
     <string name="WalletAppRequestsTransfer">{0} requests a transfer</string>
+    <string name="WalletAppRequestsSignature">{0} requests your signature</string>
+    <string name="WalletBinaryData">binary data</string>
+    <string name="WalletBinaryDataWarning">you are signing blindly. sign only from trusted sources.</string>
+    <string name="WalletReviewSigningData">carefully review the message, and if you agree, sign data.</string>
+    <string name="WalletSign">sign</string>
+    <string name="WalletSignData">sign data</string>
+    <string name="WalletSigningData">data</string>
     <string name="WalletImported">wallet imported</string>
     <string name="WalletImportedInfo">your wallet was restored from your secret phrase.</string>
     <string name="WalletInvalidRecoveryPhrase">invalid secret phrase</string>
@@ -14476,7 +14577,6 @@
     <string name="RichPasteToastMarkdown">pasted with markdown formatting</string>
     <string name="RichPasteToastPlain">paste as plain text instead</string>
 
-
   <!-- new from translations.telegram.org -->
 
   <string name="ShortcutsImportIgnored_zero">{0} entries ignored</string>
@@ -14515,13 +14615,116 @@
   <string name="WelcomeMessageHint_many">new members will see these messages\nwhen they join</string>
   <string name="WelcomeMessageHint_other">new members will see these messages\nwhen they join</string>
 
+  <string name="UseNavigationBar">use navigation bar</string>
+  <!--store screenshots: the headings of the Microsoft Store screenshots in screen order, then each chat
+      they show, its messages numbered in the order they are sent. The names are meant to be replaced by
+      names common in the language, and the messages that mention one follow it.-->
+  <string name="StoreScreenshot1Title">fast</string>
+  <string name="StoreScreenshot1Subtitle">simple, reliable and synced\nacross all your devices.</string>
+  <string name="StoreScreenshot2Title">powerful</string>
+  <string name="StoreScreenshot2Subtitle">no limits on the size of\ngroups and broadcasts.</string>
+  <string name="StoreScreenshot3Title">private</string>
+  <string name="StoreScreenshot3Subtitle">your data is never disclosed.\nonly you are in control.</string>
+  <string name="StoreScreenshot4Title">secure</string>
+  <string name="StoreScreenshot4Subtitle">all chats are protected\nwith strong encryption.</string>
+  <string name="StoreScreenshot5Title">creative</string>
+  <string name="StoreScreenshot5Subtitle">color themes, stickers, gifs,\nvideo messages and more.</string>
+  <string name="StoreScreenshot6Title">cloud-based</string>
+  <string name="StoreScreenshot6Subtitle">unlimited storage for chats,\nmedia and documents.</string>
+  <string name="StoreScreenshotAlexName">alex morgan</string>
+  <string name="StoreScreenshotEmmaName">emma torreaux</string>
+  <string name="StoreScreenshotEmmaMessage1">send a dice emoji to roll a die!</string>
+  <string name="StoreScreenshotEmmaMessage2">advance to illinois ave. if you pass go, collect coffee</string>
+  <string name="StoreScreenshotEmmaMessage3">passed! &#127881;</string>
+  <string name="StoreScreenshotEmmaMessage4">okay</string>
+  <string name="StoreScreenshotEmmaMessage5">wait for me there.</string>
+  <string name="StoreScreenshotEmmaMessage6">bob says hi.</string>
+  <string name="StoreScreenshotRobertoName">roberto</string>
+  <string name="StoreScreenshotRobertoMessage1">say hello to emma.</string>
+  <string name="StoreScreenshotRoadTripTitle">road trip &#128663;</string>
+  <string name="StoreScreenshotRoadTripMessage1">who\'s in charge of the playlist? &#127926;</string>
+  <string name="StoreScreenshotRoadTripMessage2">our ride for the weekend &#128525;</string>
+  <string name="StoreScreenshotRoadTripMessage3">please tell me it has ac &#128517;</string>
+  <string name="StoreScreenshotRoadTripChecklistTitle">before friday &#128467;&#65039;</string>
+  <string name="StoreScreenshotRoadTripChecklistTask1">fill up the tank &#9981;</string>
+  <string name="StoreScreenshotRoadTripChecklistTask2">snacks for the drive &#127850;</string>
+  <string name="StoreScreenshotRoadTripChecklistTask3">sunscreen &#129524;</string>
+  <string name="StoreScreenshotLittleSisterName">little sister</string>
+  <string name="StoreScreenshotLittleSisterMessage1">any gift ideas for mom?</string>
+  <string name="StoreScreenshotLittleSisterMessage2">a dog!</string>
+  <string name="StoreScreenshotLittleSisterMessage3">i’m serious. let’s get her a puppy. &#128054;</string>
+  <string name="StoreScreenshotLittleSisterMessage4">i saw this!</string>
+  <string name="StoreScreenshotLittleSisterMessage5">i needed proof this was your idea! &#128552;&#129323;</string>
+  <string name="StoreScreenshotPenelopeName">penelope</string>
+  <string name="StoreScreenshotPenelopeMessage1">lunch tomorrow? my treat &#127837;</string>
+  <string name="StoreScreenshotPenelopeMessage2">table for four, 2 pm. be there.</string>
+  <string name="StoreScreenshotPenelopeMessage3">no limits on the size of your cats.</string>
+  <string name="StoreScreenshotDigitalNomadsTitle">digital nomads</string>
+  <string name="StoreScreenshotDigitalNomadsEmmaName">emma</string>
+  <string name="StoreScreenshotDigitalNomadsMessage1">good morning! &#128075;</string>
+  <string name="StoreScreenshotDigitalNomadsMessage2">do you have any idea what time it is? &#129315;&#128564;</string>
+  <string name="StoreScreenshotDigitalNomadsPollQuestion">is it still morning? &#129300;</string>
+  <string name="StoreScreenshotDigitalNomadsPollOption1">sure!</string>
+  <string name="StoreScreenshotDigitalNomadsPollOption2">not sure</string>
+  <string name="StoreScreenshotDigitalNomadsMessage3">we just reached 2,500 members! woo!</string>
+  <string name="StoreScreenshotJamesName">james</string>
+  <string name="StoreScreenshotJamesMessage1">check these out!</string>
+  <string name="StoreScreenshotBookClubTitle">book club</string>
+  <string name="StoreScreenshotBookClubMessage1">next meeting is thursday at 7, bring snacks &#127850;</string>
+  <string name="StoreScreenshotDanielName">daniel kim</string>
+  <string name="StoreScreenshotDanielMessage1">sent you the tickets for saturday &#127903;&#65039;</string>
+  <string name="StoreScreenshotWeekendRecipesTitle">weekend recipes</string>
+  <string name="StoreScreenshotWeekendRecipesMessage1">lemon pasta in 15 minutes &#127819;</string>
+  <string name="StoreScreenshotRoxanneName">roxanne</string>
+  <string name="StoreScreenshotRoxanneBio">23 y.o. pianist from vienna.</string>
+  <string name="StoreScreenshotRoxanneMessage1">rehearsal recording from last night &#127929;</string>
+  <string name="StoreScreenshotDwayneName">dwayne</string>
+  <string name="StoreScreenshotHalbertName">halbert</string>
+  <string name="StoreScreenshotJennieName">jennie</string>
+  <string name="StoreScreenshotLucyName">lucy garner</string>
+  <string name="StoreScreenshotMayaName">maya</string>
+  <string name="StoreScreenshotNinaName">nina</string>
+  <!--NOT FINAL: widget messages. The badge over a widget that crashed (widget-sandbox's stoppedLabel default),
+      the media name for a widget without a caption, and the hint of the sign on a widget that may send data to
+      its bot. Replace with the final strings once they ship, and remove this block.-->
+  <string name="WidgetStopped">widget stopped</string>
+  <string name="AttachWidget">widget</string>
+  <string name="WidgetNetworkHint">a tap may send data to the bot\'s server.</string>
+
+
   <!-- new from translations.telegram.org -->
 
-  <string name="CaptionPremiumSubtitle_zero">increase this limit **{0}** times to **{1}** symbols by subscribing to __telegram premium.__</string>
+  <string name="CaptionPremiumSubtitle_zero">increase this limit **{0}x** to **{1}** characters by subscribing to __telegram premium__.</string>
   <string name="CaptionPremiumSubtitle_one"></string>
-  <string name="CaptionPremiumSubtitle_two">increase this limit **{0}** times to **{1}** symbols by subscribing to __telegram premium.__</string>
-  <string name="CaptionPremiumSubtitle_few">increase this limit **{0}** times to **{1}** symbols by subscribing to __telegram premium.__</string>
-  <string name="CaptionPremiumSubtitle_many">increase this limit **{0}** times to **{1}** symbols by subscribing to __telegram premium.__</string>
+  <string name="CaptionPremiumSubtitle_two">increase this limit **{0}x** to **{1}** characters by subscribing to __telegram premium__.</string>
+  <string name="CaptionPremiumSubtitle_few">increase this limit **{0}x** to **{1}** characters by subscribing to __telegram premium__.</string>
+  <string name="CaptionPremiumSubtitle_many">increase this limit **{0}x** to **{1}** characters by subscribing to __telegram premium__.</string>
+  <string name="Gift2ConvertedChannel_zero">{0} stars were sent to channel\'s balance</string>
+  <string name="Gift2ConvertedChannel_two">{0} stars were sent to channel\'s balance</string>
+  <string name="Gift2ConvertedChannel_few">{0} stars were sent to channel\'s balance</string>
+  <string name="Gift2ConvertedChannel_many">{0} stars were sent to channel\'s balance</string>
+  <string name="Gift2Info_one">you can add this gift to your profile or convert it to **{0}** star.</string>
+  <string name="Gift2Info_other">you can add this gift to your profile or convert it to **{0}** stars.</string>
+  <string name="Gift2Info2Expired_one">you can add this gift of {0} star to your profile.</string>
+  <string name="Gift2Info2Expired_other">you can add this gift of {0} stars to your profile.</string>
+  <string name="Gift2Info3_zero">you can add this gift to your profile or convert it to **{0}** stars.</string>
+  <string name="Gift2Info3_two">you can add this gift to your profile or convert it to **{0}** stars.</string>
+  <string name="Gift2Info3_few">you can add this gift to your profile or convert it to **{0}** stars.</string>
+  <string name="Gift2Info3_many">you can add this gift to your profile or convert it to **{0}** stars.</string>
+  <string name="Gift2Info3Channel_zero">your channel can add this gift to its profile or convert it to **{0}** stars.</string>
+  <string name="Gift2Info3Channel_two">your channel can add this gift to its profile or convert it to **{0}** stars.</string>
+  <string name="Gift2Info3Channel_few">your channel can add this gift to its profile or convert it to **{0}** stars.</string>
+  <string name="Gift2Info3Channel_many">your channel can add this gift to its profile or convert it to **{0}** stars.</string>
+  <string name="Gift2InfoPinned">you added this gift to your profile.</string>
+  <string name="Gift2SelfInfoConvert_zero">add this gift to your profile or convert it to **{0} stars**.</string>
+  <string name="Gift2SelfInfoConvert_two">add this gift to your profile or convert it to **{0} stars**.</string>
+  <string name="Gift2SelfInfoConvert_few">add this gift to your profile or convert it to **{0} stars**.</string>
+  <string name="Gift2SelfInfoConvert_many">add this gift to your profile or convert it to **{0} stars**.</string>
+  <string name="Gift2Unwear">take off</string>
+  <string name="Gift2UpgradeFeature1Text">get a unique number, model, backdrop and symbol for your gift.</string>
+  <string name="Gift2UpgradeFeature2Text">send your upgraded gift to any of your friends on telegram.</string>
+  <string name="Gift2UpgradeFeature3Text">sell or auction your gift on third-party nft marketplaces.</string>
+  <string name="Gift2Wear">wear</string>
   <string name="LimitReachedStoriesCount2First_zero">you can post **{0}** stories in **24** hours.</string>
   <string name="LimitReachedStoriesCount2First_two">you can post **{0}** stories in **24** hours.</string>
   <string name="LimitReachedStoriesCount2First_few">you can post **{0}** stories in **24** hours.</string>
@@ -14534,6 +14737,18 @@
   <string name="LimitReachedStoriesCount2Second_two">subscribe to **telegram premium** to increase this limit to **{0}**.</string>
   <string name="LimitReachedStoriesCount2Second_few">subscribe to **telegram premium** to increase this limit to **{0}**.</string>
   <string name="LimitReachedStoriesCount2Second_many">subscribe to **telegram premium** to increase this limit to **{0}**.</string>
+  <string name="PollViewVotesAsAdmin_zero">{0} votes &gt;</string>
+  <string name="PollViewVotesAsAdmin_two">{0} votes &gt;</string>
+  <string name="PollViewVotesAsAdmin_few">{0} votes &gt;</string>
+  <string name="PollViewVotesAsAdmin_many">{0} votes &gt;</string>
+  <string name="StarsSubscribeText_zero">do you want to subscribe to **{1}** for **{0} stars** per month?</string>
+  <string name="StarsSubscribeText_two">do you want to subscribe to **{1}** for **{0} stars** per month?</string>
+  <string name="StarsSubscribeText_few">do you want to subscribe to **{1}** for **{0} stars** per month?</string>
+  <string name="StarsSubscribeText_many">do you want to subscribe to **{1}** for **{0} stars** per month?</string>
+  <string name="StarsSubscriptionCompletedText_zero">{0} stars transferred to **{1}**.</string>
+  <string name="StarsSubscriptionCompletedText_two">{0} stars transferred to **{1}**.</string>
+  <string name="StarsSubscriptionCompletedText_few">{0} stars transferred to **{1}**.</string>
+  <string name="StarsSubscriptionCompletedText_many">{0} stars transferred to **{1}**.</string>
   <string name="StoryLinkLimitMessage_zero">you can’t add more than {0} links to a story.</string>
   <string name="StoryLinkLimitMessage_one"></string>
   <string name="StoryLinkLimitMessage_two">you can’t add more than {0} links to a story.</string>

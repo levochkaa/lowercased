@@ -338,6 +338,7 @@
   <string name="ChatContentFile">file</string>
   <string name="ChatContentPhoto">photo</string>
   <string name="ChatContentAnimation">gif</string>
+  <string name="ChatContentWidget">widget</string>
   <string name="ChatContentProximityM_one">%2$s is now within %1$s meter from %3$s</string>
   <string name="ChatContentProximityM_other">%2$s is now within %1$s meters from %3$s</string>
   <string name="ChatContentProximityKm_one">%2$s is now within %1$s kilometer from %3$s</string>
@@ -1112,6 +1113,7 @@
   <string name="MessagePreview">message preview</string>
   <string name="Vibrate">vibrate</string>
   <string name="VibrateDisabled">disabled</string>
+  <string name="VibrateEnabled">enabled</string>
   <string name="Sound">sound</string>
   <string name="SoundDisabled">disabled</string>
   <string name="InChatSound">in-chat sounds</string>
@@ -1687,6 +1689,7 @@
   <string name="EnableNotifications2_one">unmute %1$s chat</string>
   <string name="EnableNotifications2_other">unmute %1$s chats</string>
   <string name="CustomNotificationsHint">these settings will override the global values in settings&#160;&gt;&#160;notifications.</string>
+  <string name="CallRingtoneUserHint">you can set custom ringtone for specific users on their profile page.</string>
   <string name="CustomNotifications">custom notifications</string>
   <string name="Send">send</string>
   <string name="ClearRecentStickers">clear recent stickers</string>
@@ -1780,7 +1783,9 @@
   <string name="VoiceCalls">voice calls</string>
   <string name="VoiceCallPrivacyDesc">choose exactly who can and can\'t call you.</string>
   <string name="Ringtone">ringtone</string>
-  <string name="RingtoneDisabled">disabled</string>
+  <string name="RingtoneSilent">silent</string>
+  <string name="RingtoneTelegramCall">telegram call</string>
+  <string name="RingtoneSystemDefault">system default</string>
   <string name="Calls">calls</string>
   <string name="Allow">allow</string>
   <string name="ContactAdded">contact added</string>
@@ -1789,12 +1794,17 @@
   <string name="SuggestInvitingUserCommon_other">%2$s is not on telegram yet. would you like to invite them via sms? they may have up to %1$s contacts on telegram.</string>
   <string name="OutgoingCall">outgoing call</string>
   <string name="IncomingCall">incoming call</string>
+  <string name="CallOngoingIncoming">ongoing call</string>
+  <string name="CallOngoingOutgoing">outgoing call</string>
   <string name="MissedCall">missed call</string>
   <string name="CallMessageOutgoingMissed">canceled call</string>
   <string name="CallMessageIncomingDeclined">declined call</string>
   <string name="Declined">declined</string>
   <string name="DeclineCall">decline</string>
   <string name="AnswerCall">answer</string>
+  <string name="CallUnlock">unlock</string>
+  <string name="CallUnlockToAnswer">unlock the app to answer the call</string>
+  <string name="CallTapToSeeCaller">tap to see who is calling</string>
   <string name="OutgoingCallBusy">outgoing call (busy)</string>
   <string name="Missed">missed</string>
   <string name="Cancelled">canceled</string>
@@ -1843,6 +1853,7 @@
   <string name="VoipUseLessData">less data for calls</string>
   <string name="UseLessDataForCallsDesc">using less data may improve your experience on bad networks, but will slightly decrease audio quality.</string>
   <string name="VoipEndCall">end call</string>
+  <string name="VoipMicrophoneOff">microphone is off. open the call to turn it on</string>
   <string name="HangUp">hang up</string>
   <string name="ChatQuickActions">swipe actions</string>
   <string name="LoopAnimatedStickers">loop animated stickers</string>
@@ -2146,7 +2157,7 @@
   <string name="RightVoiceChats">manage video chats</string>
   <string name="RightLiveStreams">manage live streams</string>
   <string name="RightDirectMessages">manage direct messages</string>
-  <string name="RightWelcomeMessages">manage direct messages</string>
+  <string name="RightWelcomeMessages">manage welcome messages</string>
   <string name="RightTags">edit member tags</string>
   <string name="RightTagsOwn">edit own tags</string>
   <string name="RightTopics">manage topics</string>
@@ -2200,6 +2211,8 @@
   <string name="DescriptionEmptyHint">enter description here</string>
   <string name="ScreenCapture">allow screen capture</string>
   <string name="ScreenCaptureInfo">if enabled, you can take screenshots of the app, but the system will display your chats in the task switcher even when the passcode is on.\n\nyou may need to restart the app for this to take effect.</string>
+  <string name="PasscodeRequireForCalls">require for incoming calls</string>
+  <string name="PasscodeRequireForCallsInfo">if enabled, you will not be able to answer incoming calls without unlocking the app with passcode lock first.</string>
   <string name="Remove">remove</string>
   <string name="RemoveMember">remove</string>
   <string name="RemoveCall">remove</string>
@@ -2692,16 +2705,20 @@
   <string name="NotificationChannelCommonPrivate">default notification settings for all private chats and mentions.</string>
   <string name="NotificationChannelCommonGroups">default notification settings for all group chats.</string>
   <string name="NotificationChannelCommonChannels">default notification settings for all channels.</string>
+  <string name="NotificationChannelCommonCalls">default ringtone settings for all incoming calls.</string>
   <string name="NotificationChannelSecretChat">custom notification settings for the secret chat with %1$s.</string>
   <string name="NotificationChannelUser">custom notification settings for messages and mentions from %1$s.</string>
+  <string name="NotificationChannelUserCalls">custom ringtone settings for calls from %1$s.</string>
   <string name="NotificationChannelGroupChat">custom notification settings for the group \"%1$s\".</string>
   <string name="NotificationChannelGroupChatPublic">custom notification settings for the group \"%1$s\" (%2$s).</string>
   <string name="NotificationChannelChannelChat">custom notification settings for the channel \"%1$s\".</string>
   <string name="NotificationChannelChannelChatPublic">custom notification settings for the channel \"%1$s\" (%2$s).</string>
   <string name="NotificationChannelCustom">custom: %1$s</string>
+  <string name="NotificationChannelCustomCalls">calls: %1$s</string>
   <string name="NotificationChannelPlayback">music player</string>
-  <string name="NotificationChannelCall">incoming call</string>
-  <string name="NotificationChannelOutgoingCall">outgoing call</string>
+  <string name="NotificationChannelIncomingCalls">incoming calls</string>
+  <string name="NotificationChannelOngoingCalls">ongoing calls</string>
+  <string name="NotificationChannelIncomingCallScreen">incoming call screen</string>
   <string name="NotificationChannelMore">more settings</string>
   <string name="RingtoneCustom">custom</string>
   <string name="IncognitoKeyboard">incognito keyboard</string>
@@ -3552,6 +3569,15 @@
   <string name="OpenCloudChat">open cloud chat</string>
 
   <string name="SystemNotificationSettings">system notification settings</string>
+  <string name="FullScreenAlerts">full screen alerts</string>
+  <string name="FullScreenNotifications">full-screen notifications</string>
+  <string name="RequirePasscodeToAnswerDisabled">enable passcode to activate this feature</string>
+  <string name="CallSettingsReset">reset to default</string>
+  <string name="CallSettingsResetConfirm">would you like to reset call settings to default?</string>
+  <string name="CallSettingsResetConfirmCustom_one">would you like to reset call settings to default including %1$s custom one?</string>
+  <string name="CallSettingsResetConfirmCustom_other">would you like to reset call settings to default including %1$s custom ones?</string>
+  <string name="CallSettingsResetOthers_one">reset for %1$s other account</string>
+  <string name="CallSettingsResetOthers_other">reset for %1$s other accounts</string>
   <string name="BadgeCounter">badge counter</string>
   <string name="BadgeCounterMuted">include muted chats</string>
   <string name="BadgeCounterMessages">count unread messages</string>
@@ -3672,10 +3698,10 @@
 
   <string name="ResetNotificationsConfirm">reset all notification settings, including custom notification settings for your contacts, groups and channels?</string>
 
-  <string name="NotificationsGuideBlockedApp">notifications from telegram are blocked in system settings. tap system notification settings to unblock them.</string>
-  <string name="NotificationsGuideBlockedCategory">notifications for the current account are disabled in system settings.\n\nto enable notifications:\n• tap system notification settings\n• find the \"%1$s\" notification category\n• turn the toggle on to unblock notifications.</string>
-  <string name="NotificationsGuideBlockedAll">notifications from telegram are blocked in your device settings.\n\nto enable notifications:\n• tap system notification settings.\n• turn on show notifications.</string>
-  <string name="NotificationsGuidePermission">notifications from telegram are blocked in your system settings.\n\nto enable notifications:\n• go to system settings – applications – telegram x.\n• tap notifications – allow notifications.</string>
+  <string name="NotificationsGuideBlockedApp2">notifications from telegram are blocked in system settings. incoming calls don\'t show either: they can only ring, and you answer them in the app. tap system notification settings to unblock notifications.</string>
+  <string name="NotificationsGuideBlockedCategory2">notifications for the current account are disabled in system settings. incoming calls of this account still ring and show: telegram x rings them by itself.\n\nto enable notifications:\n• tap system notification settings\n• find the \"%1$s\" notification category\n• turn the toggle on to unblock notifications.</string>
+  <string name="NotificationsGuideBlockedAll2">notifications from telegram are blocked in your device settings. incoming calls don\'t show either: they can only ring, and you answer them in the app.\n\nto enable notifications:\n• tap system notification settings.\n• turn on show notifications.</string>
+  <string name="NotificationsGuidePermission2">notifications from telegram are blocked in your system settings. incoming calls don\'t show either: they can only ring, and you answer them in the app.\n\nto enable notifications:\n• go to system settings – applications – telegram x.\n• tap notifications – allow notifications.</string>
   <string name="NotificationsGuideSyncGlobalOff">you have data sync turned off in system settings. notifications may not arrive when app is closed.\n\ndata sync may be implicitly turned off by the battery optimization mode on your device.</string>
   <string name="NotificationsGuideSyncAppOff">you have data sync turned off for telegram x. notifications may not arrive when app is closed.\n\ndata sync may be implicitly turned off by the battery optimization mode on your device.</string>
   <string name="NotificationsGuideFirebaseUnavailable">google play services are unavailable. please check you have them installed and up-to-date.\n\nnotifications may arrive with big delays or not arrive at all without them.</string>
@@ -5112,6 +5138,22 @@
   <string name="NotificationsErrorUnselected">notifications from this account are disabled</string>
   <string name="NotificationsErrorError">couldn\'t display some notifications</string>
   <string name="NotificationsErrorErrorChat">couldn\'t display notification from %1$s</string>
+  <string name="CallProblemFullScreen">calls can\'t show on the lock screen</string>
+  <string name="CallProblemBackground">calls may not come while the app is closed</string>
+  <string name="CallProblemFullScreenAction">allow calls on the lock screen</string>
+  <string name="CallProblemBackgroundAction">open battery settings</string>
+  <string name="CallProblemFullScreenGuide">while the phone is locked, incoming calls come only as a notification: **telegram x** isn\'t allowed to turn on the screen and show them.</string>
+  <string name="CallProblemFullScreenSteps">open **full-screen notifications** and turn on **allow full-screen notifications from this app** so that you don\'t miss calls while the app is closed.</string>
+  <string name="CallProblemFullScreenStepsSamsung">open **full screen alerts** and turn on **allow permission** so that you don\'t miss calls while the app is closed.</string>
+  <string name="CallProblemBackgroundGuide">background activity of **telegram x** is restricted in the battery settings of your phone, so incoming calls may not come while the app is closed.\n\ntap **open battery settings**, then **battery**, and lift the background restriction of telegram x.</string>
+  <string name="CallProblemChannel">incoming calls are silenced</string>
+  <string name="CallProblemChannelAction">open settings of incoming calls</string>
+  <string name="CallProblemAppChannel">incoming calls don\'t pop up</string>
+  <string name="CallProblemOngoingChannel">calls in progress have no notification</string>
+  <string name="CallProblemOngoingChannelAction">open settings of ongoing calls</string>
+  <string name="CallProblemOngoingChannelGuide">notifications of **ongoing calls** are turned off in the system settings, so a call in progress has no notification to go back to it or hang up.\n\ntap **open settings of ongoing calls** and turn them on.</string>
+  <string name="CallProblemAppChannelGuide">notifications of **incoming call screen** are turned off, kept off the screen or hidden on the lock screen in the system settings, so incoming calls can\'t show over other apps and over the lock screen.\n\ntap **open settings of incoming calls**, let them pop on screen and show them on the lock screen.</string>
+  <string name="CallProblemChannelGuide">notifications of **incoming calls** of this account are silenced or turned off in the system settings, so incoming calls don\'t ring and don\'t show over the lock screen.\n\ntap **open settings of incoming calls** and let them make sound and pop on screen.</string>
 
   <string name="TooManySelectedAccounts">at least one account must remain selected.</string>
 
@@ -6052,6 +6094,14 @@
   <string name="BoostingGiveawayServiceWinnersSelected_two">%1$s winners of the giveaway were randomly selected by telegram and received their gift link in a private message.</string>
   <string name="BoostingGiveawayServiceWinnersSelected_few">%1$s winners of the giveaway were randomly selected by telegram and received their gift link in a private message.</string>
   <string name="BoostingGiveawayServiceWinnersSelected_many">%1$s winners of the giveaway were randomly selected by telegram and received their gift link in a private message.</string>
+  <string name="CallSettingsResetConfirmCustom_zero">would you like to reset call settings to default including %1$s custom ones?</string>
+  <string name="CallSettingsResetConfirmCustom_two">would you like to reset call settings to default including %1$s custom ones?</string>
+  <string name="CallSettingsResetConfirmCustom_few">would you like to reset call settings to default including %1$s custom ones?</string>
+  <string name="CallSettingsResetConfirmCustom_many">would you like to reset call settings to default including %1$s custom ones?</string>
+  <string name="CallSettingsResetOthers_zero">reset for %1$s other accounts</string>
+  <string name="CallSettingsResetOthers_two">reset for %1$s other accounts</string>
+  <string name="CallSettingsResetOthers_few">reset for %1$s other accounts</string>
+  <string name="CallSettingsResetOthers_many">reset for %1$s other accounts</string>
   <string name="ChatBoostedXTimes_zero">%2$s boosted the group %1$s times</string>
   <string name="ChatBoostedXTimes_two">%2$s boosted the group %1$s times</string>
   <string name="ChatBoostedXTimes_few">%2$s boosted the group %1$s times</string>
@@ -6537,6 +6587,8 @@
   <string name="MutedXChats_two">muted %1$s chats</string>
   <string name="MutedXChats_few">muted %1$s chats</string>
   <string name="MutedXChats_many">muted %1$s chats</string>
+  <string name="NotificationChannelCall">incoming call</string>
+  <string name="NotificationChannelOutgoingCall">outgoing call</string>
   <string name="NotificationMutedPersons_zero">muted %1$s people for 1 hour</string>
   <string name="NotificationMutedPersons_two">muted %1$s people for 1 hour</string>
   <string name="NotificationMutedPersons_few">muted %1$s people for 1 hour</string>
@@ -6545,6 +6597,10 @@
   <string name="NotificationUnmutedPeople_two">unmuted %1$s people</string>
   <string name="NotificationUnmutedPeople_few">unmuted %1$s people</string>
   <string name="NotificationUnmutedPeople_many">unmuted %1$s people</string>
+  <string name="NotificationsGuideBlockedAll">notifications from telegram are blocked in your device settings.\n\nto enable notifications:\n• tap system notification settings.\n• turn on show notifications.</string>
+  <string name="NotificationsGuideBlockedApp">notifications from telegram are blocked in system settings. tap system notification settings to unblock them.</string>
+  <string name="NotificationsGuideBlockedCategory">notifications for the current account are disabled in system settings.\n\nto enable notifications:\n• tap system notification settings\n• find the \"%1$s\" notification category\n• turn the toggle on to unblock notifications.</string>
+  <string name="NotificationsGuidePermission">notifications from telegram are blocked in your system settings.\n\nto enable notifications:\n• go to system settings – applications – telegram x.\n• tap notifications – allow notifications.</string>
   <string name="NotificationsModeSelectedHint_zero">you will receive notifications only from %1$s accounts selected below.</string>
   <string name="NotificationsModeSelectedHint_two">you will receive notifications only from %1$s accounts selected below.</string>
   <string name="NotificationsModeSelectedHint_few">you will receive notifications only from %1$s accounts selected below.</string>
@@ -6729,6 +6785,7 @@
   <string name="RevokeForX_two">delete all messages for %1$s other users</string>
   <string name="RevokeForX_few">delete all messages for %1$s other users</string>
   <string name="RevokeForX_many">delete all messages for %1$s other users</string>
+  <string name="RingtoneDisabled">disabled</string>
   <string name="RoleMember_days_zero">joined %1$s days ago</string>
   <string name="RoleMember_days_two">joined %1$s days ago</string>
   <string name="RoleMember_days_few">joined %1$s days ago</string>

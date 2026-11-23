@@ -1654,6 +1654,9 @@
 "Channel.Setup.PublicNoLink" = "please choose a link for your public channel, so that people can find it in search and share with others.\n\nif you're not interested, we suggest creating a private channel instead.";
 
 "Channel.Edit.PrivatePublicLinkAlert" = "please note that if you choose a public link for your channel, anyone will be able to find it in search and join.\n\ndo not create this link if you want your channel to stay private.";
+"Channel.Edit.PrivateConfirmation.Title" = "make channel private?";
+"Channel.Edit.PrivateConfirmation.Text" = "your channel's public link t.me/%@ will be removed, and this username will become available to anyone. continue?";
+"Channel.Edit.PrivateConfirmation.Continue" = "continue";
 
 "Channel.Info.Description" = "description";
 
@@ -2532,6 +2535,8 @@ unused sets are archived when you add more.";
 "Call.StatusIncoming" = "telegram audio...";
 "Call.IncomingVoiceCall" = "incoming voice call";
 "Call.IncomingVideoCall" = "incoming video call";
+"Call.UnlockToSeeVideoNotification" = "unlock your phone to see and share video";
+"Call.UnlockToSeeVideoNotificationPad" = "unlock your ipad to see and share video";
 "Call.StatusRequesting" = "contacting...";
 "Call.StatusWaiting" = "waiting...";
 "Call.StatusRinging" = "ringing...";
@@ -2595,6 +2600,7 @@ unused sets are archived when you add more.";
 "NetworkUsageSettings.CallDataSection" = "calls";
 
 "Call.PrivacyErrorMessage" = "sorry, you cannot call %@ because of their privacy settings. you can ask them to modify their setting or to call you instead.";
+"Call.PrivacyErrorMessageMultiple" = "sorry, %@ don't accept calls.";
 
 "Notification.CallBack" = "call back";
 
@@ -3261,6 +3267,7 @@ unused sets are archived when you add more.";
 "AuthSessions.LoggedIn" = "websites";
 "AuthSessions.LogOutApplications" = "disconnect all websites";
 "AuthSessions.LogOutApplicationsHelp" = "you can log in on websites that support signing in with telegram.";
+"AuthSessions.LogOutApplicationsText" = "are you sure you want to disconnect all websites where you logged in with telegram?";
 "AuthSessions.LoggedInWithTelegram" = "logged in with telegram";
 "AuthSessions.LogOut" = "log out";
 "AuthSessions.Message" = "you allowed this bot to message you when you logged in on %@.";
@@ -4602,6 +4609,7 @@ sorry for the inconvenience.";
 "Conversation.BlockUser" = "block user";
 "Conversation.ShareMyPhoneNumber" = "share my phone number";
 "Conversation.ShareMyPhoneNumberConfirmation" = "do you want to share your phone number %1$@ with %2$@?";
+"Conversation.ShareMyPhoneNumberConfirmation.Action" = "share";
 "Conversation.AddToContacts" = "add to contacts";
 "Conversation.AddNameToContacts" = "add %@ to contacts";
 
@@ -4740,6 +4748,8 @@ sorry for the inconvenience.";
 "Conversation.SendMessage.ScheduleMessage" = "schedule message";
 
 "Appearance.ThemeCarouselTintedNight" = "dark";
+"Appearance.ThemeCarouselNeutral" = "neutral";
+"Appearance.ThemeCarouselNeutralNight" = "neutral night";
 "Appearance.ThemeCarouselNewNight" = "night";
 
 "Channel.AdminLog.MessageRankName" = "changed custom title for %1$@:\n%2$@";
@@ -4748,6 +4758,7 @@ sorry for the inconvenience.";
 
 "VoiceOver.Editing.ClearText" = "clear text";
 "VoiceOver.Recording.StopAndPreview" = "stop and preview";
+"VoiceOver.Recording.RecordMore" = "record more";
 "VoiceOver.Media.PlaybackRate" = "playback speed";
 "VoiceOver.Media.PlaybackRateNormal" = "normal";
 "VoiceOver.Media.PlaybackRateFast" = "fast";
@@ -4755,6 +4766,24 @@ sorry for the inconvenience.";
 "VoiceOver.Media.PlaybackStop" = "stop playback";
 "VoiceOver.Media.PlaybackPlay" = "play";
 "VoiceOver.Media.PlaybackPause" = "pause";
+"VoiceOver.Media.PreviousTrack" = "previous track";
+"VoiceOver.Media.NextTrack" = "next track";
+"VoiceOver.Media.PlaybackOrder" = "order";
+"VoiceOver.Media.PlaybackOrderRegular" = "in order";
+"VoiceOver.Media.PlaybackOrderReversed" = "reverse order";
+"VoiceOver.Media.PlaybackOrderShuffle" = "shuffle";
+"VoiceOver.Media.Repeat" = "repeat";
+"VoiceOver.Media.RepeatAll" = "all";
+"VoiceOver.Media.RepeatOne" = "one";
+"VoiceOver.Map.MapType" = "map type";
+"VoiceOver.Map.ShowMyLocation" = "show my location";
+"VoiceOver.DatePicker.Date" = "date";
+"VoiceOver.DatePicker.PreviousMonth" = "previous month";
+"VoiceOver.DatePicker.NextMonth" = "next month";
+"VoiceOver.Call.Rating_1" = "%@ star";
+"VoiceOver.Call.Rating_any" = "%@ stars";
+"VoiceOver.Wallpaper.PatternNumber" = "pattern %@";
+"VoiceOver.Wallpaper.WallpaperNumber" = "wallpaper %@";
 "VoiceOver.Navigation.Compose" = "compose";
 "VoiceOver.Navigation.Search" = "search";
 "VoiceOver.Navigation.ProxySettings" = "proxy settings";
@@ -5124,6 +5153,8 @@ sorry for the inconvenience.";
 "Appearance.TextSize.Title" = "text size";
 "Appearance.TextSize.UseSystem" = "use system text size";
 "Appearance.TextSize.Apply" = "set";
+"Appearance.TextSize.FontDefault" = "default";
+"Appearance.TextSize.FontSerif" = "new york";
 
 "Shortcut.SwitchAccount" = "switch account";
 
@@ -5971,6 +6002,18 @@ sorry for the inconvenience.";
 "VoiceOver.Common.SwitchHint" = "double tap to toggle";
 "VoiceOver.Common.On" = "on";
 "VoiceOver.Common.Off" = "off";
+"VoiceOver.Common.SectionIndex" = "section index";
+"VoiceOver.QrCodeScan.Flashlight" = "flashlight";
+"VoiceOver.Common.ColorNumber" = "color %@";
+"VoiceOver.Common.NoColor" = "no color";
+"VoiceOver.Common.Page" = "page";
+"VoiceOver.Common.Expand" = "expand";
+"VoiceOver.Common.Collapse" = "collapse";
+"VoiceOver.Common.Add" = "add";
+"VoiceOver.Common.MoveUp" = "move up";
+"VoiceOver.Common.MoveDown" = "move down";
+
+"VoiceOver.TabBar.AttentionRequired" = "attention required";
 
 "VoiceOver.Chat.MessagesSelected_0" = "%@ messages selected";
 "VoiceOver.Chat.MessagesSelected_1" = "%@ message selected";
@@ -6225,6 +6268,17 @@ sorry for the inconvenience.";
 "VoiceOver.ChatList.MessageFrom" = "from: %@";
 "VoiceOver.ChatList.MessageRead" = "read";
 "VoiceOver.ChatList.MessageEmpty" = "empty";
+"VoiceOver.ChatList.Pinned" = "pinned";
+"VoiceOver.ChatList.Muted" = "muted";
+"VoiceOver.ChatList.UnreadMentions" = "unread mentions";
+"VoiceOver.ChatList.UnreadReactions" = "unread reactions";
+"VoiceOver.Chat.GoToBottom" = "go to bottom";
+"VoiceOver.Chat.NextResult" = "next result";
+"VoiceOver.Chat.PreviousResult" = "previous result";
+"VoiceOver.Chat.NextMention" = "next mention";
+"VoiceOver.Chat.NextReaction" = "next reaction";
+"VoiceOver.Chat.NextPollVote" = "next poll vote";
+"VoiceOver.ChatList.ShowStoriesHint" = "double tap to show stories";
 
 "VoiceOver.Chat.Profile" = "profile";
 "VoiceOver.Chat.GroupInfo" = "group info";
@@ -7118,6 +7172,7 @@ sorry for the inconvenience.";
 "Channel.AdminLog.JoinedViaRequest" = "%1$@ joined via invite link %2$@, approved by %3$@";
 
 "Appearance.NightTheme" = "night mode";
+"Appearance.BubbleMode" = "bubble mode";
 
 "Map.ETADays_0" = "%@ days";
 "Map.ETADays_1" = "%@ day";
@@ -7221,6 +7276,9 @@ sorry for the inconvenience.";
 "VoiceChat.DiscussionGroup" = "discussion group";
 
 "Group.Edit.PrivatePublicLinkAlert" = "please note that if you choose a public link for your group, anyone will be able to find it in search and join.\n\ndo not create this link if you want your group to stay private.";
+"Group.Edit.PrivateConfirmation.Title" = "make group private?";
+"Group.Edit.PrivateConfirmation.Text" = "your group's public link t.me/%@ will be removed, and this username will become available to anyone. continue?";
+"Group.Edit.PrivateConfirmation.Continue" = "continue";
 
 "Conversation.CopyProtectionInfoGroup" = "copying and forwarding is not allowed from this group.";
 "Conversation.CopyProtectionInfoChannel" = "copying and forwarding is not allowed in this channel.";
@@ -7663,6 +7721,7 @@ sorry for the inconvenience.";
 
 "Share.UploadProgress" = "uploading • %d%";
 "Share.UploadDone" = "done";
+"Share.Sending" = "sending";
 
 "StickerPack.Share" = "share";
 "StickerPack.CopyLink" = "copy link";
@@ -8998,6 +9057,15 @@ sorry for the inconvenience.";
 "Gallery.VoiceOver.Edit" = "edit";
 "Gallery.VoiceOver.Stickers" = "stickers";
 "Gallery.VoiceOver.PictureInPicture" = "picture-in-picture";
+"VoiceOver.Gallery.VideoSettings" = "video settings";
+"VoiceOver.Gallery.TextRecognition" = "recognize text";
+"VoiceOver.Gallery.SeekBackward" = "back 15 seconds";
+"VoiceOver.Gallery.SeekForward" = "forward 15 seconds";
+"VoiceOver.Gallery.PlaybackPosition" = "playback position";
+"VoiceOver.Browser.Forward" = "forward";
+"VoiceOver.Browser.PreviousResult" = "previous result";
+"VoiceOver.Browser.NextResult" = "next result";
+"VoiceOver.EmojiPicker.None" = "none";
 
 "Appearance.VoiceOver.Theme" = "%@ theme";
 
@@ -13308,6 +13376,8 @@ sorry for the inconvenience.";
 "PeerInfo.Permissions.EmojiStatus" = "emoji status";
 "PeerInfo.Permissions.Geolocation" = "geolocation";
 "PeerInfo.Permissions.Biometry" = "biometrics";
+"PeerInfo.Permissions.Camera" = "camera";
+"PeerInfo.Permissions.Microphone" = "microphone";
 
 "Stars.Transaction.Subscription" = "subscription";
 "Stars.Transaction.Subscription.Bot" = "bot";
@@ -13340,6 +13410,13 @@ sorry for the inconvenience.";
 "WebApp.LocationPermission.Decline" = "decline";
 "WebApp.LocationPermission.Succeed" = "**%@** can now access your location.";
 "WebApp.LocationPermission.Undo" = "undo";
+
+"WebApp.CameraPermission.Text" = "**%1$@** requests access to your **camera**. you will be able to revoke this access in the profile page of **%2$@**.";
+"WebApp.CameraPermission.Succeed" = "**%@** can now have access to your camera.";
+"WebApp.MicrophonePermission.Text" = "**%1$@** requests access to your **microphone**. you will be able to revoke this access in the profile page of **%2$@**.";
+"WebApp.MicrophonePermission.Succeed" = "**%@** can now have access to your microphone.";
+"WebApp.CameraMicrophonePermission.Text" = "**%1$@** requests access to your **camera** and **microphone**. you will be able to revoke this access in the profile page of **%2$@**.";
+"WebApp.CameraMicrophonePermission.Succeed" = "**%@** can now have access to your camera and microphone.";
 
 "WebApp.Download.Photo" = "download photo";
 "WebApp.Download.Video" = "download video";
@@ -13822,6 +13899,7 @@ sorry for the inconvenience.";
 "PeerInfo.Gifts.Unlimited" = "unlimited";
 "PeerInfo.Gifts.Limited" = "limited";
 "PeerInfo.Gifts.Unique" = "unique";
+"PeerInfo.Gifts.OnSale" = "on sale";
 "PeerInfo.Gifts.Displayed" = "displayed";
 "PeerInfo.Gifts.Hidden" = "hidden";
 
@@ -14197,6 +14275,7 @@ sorry for the inconvenience.";
 "NewCall.VideoOption" = "join with camera on";
 "NewCall.ActionCallSingle" = "call %@";
 "NewCall.ActionCallMultiple" = "call";
+"NewCall.ParticipantLimitAlert" = "a call can have up to %@ participants.";
 
 "Chat.ToastCallLinkExpired.Text" = "this link is no longer active";
 
@@ -14415,6 +14494,7 @@ sorry for the inconvenience.";
 "PeerInfo.Topics.DisplayAsInfo" = "choose how topics appear for all members.";
 "PeerInfo.Topics.Tabs" = "tabs";
 "PeerInfo.Topics.List" = "list";
+"PeerInfo.Topics.Sidebar" = "sidebar";
 
 "PeerInfo.OptionTopics.Enabled" = "enabled";
 "PeerInfo.OptionTopics.Disabled" = "disabled";
@@ -15014,6 +15094,13 @@ sorry for the inconvenience.";
 "Ton.WithdrawViaFragment" = "withdraw via fragment";
 "Ton.WithdrawViaFragment.Info" = "collect your grams using fragment. [learn more >]()";
 "Ton.WithdrawViaFragment.Info_URL" = "https://telegram.org/tos/bot-developers#6-2-2-tpa-balance";
+"Ton.Withdraw" = "withdraw";
+"Ton.WithdrawToWallet.Title" = "withdraw %@";
+"Ton.WithdrawToWallet.Text" = "the grams will go to your self-custodial wallet (%@).";
+"Ton.WithdrawToWallet.WalletCreating" = "your wallet is being set up. please try again in a minute.";
+"Ton.WithdrawToWallet.WalletUnavailable" = "your wallet is unavailable right now. please try again later.";
+"Ton.WithdrawToWallet.AmountTooLarge" = "this amount exceeds the withdrawal limit.";
+"Ton.WithdrawToWallet.OutcomeUnknown" = "couldn't confirm the withdrawal. check your transaction history before trying again.";
 
 "MESSAGE_GIFT_THEME" = "%1$@ changed theme to %2$@";
 
@@ -15161,8 +15248,10 @@ error: %8$@";
 "MESSAGE_SUGGEST_BIRTHDAY" = "suggested you add your birthday";
 
 "Gift.UnavailableAction.Title" = "action locked";
-"Gift.UnavailableAction.Text" = "transfer this gift to your telegram account on fragment to unlock this action.";
+"Gift.UnavailableAction.Text" = "move this gift from your wallet to your profile to unlock this action.";
 "Gift.UnavailableAction.OpenFragment" = "open fragment";
+"Gift.UnavailableAction.MoveToProfileText" = "move this gift from your wallet to your profile to unlock this action.";
+"Gift.UnavailableAction.UnlistText" = "unlist this gift from sale to unlock this action.";
 
 "Gift.Unique.Telegram" = "telegram";
 
@@ -15656,6 +15745,7 @@ error: %8$@";
 "Gift.WearPreview.LearnMore" = "learn more about wearing telegram gifts >";
 
 "Notification.StarGift.Sold" = "sold";
+"Notification.StarGift.Bought" = "bought";
 "Notification.StarGiftOffer.Offer" = "the user offered you **%2$@** for your gift **%3$@**.";
 "Notification.StarGiftOffer.OfferYou" = "you offered **%1$@** **%2$@** for their gift **%3$@**.";
 "Notification.StarGiftOffer.Offer.Stars_1" = "%@ star";
@@ -16081,6 +16171,37 @@ error: %8$@";
 "Gift.Store.ShowStarsListings" = "show listings for stars only";
 "Gift.Store.AllListings" = "all listings";
 "Gift.Store.StarsOnlyListings" = "for stars only";
+"Gift.Store.Filter.Stars" = "for stars";
+"Gift.Store.Filter.Ton" = "for grams";
+"Gift.Store.Filter.Fragment" = "from fragment";
+
+"Gift.Onchain.Buy.Sent" = "purchase sent. **%@** will appear in your wallet once the network confirms it.";
+"Gift.Onchain.Buy.SentGift" = "gift sent. **%1$@** will be delivered to **%2$@** shortly.";
+"Gift.Onchain.Buy.SentGiftNoName" = "gift sent. **%@** will be delivered to the recipient shortly.";
+"Gift.Onchain.List.Sent" = "**%@** will be listed for sale once the network confirms it.";
+"Gift.Onchain.Unlist.Sent" = "**%@** will be removed from sale once the network confirms it.";
+"Gift.Onchain.Reprice.Sent" = "**%1$@** was repriced to **%2$@**.";
+ 
+"Gift.Onchain.WalletRequired.Text" = "fragment listings are paid for and sold from your telegram wallet.";
+"Gift.Onchain.WalletCreating.Text" = "your wallet is still being created. please try again in a moment.";
+"Gift.Onchain.OpenWallet" = "open my money";
+"Gift.Onchain.InsufficientBalance.Text" = "not enough grams in your wallet. this requires **%@** including network fees.";
+"Gift.Onchain.Error.SaleDisabled" = "fragment listings are unavailable right now.";
+"Gift.Onchain.Error.NotForSale" = "this gift is no longer for sale.";
+"Gift.Onchain.Error.SelfPurchase" = "you can't buy your own listing.";
+"Gift.Onchain.Error.PriceInvalid" = "this price is outside the allowed range.";
+"Gift.Onchain.Error.NotMinted" = "this gift isn't on the blockchain yet.";
+"Gift.Onchain.Error.NotOwner" = "this gift isn't in your wallet.";
+"Gift.Onchain.Error.SaleActive" = "this gift is still listed. wait for the previous transaction to complete and try again.";
+"Gift.Onchain.Error.SaleInactive" = "this gift isn't listed for sale.";
+"Gift.Onchain.Error.OnlyForSelf" = "fragment listings can only be bought for yourself.";
+"Gift.Onchain.Error.CancellationPending" = "your gift was removed from sale, but the network hasn't confirmed it yet. set the new price once it's confirmed.";
+"Gift.Onchain.Error.RelistFailed" = "your gift was removed from sale, but listing it at the new price failed: %@";
+"Gift.Onchain.WalletCannotSign.Text" = "your wallet can't sign transactions on this device. open the wallet to restore access.";
+"Gift.Onchain.UseEarnings.Title" = "use gram earnings?";
+"Gift.Onchain.UseEarnings.Text" = "**%@** will be moved from gram earnings to your balance and used to buy this gift.";
+"Gift.Onchain.UseEarnings.Proceed" = "proceed";
+"Gift.Onchain.UseEarnings.Pending" = "your gram earnings are on their way to your wallet. buy the gift once they arrive.";
 
 "MessagePoll.ViewVotes" = "view votes (%@)";
 "MessagePoll.ViewVote_1" = "%@ vote >";
@@ -16588,6 +16709,8 @@ error: %8$@";
 "RichText.RemoveFormattingText" = "this message uses rich formatting, which requires telegram premium.";
 "RichText.SubscribeToPremium" = "subscribe to premium";
 "RichText.SendWithoutFormatting" = "send without formatting";
+"RichText.CaptionRemoveFormattingText" = "media captions can't contain buttons, headings, lists, tables or other rich formatting. the caption will be saved as text without them.";
+"RichText.SaveWithoutFormatting" = "save without formatting";
 "RichText.LinkTitle" = "link";
 "RichText.LinkText" = "set a url for the selected text";
 "RichText.LinkSet" = "set";
@@ -16674,9 +16797,14 @@ error: %8$@";
 "RichText.ButtonStyleDanger" = "red";
 "RichText.ButtonStyleSuccess" = "green";
 "RichText.ButtonStyleLink" = "link";
-"RichText.ButtonActionCopy" = "copies text";
 "RichText.ButtonActionDisabled" = "disabled";
 "RichText.ButtonActionNotEditable" = "this button's action can't be edited";
+"RichText.ButtonSectionAction" = "action";
+"RichText.ButtonActionTypeURL" = "url";
+"RichText.ButtonActionTypeCopy" = "copy text";
+"RichText.ButtonActionTypeUserProfile" = "user profile";
+"RichText.ButtonCopyTextPlaceholder" = "text to copy";
+"RichText.ButtonChooseUser" = "choose user";
 "RichText.MenuInlineButton" = "button";
 "RichText.MenuButtonRow" = "button row";
 "RichText.MenuButtonInline" = "inline";
@@ -16895,6 +17023,7 @@ error: %8$@";
 "Wallet.Transfer.ErrorTitle" = "transfer failed";
 "Wallet.Transfer.ErrorText" = "the transfer could not be prepared or sent. check the address, balance and network connection, then try again.";
 "Wallet.Transfer.CollectibleTopUpText" = "you need at least 0.1 grams in your wallet to transfer an nft. top up your balance and try again.";
+"Wallet.Transfer.TopUpText" = "there are not enough grams in your wallet for this payment and its network fee. top up your balance and try again.";
 "Wallet.TonAddressCopied" = "ton address copied to clipboard";
 "Wallet.OptionalMessage" = "optional message";
 "Wallet.Transfer.KeyChangedTitle" = "wallet key changed";
@@ -16940,10 +17069,35 @@ error: %8$@";
 "Wallet.Transaction.Username" = "username";
 "Wallet.Transaction.AnonymousNumber" = "collectible number";
 "Wallet.Transaction.Collectible" = "collectible";
+"Wallet.Transaction.CollectibleReceived" = "received";
+"Wallet.Transaction.CollectibleSent" = "sent";
+"Wallet.Transaction.CollectiblePurchased" = "purchased";
+"Wallet.Transaction.CollectibleSold" = "sold";
+"Wallet.Transaction.CollectiblePutOnSale" = "put on sale";
+"Wallet.Transaction.CollectiblePutOnSaleFor" = "put on sale for %@";
+"Wallet.Transaction.CollectibleRepricedTo" = "repriced to %@";
+"Wallet.Transaction.CollectibleRepricedTitle" = "repriced";
+"Wallet.Transaction.NewPrice" = "new price";
+"Wallet.Transaction.OldPrice" = "old price";
+"Wallet.Transaction.CollectibleRemovedFromSale" = "removed from sale";
+"Wallet.Transaction.CollectibleOfferSent" = "offer sent";
+"Wallet.Transaction.CollectibleOfferAccepted" = "offer accepted";
+"Wallet.Transaction.CollectibleOfferCancelled" = "offer cancelled";
+"Wallet.Transaction.CollectibleOfferDeclined" = "offer declined";
+"Wallet.Transaction.CollectibleOfferExpired" = "offer expired";
+"Wallet.Transaction.OfferPrice" = "price";
+"Wallet.Transaction.OfferPlatformFee" = "platform fee";
+"Wallet.Transaction.OfferCancellationFee" = "cancellation fee";
+"Wallet.Transaction.OfferExpiration" = "expiration";
+"Wallet.Transaction.OfferSeller" = "seller";
+"Wallet.Transaction.OfferBuyer" = "buyer";
+"Wallet.Transaction.CollectibleMovedFromProfile" = "moved from profile";
+"Wallet.Transaction.CollectibleMovedToProfile" = "moved to profile";
 "Wallet.Transaction.KeyUpdate" = "key update";
 "Wallet.Transaction.Failed" = "failed";
 "Wallet.Transaction.UnknownAddress" = "unknown address";
 "Wallet.Transaction.Fee" = "fee";
+"Wallet.Transaction.NetworkFee" = "network fee";
 "Wallet.Transaction.PrivateComment" = "visible only to you and the recipient.";
 "Wallet.Transaction.PublicComment" = "the comment is visible to everyone.";
 "Wallet.Transaction.NetworkFeesTitle" = "network fees";
@@ -17118,53 +17272,65 @@ error: %8$@";
 
 "Notification.GramTransferUnknown" = "someone sent you %@";
 "Notification.GramTransferUnknown.WithFiat" = "someone sent you %1$@ (%2$@)";
+"Notification.GramTransferReceived" = "you received %@";
+"Notification.GramTransferReceived.WithFiat" = "you received %1$@ (%2$@)";
 "Notification.GramTransfer.UnknownUser" = "unknown user";
 
 "Chat.ViewStyle" = "view style";
+"News.Time.Now" = "now";
+"News.Time.Seconds" = "%@s";
+"News.Time.Minutes" = "%@m";
+"News.Time.Hours" = "%@h";
+"News.Time.Days" = "%@d";
+"News.Interests.Title" = "what are you interested in?";
+"News.Empty.Added" = "posts from your channels appear here";
+"News.Error.Text" = "couldn't load posts";
+"News.Error.Retry" = "retry";
+"News.NewPostsPill" = "new posts";
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"News.Title" = "news";
+"News.Segment.ForYou" = "for you";
+"News.Segment.Added" = "added";
+"News.MarkAllAsRead" = "mark all as read";
+"News.ReloadFeed" = "reload feed";
+"News.Display.Compact" = "compact";
+"News.Display.Expanded" = "expanded";
+"News.ShowMore" = "show more";
+"Channel.AddToNews" = "add to news";
+"Channel.AddedToNews" = "added to news";
+"Channel.AddToChats" = "add to chats";
+"Channel.RemoveFromNews" = "remove from news";
+"Channel.AddedToChats" = "added to chats";
+"Channel.Notify" = "notify";
+"Channel.DoNotNotify" = "do not notify";
+"Channel.RemoveFromChats" = "remove from chats";
+"Channel.IslandMenuHint" = "opens a menu.";
+"Channel.Toast.AddedToNews" = "**%@** added to **news** tab.";
+"Channel.Toast.AddedToChats" = "**%@** added to **chats**.";
+"Channel.Toast.RemovedFromNews" = "**%@** removed from **news**.";
+"Channel.Toast.RemovedFromChats" = "**%@** removed from **chats**.";
+"Channel.Toast.NotificationsOn" = "notifications **on**.";
+"Channel.Toast.NotificationsOff" = "notifications **off**.";
+"Channel.Toast.Archived" = "**%@** archived.";
+"Channel.Toast.Unarchived" = "**%@** unarchived.";
+"News.Empty.ForYou" = "no posts for you yet";
+"News.Refresh" = "refresh";
+"News.Swipe.Interesting" = "interesting";
+"News.Swipe.NotInterested" = "not interested";
+"News.Swipe.Expand" = "expand";
+"News.Swipe.Collapse" = "collapse";
+"News.Feedback.Hidden" = "post hidden. tell us more?";
+"News.Feedback.HideChannel" = "don't show posts from %@";
+"News.Feedback.FewerLikeThis" = "don't show posts like this";
+"News.Feedback.RemoveFromNews" = "remove %@ from news";
+"News.Feedback.Done.HideChannel" = "you won't see posts from %@";
+"News.Feedback.Done.FewerLikeThis" = "you'll see fewer posts like this";
+"News.Feedback.Done.RemoveFromNews" = "%@ removed from news";
 
 "ShareScreen.Title" = "share with";
 "ShareScreen.Caption" = "add a caption...";
@@ -17233,6 +17399,7 @@ error: %8$@";
 "Gift.MoveToWallet.Text" = "transfer this gift to your blockchain wallet?";
 "Gift.MoveToWallet.Location" = "it will appear in";
 "Gift.MoveToWallet.Move" = "move";
+"Gift.MoveToWallet.KeepOnProfile" = "keep showing on my profile";
 "Gift.MoveToWallet.Success" = "gift moved to your wallet.";
 "Gift.MoveToGifts.Title" = "move to my gifts";
 "Gift.MoveToGifts.Text" = "transfer this collectible off-chain to your telegram account?";
@@ -17243,6 +17410,245 @@ error: %8$@";
 "Gift.Delete.Title" = "delete gift";
 "Gift.Delete.Text" = "do you want to delete this gift?\n\nit will disappear from your profile and can't be restored.";
 "Gift.Delete.Success" = "gift deleted";
+
+"MediaEditor.AddGeneratedImage" = "image";
+
+"Message.WidgetStopped" = "widget stopped";
+"Message.Widget" = "widget";
+"Message.WidgetNetworkMarkerInfo" = "taps on this widget can send data to the bot.";
+
+"Agent.AddKey" = "add your ai api key";
+"Agent.AddKeyInfo" = "this chatbot works only if you have an active subscription for an ai service.";
+"Agent.AddAnotherProvider" = "add another provider";
+"Agent.ProvidersInfo" = "tap and hold to delete.";
+"Agent.Connect.Title" = "connect api key";
+"Agent.Connect.ProviderHeader" = "provider";
+"Agent.Connect.ProviderInfo" = "select the ai provider you have an account with.";
+"Agent.Key.Title" = "api key";
+"Agent.Key.Header" = "api key";
+"Agent.Key.Invalid" = "invalid api key";
+"Agent.Key.Placeholder" = "paste your %@ api key";
+"Agent.Key.Info" = "get your api key or api token in your [ai provider's settings]().";
+"Agent.Key.Connect" = "connect %@";
+"Agent.Key.Connecting" = "connecting...";
+"Agent.Key.ProviderUnavailable" = "%@ didn't respond. please try again later.";
+"Agent.Connected.Title" = "%@ connected!";
+"Agent.Connected.Text" = "you can now use %@.";
+"Agent.Connected.Start" = "start";
+"Agent.InputPlaceholder" = "ask agent anything";
+"Agent.Effort" = "effort";
+"Agent.Effort.Fast" = "fast";
+"Agent.Effort.Medium" = "medium";
+"Agent.Effort.Expert" = "expert";
+"Agent.Effort.Ultra" = "ultra";
+"Agent.Models.Search" = "search models";
+"Agent.Models.NotFound" = "no models found";
+"Agent.ConnectModel" = "connect model";
+
+"Chat.SideList.Open" = "show chat list";
+"Chat.SideList.Close" = "hide chat list";
+"Chat.SideList.NewTopic" = "new topic";
+"Chat.SideList.DirectMessages" = "direct messages";
+"Chat.SideList.AllMessages" = "all messages";
+
+"VoiceOver.Stories.Unseen" = "new stories";
+"VoiceOver.Stories.Position" = "story %1$@ of %2$@";
+"VoiceOver.Stories.NextPeer" = "next: %@";
+"VoiceOver.Stories.PreviousPeer" = "previous: %@";
+"VoiceOver.Stories.Sound" = "sound";
+"VoiceOver.Stories.Like" = "like";
+"VoiceOver.Stories.Repost" = "repost";
+"VoiceOver.Common.Verified" = "verified";
+"VoiceOver.Camera.Collage" = "collage";
+"VoiceOver.Camera.Flash" = "flash";
+"VoiceOver.Camera.SwitchCamera" = "switch camera";
+"VoiceOver.Camera.DualCamera" = "dual camera";
+"VoiceOver.Camera.RecordVideo" = "record video";
+"VoiceOver.MessageInput.Timer" = "timer";
+"VoiceOver.MediaEditor.Adjustments" = "adjustments";
+"VoiceOver.MediaEditor.Rotate" = "rotate";
+"VoiceOver.MediaEditor.Crop" = "crop";
+"VoiceOver.MediaEditor.AspectRatio" = "aspect ratio";
+"VoiceOver.Reactions.ShowAll" = "show all reactions";
+"VoiceOver.Reactions.Premium" = "premium reactions";
+"VoiceOver.Passcode.Incorrect" = "incorrect passcode. please try again.";
+
+"Chat.Dictation.Hint" = "swipe here to convert speech to text";
+"Chat.Dictation.ConvertToText" = "convert to text";
+"Chat.Dictation.Listening" = "listening…";
+"Chat.Dictation.Stop" = "stop dictation";
+"Chat.Dictation.ErrorSpeechDenied" = "allow speech recognition for telegram in settings to dictate.";
+"Chat.Dictation.ErrorUnavailable" = "dictation is not available for this language right now.";
+"Chat.Dictation.ErrorGeneric" = "couldn't recognize speech. please try again.";
+"Chat.Dictation.ErrorUnsupportedLanguage" = "dictation doesn't support %@ yet.";
+"Chat.Dictation.Enhance" = "enhance";
+"Chat.Dictation.Enhancing" = "enhancing…";
+"Chat.Dictation.AllStyles" = "all styles";
+"Chat.Dictation.EnhanceErrorLimit" = "you've reached the ai limit for now. try again later.";
+"Chat.Dictation.EnhanceErrorTooLong" = "the text is too long to enhance.";
+"Chat.Dictation.EnhanceErrorGeneric" = "couldn't enhance the text. please try again.";
+
+"ChatList.ContextShowUnread" = "show unread";
+"ChatList.UnreadOnlyPanel.ShowAll" = "show all chats";
+"ChatList.UnreadOnlyPanel.Info" = "only unread chats shown";
+
+"TextProcessing.AlwaysUse" = "always use in this chat";
+"TextProcessing.AlwaysUseFooter" = "every message you send in this chat will be rewritten with these settings.";
+"TextProcessing.AlwaysUseSummary" = "→ %@";
+"TextProcessing.AlwaysUseSummaryStyledLanguage" = "%1$@ %2$@";
+"TextProcessing.AlwaysUseSummaryWithEmoji" = "%@ + emoji";
+"TextProcessing.AlwaysUseSummaryEmoji" = "emoji";
+"TextProcessing.AlwaysUseSummaryFix" = "fix grammar";
+
+"Chat.AlwaysUseAI.ErrorLimit" = "you've reached the ai limit, so the message wasn't sent. tap send to send it as it is.";
+"Chat.AlwaysUseAI.ErrorTooLong" = "the message is too long for ai, so it wasn't sent. tap send to send it as it is.";
+"Chat.AlwaysUseAI.ErrorGeneric" = "couldn't rewrite the message, so it wasn't sent. tap send to send it as it is.";
+
+"PeerInfo.GroupsInCommon.CreateGroup" = "create group with %@";
+
+"Gift.OnchainOffer.PriceDescription" = "enter the number of grams you'd like to offer for **%@**.";
+"Gift.OnchainOffer.OwnerWillReceive" = "the owner will receive **%@**.";
+"Gift.OnchainOffer.DurationDescription" = "choose how long the owner has to accept your offer. when it expires, your grams will be automatically refunded.";
+"Gift.OnchainOffer.InsufficientFunds" = "insufficient funds.";
+"Gift.OnchainOffer.DepositFunds" = "deposit funds >";
+"Gift.OnchainOffer.MinAmountToast" = "you cannot offer less than %@ for this gift";
+"Gift.OnchainOffer.Confirm.Title" = "confirm offer";
+"Gift.OnchainOffer.Confirm.Text" = "are you sure you want to offer **%1$@** for **%2$@**?";
+"Gift.OnchainOffer.Confirm.PlatformFee" = "platform fee";
+"Gift.OnchainOffer.Confirm.YouPay" = "you pay";
+"Gift.OnchainOffer.Confirm.OwnerReceives" = "owner receives";
+"Gift.OnchainOffer.Confirm.YouReceive" = "you receive";
+"Gift.OnchainOffer.Confirm.Expires" = "offer expires";
+"Gift.OnchainOffer.Confirm.Refund" = "if the seller declines your offer or it expires, **%@** will be automatically returned to you.";
+"Gift.OnchainOffer.Confirm.Confirm" = "confirm";
+"Gift.OnchainOffer.Sent.Title" = "offer sent";
+"Gift.OnchainOffer.Sent.Text" = "%1$@ held until %2$@.";
+"Gift.OnchainOffer.Sale.Title" = "confirm sale";
+"Gift.OnchainOffer.Sale.Text" = "sell **%1$@** for **%2$@**?";
+"Gift.OnchainOffer.Sale.Price" = "price";
+"Gift.OnchainOffer.Sale.Sell" = "sell";
+"Gift.OnchainOffer.Sale.Decline" = "decline";
+"Gift.OnchainOffer.Sale.Sent.Title" = "offer accepted";
+"Gift.OnchainOffer.Sale.Sent" = "sale submitted. you'll receive **%@** once it's confirmed on-chain.";
+"Gift.OnchainOffer.Decline.Title" = "decline offer?";
+"Gift.OnchainOffer.Decline.Text" = "the buyer's **%@** will be returned to them.";
+"Gift.OnchainOffer.Decline.Action" = "decline";
+"Gift.OnchainOffer.Withdraw.Title" = "withdraw offer?";
+"Gift.OnchainOffer.Withdraw.Text" = "withdrawing early costs **%1$@**.\n\n**%2$@** will be returned to you.";
+"Gift.OnchainOffer.Withdraw.TextFree" = "**%@** will be returned to you.";
+"Gift.OnchainOffer.Withdraw.Action" = "withdraw for %@";
+"Gift.OnchainOffer.Withdraw.ActionFree" = "withdraw";
+"Gift.OnchainOffer.Withdraw.Sent" = "withdrawal submitted. your grams will be returned once it's confirmed on-chain.";
+"Gift.OnchainOffer.Error.NotOwner" = "this gift is no longer in your wallet.";
+"Gift.OnchainOffer.Error.OnSale" = "this gift is listed for sale. remove it from sale first to accept the offer.";
+"Gift.OnchainOffer.Error.AlreadyActive" = "you already have an active offer for this gift. withdraw it in your chat with telegram to make a new one.";
+"Gift.OnchainOffer.Error.InProgress" = "your previous offer for this gift is still being processed. please try again in a minute.";
+
+"Notification.StarGiftOnchainOffer.Offer" = "you were offered **%1$@** (%2$@) for **%3$@**.";
+"Notification.StarGiftOnchainOffer.OfferNoValue" = "you were offered **%1$@** for **%2$@**.";
+"Notification.StarGiftOnchainOffer.OfferYou" = "you offered **%1$@** for **%2$@**.";
+"Notification.StarGiftOnchainOffer.Status.Expires" = "the offer expires in";
+"Notification.StarGiftOnchainOffer.Status.Withdrawn" = "the offer was withdrawn.";
+"Notification.StarGiftOnchainOffer.Status.Declined" = "the offer was declined.";
+"Notification.StarGiftOnchainOffer.Status.Expired" = "the offer has expired.";
+"Notification.StarGiftOnchainOffer.Status.Cancelling" = "the offer is being cancelled.";
+"Notification.StarGiftOnchainOffer.Status.Settling" = "the sale is being completed.";
+"Notification.StarGiftOnchainOffer.Status.Accepted" = "the offer was accepted.";
+"Notification.StarGiftOnchainOffer.Outcome.AcceptedYou" = "your offer of **%1$@** for **%2$@** was accepted";
+"Notification.StarGiftOnchainOffer.Outcome.Accepted" = "you accepted the offer";
+"Notification.StarGiftOnchainOffer.Outcome.Sold" = "you sold **%1$@** for **%2$@**";
+"Notification.StarGiftOnchainOffer.Outcome.DeclinedYou" = "your offer of **%1$@** for **%2$@** was declined";
+"Notification.StarGiftOnchainOffer.Outcome.Declined" = "you declined the offer";
+"Notification.StarGiftOnchainOffer.Outcome.WithdrawnYou" = "you withdrew your offer of **%1$@** for **%2$@**";
+"Notification.StarGiftOnchainOffer.Outcome.Withdrawn" = "the offer of **%1$@** for **%2$@** was withdrawn";
+"Notification.StarGiftOnchainOffer.Outcome.ExpiredYou" = "your offer of **%1$@** for **%2$@** has expired";
+"Notification.StarGiftOnchainOffer.Outcome.Expired" = "the offer of **%1$@** for **%2$@** has expired";
+"Notification.StarGiftOnchainOffer.Review" = "review";
+"Notification.StarGiftOnchainOffer.Withdraw" = "withdraw";
+"Notification.StarGiftOnchainOffer.Sold" = "sold";
+"Notification.StarGiftOnchainOffer.ListOffer" = "you were offered %1$@ for %2$@";
+"Notification.StarGiftOnchainOffer.ListOfferYou" = "you offered %1$@ for %2$@";
+
+"ChatList.DeleteChatsAlert.Title_1" = "delete chat?";
+"ChatList.DeleteChatsAlert.Title_any" = "delete %@ chats?";
+"ChatList.DeleteChatsAlert.Text_1" = "this chat will be removed from your chat list.";
+"ChatList.DeleteChatsAlert.Text_any" = "these chats will be removed from your chat list.";
+"ChatList.DeleteTopicsAlert.Title_1" = "delete topic?";
+"ChatList.DeleteTopicsAlert.Title_any" = "delete %@ topics?";
+"ChatList.DeleteTopicsAlert.Text_1" = "this will delete the topic and all its messages.";
+"ChatList.DeleteTopicsAlert.Text_any" = "this will delete the topics and all their messages.";
+"ContactList.DeleteAlert.Title_1" = "delete contact?";
+"ContactList.DeleteAlert.Title_any" = "delete %@ contacts?";
+"ContactList.DeleteAlert.Text_1" = "this contact will be removed from your contact list.";
+"ContactList.DeleteAlert.Text_any" = "these contacts will be removed from your contact list.";
+"QuickReply.DeleteAlert.TitleSingle" = "delete quick reply?";
+"QuickReply.DeleteAlert.TitleMultiple" = "delete quick replies?";
+"QuickReply.DeleteAlert.TextSingle" = "this quick reply and all its messages will be deleted.";
+"QuickReply.DeleteAlert.TextMultiple" = "these quick replies and all their messages will be deleted.";
+"StickerPacks.DeleteStickerPacksAlert.Title_1" = "delete sticker set?";
+"StickerPacks.DeleteStickerPacksAlert.Title_any" = "delete %@ sticker sets?";
+"StickerPacks.DeleteEmojiPacksAlert.Title_1" = "delete emoji pack?";
+"StickerPacks.DeleteEmojiPacksAlert.Title_any" = "delete %@ emoji packs?";
+"StickerPacks.DeletePacksAlert.Text_1" = "this set will be removed from your list.";
+"StickerPacks.DeletePacksAlert.Text_any" = "these sets will be removed from your list.";
+"StickerPacks.ArchivePacksAlert.Title_1" = "archive sticker set?";
+"StickerPacks.ArchivePacksAlert.Title_any" = "archive %@ sticker sets?";
+"StickerPacks.ArchivePacksAlert.Text_1" = "you can quickly restore this set later from the archived stickers section.";
+"StickerPacks.ArchivePacksAlert.Text_any" = "you can quickly restore these sets later from the archived stickers section.";
+"StickerPacks.UnarchivePacksAlert.Title_1" = "unarchive pack?";
+"StickerPacks.UnarchivePacksAlert.Title_any" = "unarchive %@ packs?";
+"StickerPacks.UnarchivePacksAlert.Text_1" = "this pack will be added back to your list.";
+"StickerPacks.UnarchivePacksAlert.Text_any" = "these packs will be added back to your list.";
+"Channel.Moderator.DismissAlert.Title" = "dismiss admin?";
+"Channel.Moderator.DismissAlert.Text" = "this admin will lose all admin rights.";
+"Channel.Moderator.DismissAlert.Action" = "dismiss";
+"GroupPermission.DeleteAlert.Title" = "delete exception?";
+"GroupPermission.DeleteAlert.Text" = "this user's permissions will be reset to the group's defaults.";
+"Appearance.RemoveThemeAlert.Title" = "remove theme?";
+"Appearance.RemoveThemeAlert.Text" = "are you sure you want to remove this theme?";
+"Business.Links.DeleteItemAlert.Title" = "delete link?";
+"Business.Links.DeleteItemAlert.Text" = "are you sure you want to delete this link?";
+"DataUsage.ResetAlert.Title" = "reset statistics?";
+"DataUsage.ResetAlert.Action" = "reset";
+"Avatar.RemovePhotoConfirmation.Title" = "remove photo?";
+"Avatar.CancelUploadConfirmation.Title" = "cancel upload?";
+"PeerInfo.DeleteMessagesConfirmation.Title_1" = "delete 1 message?";
+"PeerInfo.DeleteMessagesConfirmation.Title_any" = "delete %@ messages?";
+"LiveStream.DeleteMessageConfirmation.Title" = "delete message?";
+"Story.DeleteConfirmation.Title" = "delete story?";
+"BotPreview.DeleteConfirmation.Title" = "delete preview?";
+
+"Wallet.TonConnect.Error.Unavailable" = "this ton connect request is no longer available.";
+"Wallet.TonConnect.Error.InvalidLink" = "this ton connect link is invalid.";
+"Wallet.TonConnect.Error.ConflictingLink" = "this app is already using a different connection request. reconnect from the app.";
+"Wallet.TonConnect.Error.InvalidManifest" = "unable to load a valid manifest for this app.";
+"Wallet.TonConnect.Error.WrongNetwork" = "this app requested a different wallet network.";
+"Wallet.TonConnect.Error.BridgeUnavailable" = "the ton connect response is waiting for network delivery.";
+"Wallet.TonConnect.Error.OutcomeUnknown" = "this operation may already have been signed or sent. it will not be signed again. check the wallet history.";
+"Wallet.TonConnect.Error.KeyMismatch" = "this connection belongs to a different wallet key.";
+"Wallet.TonConnect.Error.Expired" = "this ton connect request has expired.";
+"Wallet.TonConnect.Error.HandledElsewhere" = "this request was handled on another device.";
+"Wallet.TonConnect.Error.InsufficientBalance" = "not enough funds in the wallet to send this transaction.";
+"Profile.Music.ShowPlaylist" = "show playlist";
+
+"Notification.BotInvite.Invited" = "%@ invited you to this bot";
+"Notification.BotInvite.InvitedUnknown" = "you were invited to this bot";
+"Notification.BotInvite.UserInvited" = "%@ invited this user to the bot";
+"Notification.BotInvite.UserInvitedUnknown" = "this user was invited to the bot";
+"PeerInfo.InviteToBot" = "invite to bot";
+"BotInvite.SelectUsers.Title" = "invite to bot";
+"BotInvite.Sent_1" = "the invitation has been sent.";
+"BotInvite.Sent_any" = "%@ invitations have been sent.";
+"BotInvite.Error.AlreadyStarted" = "this user already has a chat with the bot.";
+"BotInvite.Error.AlreadyStartedMultiple" = "these users already have a chat with the bot.";
+"BotInvite.Error.Privacy" = "privacy settings of this user don't allow inviting them to bots.";
+"BotInvite.Error.TooMany" = "you can invite up to 10 users at a time.";
+"BotInvite.Error.NotOwner" = "only the owner of the bot can invite users.";
+"BotInvite.Error.RateLimited" = "too many attempts. please try again later.";
+"BotInvite.Error.Generic" = "unable to invite users. please try again later.";
+"Conversation.BotInvite.InvitedBy" = "%@ invited you to use this chatbot";
+"Conversation.BotInvite.ReportSpamAndBlock" = "report spam and block";
+"Chat.BotInvite.OwnedBy" = "%1$@ is owned by %2$@";
 
 
 /* new from translations.telegram.org */
@@ -17445,6 +17851,10 @@ error: %8$@";
 "BoostGift.Stars.Stars_2" = "%@ stars";
 "BoostGift.Stars.Stars_3_10" = "%@ stars";
 "BoostGift.Stars.Stars_many" = "%@ stars";
+"BotInvite.Sent_0" = "%@ invitations have been sent.";
+"BotInvite.Sent_2" = "%@ invitations have been sent.";
+"BotInvite.Sent_3_10" = "%@ invitations have been sent.";
+"BotInvite.Sent_many" = "%@ invitations have been sent.";
 "BotPreviews.AlertTooManyPreviews_0" = "you can add up to 12 previews.";
 "BotPreviews.AlertTooManyPreviews_2" = "you can add up to 12 previews.";
 "BotPreviews.AlertTooManyPreviews_3_10" = "you can add up to 12 previews.";
@@ -17915,10 +18325,26 @@ error: %8$@";
 "ChatList.BirthdayMultipleTitle_2" = "%@ contacts have **birthdays** today! 🎂";
 "ChatList.BirthdayMultipleTitle_3_10" = "%@ contacts have **birthdays** today! 🎂";
 "ChatList.BirthdayMultipleTitle_many" = "%@ contacts have **birthdays** today! 🎂";
+"ChatList.DeleteChatsAlert.Text_0" = "these chats will be removed from your chat list.";
+"ChatList.DeleteChatsAlert.Text_2" = "these chats will be removed from your chat list.";
+"ChatList.DeleteChatsAlert.Text_3_10" = "these chats will be removed from your chat list.";
+"ChatList.DeleteChatsAlert.Text_many" = "these chats will be removed from your chat list.";
+"ChatList.DeleteChatsAlert.Title_0" = "delete %@ chats?";
+"ChatList.DeleteChatsAlert.Title_2" = "delete %@ chats?";
+"ChatList.DeleteChatsAlert.Title_3_10" = "delete %@ chats?";
+"ChatList.DeleteChatsAlert.Title_many" = "delete %@ chats?";
 "ChatList.DeleteThreadsConfirmation_0" = "delete %@ topics";
 "ChatList.DeleteThreadsConfirmation_2" = "delete %@ topics";
 "ChatList.DeleteThreadsConfirmation_3_10" = "delete %@ topics";
 "ChatList.DeleteThreadsConfirmation_many" = "delete %@ topics";
+"ChatList.DeleteTopicsAlert.Text_0" = "this will delete the topics and all their messages.";
+"ChatList.DeleteTopicsAlert.Text_2" = "this will delete the topics and all their messages.";
+"ChatList.DeleteTopicsAlert.Text_3_10" = "this will delete the topics and all their messages.";
+"ChatList.DeleteTopicsAlert.Text_many" = "this will delete the topics and all their messages.";
+"ChatList.DeleteTopicsAlert.Title_0" = "delete %@ topics?";
+"ChatList.DeleteTopicsAlert.Title_2" = "delete %@ topics?";
+"ChatList.DeleteTopicsAlert.Title_3_10" = "delete %@ topics?";
+"ChatList.DeleteTopicsAlert.Title_many" = "delete %@ topics?";
 "ChatList.DeletedChats_0" = "deleted %@ chats";
 "ChatList.DeletedChats_2" = "deleted %@ chats";
 "ChatList.DeletedChats_3_10" = "deleted %@ chats";
@@ -18017,6 +18443,14 @@ error: %8$@";
 "Community.Request.SectionTitle_2" = "%@ chats suggested for this community";
 "Community.Request.SectionTitle_3_10" = "%@ chats suggested for this community";
 "Community.Request.SectionTitle_many" = "%@ chats suggested for this community";
+"ContactList.DeleteAlert.Text_0" = "these contacts will be removed from your contact list.";
+"ContactList.DeleteAlert.Text_2" = "these contacts will be removed from your contact list.";
+"ContactList.DeleteAlert.Text_3_10" = "these contacts will be removed from your contact list.";
+"ContactList.DeleteAlert.Text_many" = "these contacts will be removed from your contact list.";
+"ContactList.DeleteAlert.Title_0" = "delete %@ contacts?";
+"ContactList.DeleteAlert.Title_2" = "delete %@ contacts?";
+"ContactList.DeleteAlert.Title_3_10" = "delete %@ contacts?";
+"ContactList.DeleteAlert.Title_many" = "delete %@ contacts?";
 "ContactList.DeleteConfirmation_0" = "delete %@ contacts";
 "ContactList.DeleteConfirmation_2" = "delete %@ contacts";
 "ContactList.DeleteConfirmation_3_10" = "delete %@ contacts";
@@ -18375,6 +18809,7 @@ error: %8$@";
 "Gift.Offer.Duration.Hours_2" = "%@ hours";
 "Gift.Offer.Duration.Hours_3_10" = "%@ hours";
 "Gift.Offer.Duration.Hours_many" = "%@ hours";
+"Gift.OnchainOffer.Confirm.YourOffer" = "your offer";
 "Gift.Options.Gift.BuyLimitReached_0" = "you already sent %@ of these gifts, which is the limit.";
 "Gift.Options.Gift.BuyLimitReached_2" = "you already sent %@ of these gifts, which is the limit.";
 "Gift.Options.Gift.BuyLimitReached_3_10" = "you already sent %@ of these gifts, which is the limit.";
@@ -18431,6 +18866,7 @@ error: %8$@";
 "Gift.Setup.AuctionInfo.Gifts_2" = "%@ gifts";
 "Gift.Setup.AuctionInfo.Gifts_3_10" = "%@ gifts";
 "Gift.Setup.AuctionInfo.Gifts_many" = "%@ gifts";
+"Gift.Store.Filter.FixedSale" = "on-chain sales";
 "Gift.Store.Filter.Selected.Backdrop_0" = "%@ backdrops";
 "Gift.Store.Filter.Selected.Backdrop_2" = "%@ backdrops";
 "Gift.Store.Filter.Selected.Backdrop_3_10" = "%@ backdrops";
@@ -18786,6 +19222,7 @@ error: %8$@";
 "NEW_MESSAGE_PHOTOS_SEPARATED_3_10" = "%1$@|sent you %2$d photos";
 "NEW_MESSAGE_PHOTOS_SEPARATED_many" = "%1$@|sent you %2$d photos";
 "NEW_MESSAGE_PHOTOS_SEPARATED_any" = "%1$@|sent you %2$d photos";
+"News.NewPostsCount" = "%@ new";
 "Notification.Boost.Times_0" = "%@ times";
 "Notification.Boost.Times_2" = "%@ times";
 "Notification.Boost.Times_3_10" = "%@ times";
@@ -19145,6 +19582,7 @@ error: %8$@";
 "PUSH_CHAT_MESSAGE_VIDEOS_TEXT_3_10" = "{author} sent %d videos";
 "PUSH_CHAT_MESSAGE_VIDEOS_TEXT_many" = "{author} sent %d videos";
 "PUSH_CHAT_REACT_STORY" = "%2$@|%1$@ %3$@ to your story";
+"PUSH_MARK_FORWARDED" = "forwarded";
 "PUSH_MESSAGES_0" = "%1$@|📷📹 albums";
 "PUSH_MESSAGES_1" = "%1$@|📷📹 album";
 "PUSH_MESSAGES_2" = "%1$@|📷📹 albums";
@@ -19235,6 +19673,10 @@ error: %8$@";
 "PeerInfo.Community_2" = "community with %@ chats";
 "PeerInfo.Community_3_10" = "community with %@ chats";
 "PeerInfo.Community_many" = "community with %@ chats";
+"PeerInfo.DeleteMessagesConfirmation.Title_0" = "delete %@ messages?";
+"PeerInfo.DeleteMessagesConfirmation.Title_2" = "delete %@ messages?";
+"PeerInfo.DeleteMessagesConfirmation.Title_3_10" = "delete %@ messages?";
+"PeerInfo.DeleteMessagesConfirmation.Title_many" = "delete %@ messages?";
 "PeerInfo.Gifts.ToastPinLimit.Text_0" = "you can't pin more than %@ gifts.";
 "PeerInfo.Gifts.ToastPinLimit.Text_2" = "you can't pin more than %@ gifts.";
 "PeerInfo.Gifts.ToastPinLimit.Text_3_10" = "you can't pin more than %@ gifts.";
@@ -19387,6 +19829,7 @@ error: %8$@";
 "RequestPeer.ReachedMaximum_2" = "you can select up to %@ users.";
 "RequestPeer.ReachedMaximum_3_10" = "you can select up to %@ users.";
 "RequestPeer.ReachedMaximum_many" = "you can select up to %@ users.";
+"RichText.ButtonActionCopy" = "copies text";
 "ScheduleVoiceChat.ChannelText" = "subscribers of the channel will be notified that the live stream starts in %@.";
 "ScheduleVoiceChatChannel.Title" = "schedule video chat";
 "ScheduledIn.Years_0" = "%@ years";
@@ -19661,10 +20104,38 @@ error: %8$@";
 "StickerPackActionInfo.MultipleRemovedText_2" = "%@ packs are no longer in your stickers.";
 "StickerPackActionInfo.MultipleRemovedText_3_10" = "%@ packs are no longer in your stickers.";
 "StickerPackActionInfo.MultipleRemovedText_many" = "%@ packs are no longer in your stickers.";
+"StickerPacks.ArchivePacksAlert.Text_0" = "you can quickly restore these sets later from the archived stickers section.";
+"StickerPacks.ArchivePacksAlert.Text_2" = "you can quickly restore these sets later from the archived stickers section.";
+"StickerPacks.ArchivePacksAlert.Text_3_10" = "you can quickly restore these sets later from the archived stickers section.";
+"StickerPacks.ArchivePacksAlert.Text_many" = "you can quickly restore these sets later from the archived stickers section.";
+"StickerPacks.ArchivePacksAlert.Title_0" = "archive %@ sticker sets?";
+"StickerPacks.ArchivePacksAlert.Title_2" = "archive %@ sticker sets?";
+"StickerPacks.ArchivePacksAlert.Title_3_10" = "archive %@ sticker sets?";
+"StickerPacks.ArchivePacksAlert.Title_many" = "archive %@ sticker sets?";
+"StickerPacks.DeleteEmojiPacksAlert.Title_0" = "delete %@ emoji packs?";
+"StickerPacks.DeleteEmojiPacksAlert.Title_2" = "delete %@ emoji packs?";
+"StickerPacks.DeleteEmojiPacksAlert.Title_3_10" = "delete %@ emoji packs?";
+"StickerPacks.DeleteEmojiPacksAlert.Title_many" = "delete %@ emoji packs?";
 "StickerPacks.DeleteEmojiPacksConfirmation_0" = "delete %@ emoji packs";
 "StickerPacks.DeleteEmojiPacksConfirmation_2" = "delete %@ emoji packs";
 "StickerPacks.DeleteEmojiPacksConfirmation_3_10" = "delete %@ emoji packs";
 "StickerPacks.DeleteEmojiPacksConfirmation_many" = "delete %@ emoji packs";
+"StickerPacks.DeletePacksAlert.Text_0" = "these sets will be removed from your list.";
+"StickerPacks.DeletePacksAlert.Text_2" = "these sets will be removed from your list.";
+"StickerPacks.DeletePacksAlert.Text_3_10" = "these sets will be removed from your list.";
+"StickerPacks.DeletePacksAlert.Text_many" = "these sets will be removed from your list.";
+"StickerPacks.DeleteStickerPacksAlert.Title_0" = "delete %@ sticker sets?";
+"StickerPacks.DeleteStickerPacksAlert.Title_2" = "delete %@ sticker sets?";
+"StickerPacks.DeleteStickerPacksAlert.Title_3_10" = "delete %@ sticker sets?";
+"StickerPacks.DeleteStickerPacksAlert.Title_many" = "delete %@ sticker sets?";
+"StickerPacks.UnarchivePacksAlert.Text_0" = "these packs will be added back to your list.";
+"StickerPacks.UnarchivePacksAlert.Text_2" = "these packs will be added back to your list.";
+"StickerPacks.UnarchivePacksAlert.Text_3_10" = "these packs will be added back to your list.";
+"StickerPacks.UnarchivePacksAlert.Text_many" = "these packs will be added back to your list.";
+"StickerPacks.UnarchivePacksAlert.Title_0" = "unarchive %@ packs?";
+"StickerPacks.UnarchivePacksAlert.Title_2" = "unarchive %@ packs?";
+"StickerPacks.UnarchivePacksAlert.Title_3_10" = "unarchive %@ packs?";
+"StickerPacks.UnarchivePacksAlert.Title_many" = "unarchive %@ packs?";
 "StickerPacks.UnarchiveStickerPacksConfirmation_0" = "unarchive %@ sets";
 "StickerPacks.UnarchiveStickerPacksConfirmation_2" = "unarchive %@ sets";
 "StickerPacks.UnarchiveStickerPacksConfirmation_3_10" = "unarchive %@ sets";
@@ -19979,6 +20450,10 @@ error: %8$@";
 "VoiceChat.SubtitleParticipants_3_10" = " participants";
 "VoiceChat.SubtitleParticipants_many" = " participants";
 "VoiceChat.UserInvited" = "you invited **%@** to the video chat";
+"VoiceOver.Call.Rating_0" = "%@ stars";
+"VoiceOver.Call.Rating_2" = "%@ stars";
+"VoiceOver.Call.Rating_3_10" = "%@ stars";
+"VoiceOver.Call.Rating_many" = "%@ stars";
 "VoiceOver.Chat.ContactEmailCount_0" = "%@ email addresses";
 "VoiceOver.Chat.ContactEmailCount_2" = "%@ email addresses";
 "VoiceOver.Chat.ContactEmailCount_3_10" = "%@ email addresses";
@@ -19999,6 +20474,7 @@ error: %8$@";
 "Wallet.Import.WordCount_2" = "%@ words";
 "Wallet.Import.WordCount_3_10" = "%@ words";
 "Wallet.Import.WordCount_many" = "%@ words";
+"Wallet.Transaction.CollectibleRepriced" = "repriced to %@";
 "Wallet.Transaction.ItemCount_0" = "%@ items";
 "Wallet.Transaction.ItemCount_2" = "%@ items";
 "Wallet.Transaction.ItemCount_3_10" = "%@ items";

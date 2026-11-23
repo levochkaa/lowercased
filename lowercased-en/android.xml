@@ -397,6 +397,7 @@
     <string name="NoSuchChannels">no such channels</string>
     <string name="NoSuchChannelsInfo">you don\'t have channels that meet the requirements for this bot</string>
     <string name="CreateGroupForThis">create a new group for this</string>
+    <string name="CreateGroupWith">create group with %1$s</string>
     <string name="NoSuchGroups">no such groups</string>
     <string name="NoSuchGroupsInfo">you don\'t have groups that meet the requirements for this bot</string>
     <string name="NoSuchUsers">no such users</string>
@@ -509,6 +510,10 @@
     <string name="MegaPublicInfo">public groups can be found in search, chat history is available to everyone and anyone can join.</string>
     <string name="ChannelPrivate">private channel</string>
     <string name="MegaPrivate">private group</string>
+    <string name="MakeChannelPrivateTitle">make channel private?</string>
+    <string name="MakeChannelPrivateText">your channel’s public link **%1$s** will be removed, and this username will become available to anyone. continue?</string>
+    <string name="MakeGroupPrivateTitle">make group private?</string>
+    <string name="MakeGroupPrivateText">your group’s public link **%1$s** will be removed, and this username will become available to anyone. continue?</string>
     <string name="MonoforumMessages">direct messages</string>
     <string name="ChannelPrivateInfo">private channels can only be joined via invite link.</string>
     <string name="MegaPrivateInfo">private groups can only be joined if you were invited or have an invite link.</string>
@@ -3080,6 +3085,11 @@
     <string name="FilterAddingChatsInfo">please wait a few moments while\nwe fill this folder for you...</string>
     <string name="FilterNoChatsToDisplay">folder is empty</string>
     <string name="FilterNoChatsToDisplayInfo">no chats currently belong to this folder.</string>
+    <string name="FilterShowUnread">show unread</string>
+    <string name="FilterShowAllChats">show all chats</string>
+    <string name="FilterUnreadOnlyShown">only unread chats shown</string>
+    <string name="FilterNoUnreadChats">no unread chats</string>
+    <string name="FilterNoUnreadChatsInfo">you have read all chats here.</string>
     <string name="FilterNoChatsToForward">no chats found</string>
     <string name="FilterNoChatsToForwardInfo">no chats in this folder to forward to.</string>
     <string name="FilterNew">new folder</string>
@@ -3208,13 +3218,14 @@
     <string name="Directions">directions</string>
     <string name="GetDirections">get directions</string>
     <string name="NoPlacesFound">no places found</string>
-    <string name="NoPlacesFoundInfo">there are no matches with **%1$s** near you.</string>
     <string name="SendLocation">send my current location</string>
     <string name="SendLiveLocation">share my live location for...</string>
     <string name="SendLiveLocationMenu">share my live location</string>
     <string name="StopLiveLocation">stop sharing location</string>
     <string name="SharingLiveLocation">sharing location...</string>
     <string name="SharingLiveLocationAdd">tap to add more time</string>
+    <string name="LiveLocationPausedTitle">live location paused</string>
+    <string name="LiveLocationPausedText">open telegram to continue sharing your location.</string>
     <string name="StopLiveLocationAlertToTitle">stop location sharing</string>
     <string name="StopLiveLocationAlertToUserText">do you want to stop sharing your live location with **%1$s**?</string>
     <string name="StopLiveLocationAlertToGroupText">do you want to stop sharing your live location with **%1$s**?</string>
@@ -3227,9 +3238,7 @@
     <string name="ShareLocation">location</string>
     <string name="SharedPlace">place</string>
     <string name="AccurateTo">accurate to %1$s</string>
-    <string name="NearbyVenue">or choose a venue</string>
     <string name="LocationOnMap">location on a map</string>
-    <string name="TapToSendLocation">tap to send this location</string>
     <string name="LiveLocations">live locations</string>
     <string name="LiveLocationContext">live location</string>
     <string name="SendLiveLocationFor15m">for 15 minutes</string>
@@ -3251,7 +3260,6 @@
     <string name="LiveLocationAlertGroup">choose for how long people in this chat will see your accurate location, including when the app is closed.</string>
     <string name="GpsDisabledAlertText">please enable your gps to access location-based features.</string>
     <string name="ChatSetThisLocation">set this location</string>
-    <string name="PlacesInThisArea">places in this area</string>
     <string name="OpenInMaps">open in maps</string>
     <string name="LocationNotifiation">proximity alert</string>
     <string name="LocationNotifiationButtonUser">notify when %1$s is within %2$s</string>
@@ -3577,6 +3585,7 @@
     <string name="OutgoingCalls">outgoing calls</string>
     <string name="IncomingCalls">incoming calls</string>
     <string name="IncomingCallsSystemSetting">internal call notifications</string>
+    <string name="InternalNotificationsSystemSetting">internal notifications</string>
     <string name="IncomingCallsSystemSettingDescription">you can change your ringtone in telegram &gt; settings &gt; notifications and sounds.</string>
     
     
@@ -3934,6 +3943,7 @@
     <string name="AttachOnceAudio">one-time voice message</string>
     <string name="AttachOnceRound">one-time video message</string>
     <string name="AttachGame">game</string>
+    <string name="AttachWidget">widget</string>
     <string name="FromYou">you</string>
     <string name="NoNewCarMessages">no new messages</string>
     <string name="NoCarMusic">no music in your chats</string>
@@ -4327,10 +4337,6 @@
     <string name="TranscriptionReportSent">thank you for your feedback.</string>
     <string name="VoipQuickReplies">respond with text</string>
     <string name="VoipQuickRepliesExplain">these options can be used as quick responses to incoming calls. change them to say anything you like.</string>
-    <string name="QuickReplyDefault1">can\'t talk now. what\'s up?</string>
-    <string name="QuickReplyDefault2">i\'ll call you right back.</string>
-    <string name="QuickReplyDefault3">i\'ll call you later.</string>
-    <string name="QuickReplyDefault4">can\'t talk now. call me later?</string>
     <string name="AllowCustomQuickReply">allow custom</string>
     <string name="VoipInCallBrandingWithName">telegram call to %s</string>
     <string name="VoipInVideoCallBrandingWithName">telegram video call to %s</string>
@@ -5456,7 +5462,7 @@
     <string name="DoubleTapSetting">quick reaction</string>
     <string name="DoubleTapPreviewRational">double tap this message for a quick reaction.</string>
     <string name="ActionReactionsChanged">un1 changed chat reactions\nfrom: %1$s \nto: %2$s</string>
-    <string name="ActionReactionsChangedList">un1 changed chat reactions:\n %1$s</string>
+    <string name="ActionReactionsChangedList">un1 changed chat reactions:\n%1$s</string>
     <string name="NobodyViewed">nobody viewed</string>
     <string name="QrCode">qr code</string>
 
@@ -5611,20 +5617,20 @@
     <string name="BotRemoveInlineFromMenu">remove **%1$s** from suggestions?</string>
     <string name="BotWebViewRequestGeolocationPermission">allow **%1$s** to access your location?\n\nthe developer of **%1$s** will be able to access your location when this web app is open.</string>
     <string name="BotWebViewRequestGeolocationPermissionWithHint">allow **%1$s** to access your location?\n\nthe developer of **%1$s** will be able to access your location when this web app is open.\n\ngo to settings &gt; permissions and turn **location** on to share location data.</string>
-    <string name="WebViewRequestGeolocationPermission">allow **%1$s** to access to your location?\n\n**%1$s** will be able to access your location when this website is open.</string>
-    <string name="WebViewRequestGeolocationPermissionWithHint">allow **%1$s** to access to your location?\n\n**%1$s** will be able to access your location when this website is open.\n\ngo to settings &gt; permissions and turn **location** on to share location data.</string>
+    <string name="WebViewRequestGeolocationPermission">allow **%1$s** to access your location?\n\n**%1$s** will be able to access your location when this website is open.</string>
+    <string name="WebViewRequestGeolocationPermissionWithHint">allow **%1$s** to access your location?\n\n**%1$s** will be able to access your location when this website is open.\n\ngo to settings &gt; permissions and turn **location** on to share location data.</string>
     <string name="BotWebViewRequestMicrophonePermission">allow **%1$s** to access your microphone?\n\nthe developer of **%1$s** will be able to access your microphone when this web app is open.</string>
-    <string name="BotWebViewRequestMicrophonePermissionWithHint">allow **%1$s** to access to your microphone?\n\nthe developer of **%1$s** will be able to access your microphone when this web app is open.\n\nenable microphone access in settings &gt; permissions &gt; microphone.</string>
-    <string name="WebViewRequestMicrophonePermission">allow **%1$s** to access to your microphone?\n\n**%1$s** will be able to access your microphone when this website is open.</string>
-    <string name="WebViewRequestMicrophonePermissionWithHint">allow **%1$s** to access to your microphone?\n\n**%1$s** will be able to access your microphone when this website is open.\n\nenable microphone access in settings &gt; permissions &gt; microphone.</string>
+    <string name="BotWebViewRequestMicrophonePermissionWithHint">allow **%1$s** to access your microphone?\n\nthe developer of **%1$s** will be able to access your microphone when this web app is open.\n\nenable microphone access in settings &gt; permissions &gt; microphone.</string>
+    <string name="WebViewRequestMicrophonePermission">allow **%1$s** to access your microphone?\n\n**%1$s** will be able to access your microphone when this website is open.</string>
+    <string name="WebViewRequestMicrophonePermissionWithHint">allow **%1$s** to access your microphone?\n\n**%1$s** will be able to access your microphone when this website is open.\n\nenable microphone access in settings &gt; permissions &gt; microphone.</string>
     <string name="BotWebViewRequestCameraPermission">allow **%1$s** to access your camera?\n\nthe developer of **%1$s** will be able to access your camera when this web app is open.</string>
     <string name="BotWebViewRequestCameraPermissionWithHint">allow **%1$s** to access your camera?\n\nthe developer of **%1$s** will be able to access your camera when this web app is open.\n\nenable camera access in settings &gt; permissions &gt; camera.</string>
-    <string name="WebViewRequestCameraPermission">allow **%1$s** to access to your camera?\n\n**%1$s** will be able to access your camera when this website is open.</string>
-    <string name="WebViewRequestCameraPermissionWithHint">allow **%1$s** to access to your camera?\n\n**%1$s** will be able to access your camera when this website is open.\n\nenable camera access in settings &gt; permissions &gt; camera.</string>
-    <string name="BotWebViewRequestCameraMicPermission">allow **%1$s** to access to your camera and microphone?\n\nthe developer of **%1$s** will be able to access your camera and microphone when this web app is open.</string>
-    <string name="BotWebViewRequestCameraMicPermissionWithHint">allow **%1$s** to access to your camera and microphone?\n\nthe developer of **%1$s** will be able to access your camera and microphone when this web app is open.\n\nenable camera access in settings &gt; permissions &gt; camera.</string>
-    <string name="WebViewRequestCameraMicPermission">allow **%1$s** to access to your camera and microphone?\n\n**%1$s** will be able to access your camera and microphone when this website is open.</string>
-    <string name="WebViewRequestCameraMicPermissionWithHint">allow **%1$s** to access to your camera and microphone?\n\n**%1$s** will be able to access your camera and microphone when this website is open.\n\nenable camera access in settings &gt; permissions &gt; camera.</string>
+    <string name="WebViewRequestCameraPermission">allow **%1$s** to access your camera?\n\n**%1$s** will be able to access your camera when this website is open.</string>
+    <string name="WebViewRequestCameraPermissionWithHint">allow **%1$s** to access your camera?\n\n**%1$s** will be able to access your camera when this website is open.\n\nenable camera access in settings &gt; permissions &gt; camera.</string>
+    <string name="BotWebViewRequestCameraMicPermission">allow **%1$s** to access your camera and microphone?\n\nthe developer of **%1$s** will be able to access your camera and microphone when this web app is open.</string>
+    <string name="BotWebViewRequestCameraMicPermissionWithHint">allow **%1$s** to access your camera and microphone?\n\nthe developer of **%1$s** will be able to access your camera and microphone when this web app is open.\n\nenable camera access in settings &gt; permissions &gt; camera.</string>
+    <string name="WebViewRequestCameraMicPermission">allow **%1$s** to access your camera and microphone?\n\n**%1$s** will be able to access your camera and microphone when this website is open.</string>
+    <string name="WebViewRequestCameraMicPermissionWithHint">allow **%1$s** to access your camera and microphone?\n\n**%1$s** will be able to access your camera and microphone when this website is open.\n\nenable camera access in settings &gt; permissions &gt; camera.</string>
     <string name="ErrorRingtoneDurationTooLong">maximum length is %s seconds.</string>
     <string name="ErrorRingtoneSizeTooBig">size must be under %s kb.</string>
     <string name="ErrorRingtoneInvalidFormat">file must be in mp3 or ogg format.</string>
@@ -5988,6 +5994,8 @@
     <string name="TopicNotificationsExceptions_other">**%d topics** are listed as exceptions.</string>
     <string name="TopicProfileStatus">in %s</string>
     <string name="TopicClosed">topic closed</string>
+    <string name="TopicsFilterOpen">open</string>
+    <string name="TopicsFilterClosed">closed</string>
     <string name="TopicHidden">general topic hidden</string>
     <string name="TopicHidden2">%s hid the general topic</string>
     <string name="TopicShown">general topic was unhidden</string>
@@ -6356,6 +6364,7 @@
     <string name="AccDescrRateTranscriptionUp">rate up</string>
     <string name="AccDescrRateTranscriptionDown">rate down</string>
     <string name="PauseMusicOnMedia">pause music while playing media</string>
+    <string name="CompactMode">compact mode</string>
     <string name="ProxyBottomSheetCheckStatus">**check status**</string>
     <string name="ProxyBottomSheetChecking">checking</string>
     <string name="ProxyBottomSheetCheckWarning">warning</string>
@@ -8625,6 +8634,9 @@ list of reactions.</string>
     <string name="OpenInSystemBrowser2">open in browser</string>
     <string name="AppsTab">apps</string>
     <string name="ProfileBotOpenApp">open app</string>
+    <string name="BotProfileViewInfo">view info</string>
+    <string name="BotProfileOpenChat">open chat</string>
+    <string name="BotProfileStopBot">stop bot</string>
     <string name="ProfileBotOpenAppInfo">by launching this mini app, you agree to the **terms of service for mini apps**.</string>
     <string name="ProfileBotOpenAppInfoLink">https://telegram.org/tos/mini-apps</string>
     <string name="ProfileBotOpenAppInfoOwner">by publishing this mini app, you agree to the **telegram terms of service for developers**.</string>
@@ -8674,7 +8686,7 @@ list of reactions.</string>
     <string name="WebBookmark">bookmark</string>
     <string name="WebBookmarkAdd">add bookmark</string>
     <string name="WebBookmarkedToast">link added to bookmarks in **saved messages**.</string>
-    <string name="SearchEngine1Name">google</string>
+    
     
     
     
@@ -9515,7 +9527,7 @@ list of reactions.</string>
     <string name="Gift2Host">telegram</string>
     <string name="Gift2HostAddress">owner</string>
     <string name="Gift2CantDoTitle">action locked</string>
-    <string name="Gift2CantDoText">transfer this gift to your telegram account on fragment to unlock this action.</string>
+    <string name="Gift2CantDoText">move this gift from your wallet to your profile to unlock this action.</string>
     <string name="Gift2OwnerChange">change</string>
     <string name="Gift2AttributeModel">model</string>
     <string name="Gift2AttributeBackdrop">backdrop</string>
@@ -9523,6 +9535,201 @@ list of reactions.</string>
     <string name="Gift2PriceUnique">unique</string>
     <string name="GiftResaleFilterAllListings">all listings</string>
     <string name="GiftResaleFilterForStarsOnly">for stars only</string>
+    <string name="GiftResaleFilterForStars">for stars</string>
+    <string name="GiftResaleFilterForTon">for grams</string>
+    <string name="GiftResaleFilterFromFragment">from fragment</string>
+    <string name="GiftOnchainBuyTitle">buy %s</string>
+    <string name="GiftOnchainBuyText">buy **%1$s** on fragment for **%2$s**? it will be paid from your wallet, and the gift will stay in your wallet and appear on your profile.</string>
+    <string name="GiftOnchainBuySent">purchase sent. %s will appear in your wallet shortly.</string>
+    <string name="GiftOnchainBought">%s is now in your wallet!</string>
+    <string name="GiftOnchainBuySentTo">purchase sent. %1$s will go to %2$s shortly.</string>
+    <string name="GiftOnchainBoughtTo">%1$s was bought for %2$s!</string>
+    <string name="GiftOnchainFailed">the transaction for %s failed.</string>
+    <string name="GiftOnchainNotEnoughToBuy">you need at least %s in your wallet to buy this gift.</string>
+    <string name="GiftOnchainNotEnoughForFee">you need at least %s in your wallet to pay the network fee for this action.</string>
+    <string name="GiftOnchainSellTitle">sell on fragment</string>
+    <string name="GiftOnchainSellMenu">sell</string>
+    <string name="GiftOnchainTransferUnlistFirst">this gift is on sale. remove it from sale first to transfer it.</string>
+    <string name="GiftOnchainSellFixed">sell at fixed price</string>
+    <string name="GiftOnchainSellFixedConfirmText">put **%1$s** on sale at a fixed price for **%2$s**?</string>
+    <string name="GiftOnchainSellText">list **%1$s** on fragment for **%2$s**? starting the sale costs **%3$s** from your wallet for the contract fees. the proceeds will go straight to your wallet.</string>
+    <string name="GiftOnchainSellButton">list for sale</string>
+    <string name="GiftOnchainSellPriceHeader">price in grams</string>
+    <string name="GiftOnchainSellPriceButton">list for %s gram</string>
+    <string name="GiftOnchainSellPriceHigh">the price is too high. the maximum price is **%s gram**.</string>
+    <string name="GiftOnchainSellPriceLow">the price is too low. the minimum price is **%s gram**.</string>
+    <string name="GiftOnchainSellHint">the buyer pays this price on fragment, the proceeds go straight to your wallet.</string>
+    <string name="GiftOnchainSellHintBuyerPays">the buyer pays this price, the proceeds go straight to your wallet.</string>
+    <string name="GiftOnchainSellNoteFixed">the buyer pays this price, the proceeds go straight to your wallet. the gift goes on sale once the sale contract receives it.</string>
+    <string name="GiftOnchainChangePriceButton">change to %s gram</string>
+    <string name="GiftOnchainChangePriceConfirmText">change the price of **%1$s** to **%2$s**?</string>
+    <string name="GiftOnchainChangePriceSent">changing the price of %s…</string>
+    <string name="GiftOnchainPriceChanged">%1$s is now for sale for %2$s.</string>
+    <string name="GiftOnchainSellSent">listing %s on fragment…</string>
+    <string name="GiftOnchainSellSentFixed">putting %s on sale…</string>
+    <string name="GiftOnchainListed">%s is now for sale on fragment!</string>
+    <string name="GiftOnchainListedFixed">%s is now for sale!</string>
+    <string name="GiftOnchainUnlistText">remove this gift from sale on fragment? it will stay in your wallet. the cancellation costs **%s** from your wallet for the contract fees.</string>
+    <string name="GiftOnchainUnlistSent">removing %s from sale…</string>
+    <string name="GiftOnchainUnlisted">%s is no longer for sale.</string>
+    <string name="GiftOnchainChangePriceText">to change the price, unlist the gift first and then list it again with the new price.</string>
+    <string name="GiftOnchainErrorTitle">fragment</string>
+    <string name="GiftOnchainErrorTitleFixed">fixed price sale</string>
+    <string name="GiftOnchainErrorPriceChanged">the price of this gift on fragment has changed. please check the new price and try again.</string>
+    <string name="GiftOnchainErrorPriceChangedFixed">the price of this gift has changed. please check the new price and try again.</string>
+    <string name="GiftOnchainErrorSaleDisabled">sales on fragment are currently unavailable.</string>
+    <string name="GiftOnchainErrorSaleDisabledFixed">fixed price sales are currently unavailable.</string>
+    <string name="GiftOnchainErrorNotForSale">this gift is no longer for sale on fragment.</string>
+    <string name="GiftOnchainErrorNotForSaleFixed">this gift is no longer for sale.</string>
+    <string name="GiftOnchainErrorPriceInvalid">this price is outside the allowed range.</string>
+    <string name="GiftOnchainErrorPriceInvalidRange">the price must be between %1$s and %2$s.</string>
+    <string name="GiftOnchainErrorNotMinted">only gifts recorded on the blockchain can be sold on fragment.</string>
+    <string name="GiftOnchainErrorNotMintedFixed">only gifts recorded on the blockchain can be sold at a fixed price.</string>
+    <string name="GiftOnchainErrorSaleActive">this gift is already for sale on fragment.</string>
+    <string name="GiftOnchainErrorSaleActiveFixed">this gift is already for sale.</string>
+    <string name="GiftOnchainErrorSaleInactive">this gift is not for sale on fragment.</string>
+    <string name="GiftOnchainErrorSaleInactiveFixed">this gift is not for sale.</string>
+    <string name="GiftOnchainErrorNotOwner">this gift is not in your wallet.</string>
+    <string name="GiftOnchainErrorNotOwnerFixed">this sale was started from another wallet.</string>
+    <string name="GiftOnchainErrorSelfPurchase">you can’t buy your own gift on fragment.</string>
+    <string name="GiftOnchainErrorSelfPurchaseFixed">you can’t buy your own gift.</string>
+    <string name="GiftOnchainErrorWalletCreating">your wallet is still being created. please try again in a moment.</string>
+    <string name="GiftOnchainErrorTransactionFailed">couldn’t prepare the transaction. please try again.</string>
+    <string name="GiftOnchainErrorSendFailed">the transaction wasn’t sent. please try again.</string>
+    <string name="GiftOnchainErrorOfferNotActive">this offer is no longer active.</string>
+    <string name="GiftErrorAlreadyTransferred">this gift has already been transferred.</string>
+    <string name="GiftOnchainErrorWalletUnavailable">gifts on fragment are bought and sold with your wallet. set up your wallet to continue.</string>
+    <string name="GiftOnchainErrorWalletUnavailableFixed">on-chain gifts are bought and sold with your wallet. set up your wallet to continue.</string>
+    <string name="GiftOnchainWalletTitle">money</string>
+    <string name="GiftOnchainOpenWallet">open my money</string>
+    <string name="GiftOnchainBuyConfirmTitle">confirm purchase</string>
+    <string name="GiftOnchainBuyConfirmText">buy **%1$s** for **%2$s**?</string>
+    <string name="GiftOnchainBuyConfirmTextFixed">buy **%1$s** for **%2$s**?</string>
+    <string name="GiftOnchainBuyConfirmButton">buy</string>
+    <string name="GiftOnchainSellConfirmText">put **%1$s** on sale on fragment for **%2$s**?</string>
+    <string name="GiftOnchainUnlistConfirmText">the gift will be removed from sale on fragment and stay in your wallet.</string>
+    <string name="GiftOnchainUnlistConfirmTextFixed">the gift will be removed from sale and stay in your wallet.</string>
+    <string name="GiftOnchainRowPrice">price</string>
+    <string name="GiftOnchainRowYouReceive">you receive</string>
+    <string name="GiftOnchainRowContractFee">contract fee</string>
+    <string name="GiftOnchainRowSeller">seller</string>
+    <string name="GiftOnchainRowNetworkFee">network fee</string>
+    <string name="GiftOnchainRowBuyer">buyer</string>
+    <string name="GiftOnchainOnSaleFor">on sale for %s</string>
+    <string name="GiftOnchainErrorUnsupported">this transaction can’t be signed by this version of telegram. please update the app.</string>
+    <string name="GiftOnchainOfferErrorTitle">offer</string>
+    <string name="GiftOnchainGramAmount">%s gram</string>
+    <string name="GiftOnchainNetworkFee">network fee: %s.</string>
+    <string name="GiftOnchainOfferBalance">balance: %s &gt;</string>
+    <string name="GiftOnchainOfferGramsToOffer">grams to offer</string>
+    <string name="GiftOnchainOfferGramsInfo">enter the number of grams you’d like to offer for **%s**.</string>
+    <string name="GiftOnchainOfferGramsLow">the offer is too low. the minimum offer for **%2$s** is **%1$s gram**.</string>
+    <string name="GiftOnchainOfferGramsHigh">the offer is too high. the maximum offer for **%2$s** is **%1$s gram**.</string>
+    <string name="GiftOnchainOfferInsufficient">insufficient funds. deposit funds &gt;</string>
+    <string name="GiftOnchainOfferDurationInfo">choose how long the owner has to accept your offer. when it expires, your grams will be automatically refunded.</string>
+    <string name="GiftOnchainOfferButton">offer %s gram</string>
+    <string name="GiftOnchainOfferConfirmTitle">confirm offer</string>
+    <string name="GiftOnchainOfferConfirmTextUser">do you want to make this offer to **%1$s** for **%2$s**?</string>
+    <string name="GiftOnchainOfferConfirmText">do you want to make this offer for **%1$s**?</string>
+    <string name="GiftOnchainOfferRowYourOffer">your offer</string>
+    <string name="GiftOnchainOfferRowPlatformFee">platform fee</string>
+    <string name="GiftOnchainOfferRowYouPay">you pay</string>
+    <string name="GiftOnchainOfferRowExpires">offer expires</string>
+    <string name="GiftOnchainOfferRefundNote">if the seller declines your offer or it expires, your grams will be automatically returned to you.</string>
+    <string name="GiftOnchainOfferSentTitle">offer sent</string>
+    <string name="GiftOnchainOfferSentText">**%1$s** held until %2$s.</string>
+    <string name="GiftOnchainOfferOut">you offered **%1$s**&#160;for **%2$s**.</string>
+    <string name="GiftOnchainOfferIn">you were offered **%1$s**&#160;(%2$s)&#160;for **%3$s**.</string>
+    <string name="GiftOnchainOfferInNoUsd">you were offered **%1$s**&#160;for **%2$s**.</string>
+    <string name="GiftOnchainOfferExpiresIn">the offer expires in\n**%s**</string>
+    <string name="GiftOnchainOfferStatusWithdrawn">the offer was withdrawn.</string>
+    <string name="GiftOnchainOfferStatusDeclined">the offer was declined.</string>
+    <string name="GiftOnchainOfferStatusExpired">the offer has expired.</string>
+    <string name="GiftOnchainOfferStatusAccepted">the offer was accepted.</string>
+    <string name="GiftOnchainOfferStatusSettled">the sale is being completed…</string>
+    <string name="GiftOnchainOfferStatusCancelling">the offer is being withdrawn…</string>
+    <string name="GiftOnchainOfferStatusExpiring">the offer is expiring…</string>
+    <string name="GiftOnchainOfferWithdraw">withdraw</string>
+    <string name="GiftOnchainOfferDecline">decline</string>
+    <string name="GiftOnchainOfferAccept">accept</string>
+    <string name="GiftOnchainOfferReview">review</string>
+    <string name="GiftOnchainOfferRibbonSold">sold</string>
+    <string name="GiftOnchainOfferNoteYouDeclined">you declined the offer</string>
+    <string name="GiftOnchainOfferNoteYouAccepted">you accepted the offer</string>
+    <string name="GiftOnchainOfferNoteYouSold">you sold **%1$s** for **%2$s**</string>
+    <string name="GiftOnchainOfferNoteDeclined">your offer of **%1$s** for **%2$s** was declined</string>
+    <string name="GiftOnchainOfferNoteAccepted">your offer of **%1$s** for **%2$s** was accepted</string>
+    <string name="GiftOnchainOfferNoteWithdrawn">you withdrew your offer of **%1$s** for **%2$s**</string>
+    <string name="GiftOnchainOfferSummaryYouDeclined">you declined the offer of **%1$s** for **%2$s**</string>
+    <string name="GiftOnchainOfferSummaryWithdrawn">the offer of **%1$s** for **%2$s** was withdrawn</string>
+    <string name="GiftOnchainOfferSummaryExpired">the offer of **%1$s** for **%2$s** has expired</string>
+    <string name="GiftOnchainOfferSummaryYourExpired">your offer of **%1$s** for **%2$s** has expired</string>
+    <string name="GiftOnchainOfferNoteRefunded">**%s** was returned to your wallet</string>
+    <string name="GiftOnchainOfferNoteFine">the early withdrawal fee was **%s**</string>
+    <string name="GiftOnchainOfferWithdrawTitle">withdraw offer?</string>
+    <string name="GiftOnchainOfferWithdrawFee">withdrawing early costs about **%1$s**.\n\nabout **%2$s** will be returned to you.</string>
+    <string name="GiftOnchainOfferWithdrawFree">about **%s** will be returned to you.</string>
+    <string name="GiftOnchainOfferWithdrawFor">withdraw for %s</string>
+    <string name="GiftOnchainOfferWithdrawSent">withdrawing your offer…</string>
+    <string name="GiftOnchainOfferDeclineTitle">decline offer</string>
+    <string name="GiftOnchainOfferDeclineText">decline the offer of **%1$s** for **%2$s**? the grams will be returned to the buyer.</string>
+    <string name="GiftOnchainOfferDeclined">offer declined.</string>
+    <string name="GiftOnchainOfferAcceptSent">you’ve accepted this offer. the sale is being completed.</string>
+    <string name="GiftOnchainOfferSellTitle">confirm sale</string>
+    <string name="GiftOnchainOfferSellText">sell **%1$s**\nfor **%2$s**?</string>
+    <string name="GiftOnchainOfferSellButton">sell</string>
+    <string name="GiftOnchainOfferSellSent">selling %s…</string>
+    <string name="GiftOnchainOfferSold">you sold %s!</string>
+    <string name="GiftOnchainOfferAcceptedToast">you accepted the offer for %s. the sale completes once the gift reaches the buyer.</string>
+    <string name="GiftOnchainOfferUnlistFirst">this gift is on sale. remove it from sale first to accept the offer.</string>
+    <string name="GiftOnchainOfferErrorAlreadyActive">you already have an active offer for this gift. to change it, withdraw it first.</string>
+    <string name="GiftOnchainOfferErrorTryAgain">couldn’t prepare the offer. please try again.</string>
+    <string name="GiftOnchainOfferFailed">the offer for %s wasn’t made: the transaction failed.</string>
+    <string name="GiftOnchainOfferWithdrawFailed">the offer for %s wasn’t withdrawn: the transaction failed.</string>
+    <string name="GiftOnchainOfferSellFailed">%s wasn’t sold: the transaction failed.</string>
+    <string name="GiftOnchainErrorBuyForSelfOnly">a gift listed on fragment can only be bought for yourself.</string>
+    <string name="GiftOnchainErrorBuyRecipient">this gift can’t be bought for this recipient.</string>
+    <string name="WalletOnchainGiftBoughtFor">bought for %s</string>
+    <string name="WalletOnchainGiftPutOnSale">put on sale</string>
+    <string name="WalletOnchainGiftRemovedFromSale">removed from sale</string>
+    <string name="WalletOnchainGiftPutOnSaleFor">put on sale for %s</string>
+    <string name="WalletOnchainGiftRepriced">repriced to %s</string>
+    <string name="WalletOnchainGiftStatusPriceChanged">repriced</string>
+    <string name="WalletOnchainGiftRowStatus">status</string>
+    <string name="WalletOnchainGiftTitle">gift market</string>
+    <string name="WalletOnchainGiftStatusPurchased">purchased</string>
+    <string name="WalletOnchainGiftStatusPutOnSale">put on sale</string>
+    <string name="WalletOnchainGiftStatusRemovedFromSale">removed from sale</string>
+    <string name="WalletOnchainGiftSoldFor">sold for %s</string>
+    <string name="WalletOnchainGiftOfferAcceptedFor">offer accepted for %s</string>
+    <string name="WalletOnchainGiftOfferSent">offer sent</string>
+    <string name="WalletOnchainGiftOfferCancelled">offer cancelled</string>
+    <string name="WalletOnchainGiftOfferDeclined">offer declined</string>
+    <string name="WalletOnchainGiftOfferExpired">offer expired</string>
+    <string name="WalletOnchainGiftStatusSold">sold</string>
+    <string name="WalletOnchainGiftStatusOfferAccepted">offer accepted</string>
+    <string name="GiftOnchainRowSellerShare">seller’s share</string>
+    <string name="GiftOnchainRowExpiration">expiration</string>
+    <string name="GiftOnchainRowOldPrice">old price</string>
+    <string name="GiftOnchainRowNewPrice">new price</string>
+    <string name="GiftOnchainRowCancellationFee">cancellation fee</string>
+    <string name="GramEarningsWithdrawTitle">withdraw %s</string>
+    <string name="GramEarningsWithdrawText">the grams will go to your self-custodial wallet (&#9881; settings → &#128142; money).</string>
+    <string name="GramEarningsTextWallet">your gram from gifts and ads.</string>
+    <string name="GramEarningsWithdrawButton">withdraw</string>
+    <string name="GramEarningsWithdrawSent">%s sent</string>
+    <string name="GramEarningsWithdrawSentText">check &#9881; settings &gt; &#128142; money</string>
+    <string name="GramEarningsWithdrawNoPassword">to withdraw grams, set up a two-step verification password in privacy and security first.</string>
+    <string name="GramEarningsWithdrawUnavailable">withdrawing to your wallet is not available yet. you can withdraw your grams using fragment.</string>
+    <string name="GramEarningsWithdrawDisabled">withdrawing gram earnings is not available for your account right now.</string>
+    <string name="GramEarningsWithdrawTryAgain">your password couldn\'t be confirmed. please try again.</string>
+    <string name="GramEarningsUseArrived">the grams from gram earnings are in your wallet. you can buy the gift now.</string>
+    <string name="GramEarningsWithdrawNothing">you have no grams to withdraw yet.</string>
+    <string name="GramEarningsUseTitle">use gram earnings?</string>
+    <string name="GramEarningsUseText">**%1$s** will be moved from gram earnings to your balance and used to buy this gift.</string>
+    <string name="GramEarningsUseMoving">moving grams from gram earnings to your wallet…</string>
+    <string name="GramEarningsUseLate">the grams from gram earnings are on their way to your wallet. buy the gift once they arrive.</string>
+    <string name="GramEarningsWithdrawOnlyTon">only grams can be withdrawn to your wallet.</string>
     <string name="Gift2AttributeOriginalDetails">gifted by %1$s to %2$s on %3$s.</string>
     <string name="Gift2AttributeOriginalDetailsComment">gifted by %1$s to %2$s on %3$s with the comment: \"%4$s\"</string>
     <string name="Gift2AttributeOriginalDetailsSelf">saved by %1$s on %2$s.</string>
@@ -9754,6 +9961,8 @@ list of reactions.</string>
     <string name="ReplyDialogMessageAuthor">message author</string>
     <string name="ForwardDialogYourChannel">your channel</string>
     <string name="ReplyDialogYourChats">your chats</string>
+    <string name="ReplyDialogChannelDirect">message the channel</string>
+    <string name="ReplyDialogChannelDirectHint">send a direct message to the channel</string>
     <string name="SearchAdsAboutTitle">about these ads</string>
     <string name="SearchAdsAboutSubtitle">telegram ads are very different from ads on other platforms. ads such as this one:</string>
     <string name="SearchAdsAbout1Title">respect your privacy</string>
@@ -10033,6 +10242,7 @@ list of reactions.</string>
     <string name="TopicsLayoutInfo">choose how topics appear for all members.</string>
     <string name="TopicsLayoutList">list</string>
     <string name="TopicsLayoutTabs">tabs</string>
+    <string name="TopicsSidebar">sidebar</string>
     <string name="SendInStandardQuality">send in standard quality</string>
     <string name="SendInHighQuality">send in high quality</string>
     <string name="ShortHighQuality">hd</string>
@@ -10043,6 +10253,8 @@ list of reactions.</string>
     <string name="AllChatsShort">all</string>
     <string name="AllTopicsShort">all</string>
     <string name="AllTopicsSide">all</string>
+    <string name="TopicsPanelAllMessages">all messages</string>
+    <string name="TopicsPanelDirectMessages">direct messages</string>
     <string name="VoicePauseHint">pause to trim or replay</string>
     <string name="RecordingTrimTitle">trim to selected range?</string>
     <string name="RecordingTrimText">audio outside that range will be discarded, and recording will start immediately.</string>
@@ -10934,6 +11146,18 @@ list of reactions.</string>
     <string name="ProfileBotManagedBy">created and managed by **@%s**</string>
     <string name="ManagedBotChatInfo">**%1$s** is ready!\n\ntap **start** below to test your new chatbot. its behavior is defined by **%2$s**.</string>
     <string name="CreateManagedBotLimitTitle">bot limit exceeded</string>
+    <string name="BotInviteToBot">invite to bot</string>
+    <string name="BotInviteDone">**%1$s** was invited to **%2$s**.</string>
+    <string name="BotInviteDoneMany_one">%1$d user was invited to **%2$s**.</string>
+    <string name="BotInviteDoneMany_other">%1$d users were invited to **%2$s**.</string>
+    <string name="BotInviteErrorAlreadyStarted">**%1$s** already has a chat with **%2$s**.</string>
+    <string name="BotInviteErrorAlreadyStartedMany">these users already have a chat with **%s**.</string>
+    <string name="BotInviteErrorFailed">sorry, you can\'t invite these users to **%s**.</string>
+    <string name="BotInviteErrorNotOwner">only the owner of **%s** can invite users to it.</string>
+    <string name="ActionBotInvite">un1 invited you to this bot</string>
+    <string name="ActionBotInviteUnknown">you were invited to this bot</string>
+    <string name="ProfileBotInvitedBy">invited by: **%s**</string>
+    <string name="ProfileBotCurrentOwner">current bot owner: **%s**</string>
     <string name="CreateManagedBotLimitTextTime">you can create another bot in %s.</string>
     <string name="CreateManagedBotLimitTextPremium">subscribe to **premium** to create up to %1$d bots, or delete one of your %2$d bots via @botfather</string>
     <string name="CreateManagedBotLimitText">you can create up to %d bots, or delete your current ones via @botfather</string>
@@ -11086,6 +11310,7 @@ list of reactions.</string>
     <string name="CommunitySectionHiddenChats">hidden chats</string>
     <string name="CommunitySectionChatsYouCanRequestToJoin">chats you can request to join</string>
     <string name="CommunityAddAChatToCommunity">add a chat to community</string>
+    <string name="CommunityAddAChatToCommunityHeader">add a chat to community</string>
     <string name="CommunityMenuAddChat">add chat to community</string>
     <string name="CommunityMenuSettings">settings</string>
     <string name="CommunityMenuShowAsOneChat">show as one chat</string>
@@ -11303,6 +11528,19 @@ list of reactions.</string>
     <string name="RoundVideoCompositionEnabled">round video styling</string>
     <string name="RoundVideoCompositionInfo">disable styling to record a plain square without outside-circle blur, dimming or telegram overlays.</string>
 
+    <string name="HeaderSettings">header</string>
+    <string name="HeaderDoneButtonColor">done button color</string>
+    <string name="HeaderDoneButtonColorGlass">white</string>
+    <string name="HeaderDoneButtonColorAccent">blue</string>
+    <string name="HeaderDoneButtonColorInfo">a white button appears only when there is something to save. a blue button is always shown and is dimmed until then.</string>
+    <string name="HeaderDoneButtonShape">done button shape</string>
+    <string name="HeaderDoneButtonShapeIcon">round with a check</string>
+    <string name="HeaderDoneButtonShapeText">text</string>
+    <string name="HeaderDoneButtonPreview">preview</string>
+    <string name="HeaderDoneButtonPreviewChanges">has changes</string>
+    <string name="HeaderDoneButtonPreviewInfo">toggle to see how the button in the header above reacts to changes.</string>
+    <string name="Apply">apply</string>
+
     <string name="AudioRecorderSettings">voice messages</string>
     <string name="AudioRecorderGeneral">recorder</string>
     <string name="AudioRecorderUseNewRecorder">use new recorder</string>
@@ -11316,6 +11554,7 @@ list of reactions.</string>
     <string name="WalletTouchFingerprint">touch the fingerprint sensor to unlock your wallet.</string>
     <string name="WalletFingerprintRetry">fingerprint not recognized. try again.</string>
     <string name="WalletUnlock">unlock wallet</string>
+    
     <string name="WalletAddressCopied">wallet address copied to clipboard</string>
     <string name="WalletCollectible">collectible</string>
     <string name="WalletDepositFunds">deposit funds</string>
@@ -11504,6 +11743,7 @@ list of reactions.</string>
     <string name="WalletActionSentGramsShort">you sent **%1$s**</string>
     <string name="WalletActionReceivedGrams">un1 sent you **%1$s**</string>
     <string name="WalletActionReceivedGramsSomeone">someone sent you **%1$s**</string>
+    <string name="WalletActionReceivedGramsOnramp">you topped up **%1$s** via %2$s</string>
     <string name="WalletTransferWorth">%1$s (%2$s)</string>
     <string name="WalletCollectibleModelBackdrop">%1$s on %2$s</string>
     <string name="WalletConnectToApp">connect money to %1$s</string>
@@ -11563,6 +11803,8 @@ list of reactions.</string>
     <string name="WalletAddressNoLinkedAccount">this address has no linked\ntelegram account.</string>
     <string name="WalletTapToSetAmount">tap to set amount</string>
     <string name="WalletTonConnectRequestUnavailable">this ton connect request is unavailable or has already been answered</string>
+    <string name="WalletWidgetNoWallet">your wallet is not available on this device.</string>
+    <string name="WalletWidgetRequestExpired">this request has expired.</string>
     <string name="WalletTonConnectSessionResponseEmpty">empty ton connect session response</string>
     <string name="WalletTonConnectManifestLoadFailed">could not load dapp manifest: %1$s</string>
     <string name="WalletTonConnectSessionClosed">ton connect session is closed</string>
@@ -11573,6 +11815,7 @@ list of reactions.</string>
     <string name="NotificationGramTransferComment">%1$s sent you %2$s: %3$s</string>
     <string name="NotificationGramTransferUnknown">you received %2$s</string>
     <string name="NotificationGramTransferUnknownComment">you received %2$s: %3$s</string>
+    <string name="NotificationGramTransferOnramp">you topped up %1$s via %2$s</string>
     <string name="NotificationWalletTonConnectRequest">you have a ton connect request</string>
     <string name="NotificationWalletTonConnectRequestDapp">you have a ton connect request from %1$s</string>
 
@@ -11595,36 +11838,45 @@ list of reactions.</string>
     <string name="WalletGiftColorOnlyOne">only %1$s can be used to change the color of your card.</string>
     <string name="WalletGiftDragHint">drag this collectible on a card to decorate it.</string>
     <string name="WalletGiftDragHere">drag this collectible here.</string>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <string name="NewsTitle">news</string>
+    <string name="NewsForYou">for you</string>
+    <string name="NewsReloadFeed">reload feed</string>
+    <string name="NewsInteresting">interesting</string>
+    <string name="NewsNotInterested">not interested</string>
+    <string name="NewsInterestingDone">you will see more posts like this.</string>
+    <string name="NewsNotInterestedDone">you will see fewer posts like this.</string>
+    <string name="NewsCompact">compact</string>
+    <string name="NewsExpanded">expanded</string>
+    <string name="NewsExpandPost">expand</string>
+    <string name="NewsCollapsePost">collapse</string>
+    <string name="NewsInterests">what are you interested in?</string>
+    <string name="NewsEmpty">no news yet</string>
+    <string name="NewsCaughtUpTitle">you\'re all caught up!</string>
+    <string name="NewsCaughtUpSubtitle">the world can wait. go live a little.</string>
+    <string name="NewsCaughtUpTitleScroll">nothing left to scroll.</string>
+    <string name="NewsCaughtUpSubtitleScroll">go make some news of your own.</string>
+    <string name="NewsCaughtUpTitleHeadlines">no more headlines!</string>
+    <string name="NewsCaughtUpSubtitleHeadlines">your brain deserves a little vacation.</string>
+    <string name="NewsAddedEmpty">posts from channels you add will appear here.</string>
+    <string name="NewsSaveInterests">save interests</string>
+    <string name="NewsInterestsSaved">interests saved</string>
+    <string name="NewsInterestsError">could not save your interests. please try again.</string>
+    <string name="ChannelAddToNews">add to news</string>
+    <string name="ChannelAddedToNews">added to news</string>
+    <string name="ChannelAddedToChats">added to chats</string>
+    <string name="ChannelAddToChats">add to chats</string>
+    <string name="ChannelRemoveFromChats">remove from chats</string>
+    <string name="ChannelRemoveFromNews">remove from news</string>
+    <string name="ChannelNotify">notify</string>
+    <string name="ChannelDoNotNotify">do not notify</string>
+    <string name="ChannelAddedToNewsBulletin">**%1$s** added to **news**.</string>
+    <string name="ChannelAddedToChatsBulletin">**%1$s** added to **chats**.</string>
+    <string name="ChannelRemovedFromNewsBulletin">**%1$s** removed from **news**.</string>
+    <string name="ChannelRemovedFromChatsBulletin">**%1$s** removed from **chats**.</string>
+    <string name="ChannelNotifyBulletin">notifications enabled for **%1$s**.</string>
+    <string name="ChannelDoNotNotifyBulletin">notifications disabled for **%1$s**.</string>
+    <string name="ChannelArchivedBulletin">**%1$s** archived.</string>
+    <string name="ChannelUnarchivedBulletin">**%1$s** unarchived.</string>
     <string name="QrNoPaidRemoveFee">remove message fee</string>
     <string name="QrNoPaidFree">free</string>
     <string name="QrNoPaidExpiresIn">expires in %1$s</string>
@@ -11662,6 +11914,104 @@ list of reactions.</string>
     <string name="NoPaidMessagesTokenUsed">un1 used your qr code and can message you for free</string>
     <string name="NoPaidMessagesTokenUsedOut">you used un1\'s qr code and can message them for free</string>
     <string name="NoPaidMessagesTokenImported">you can now message **%1$s** for free.</string>
+    <string name="AgentAddApiKey">add your ai api key</string>
+    <string name="AgentChooseProvider">choose ai provider</string>
+    <string name="AgentSubscriptionInfo">this chatbot works only if you have an active subscription for an ai service.</string>
+    <string name="AgentConnectApiKey">connect api key</string>
+    <string name="AgentProviderHeader">provider</string>
+    <string name="AgentProviderInfo">select the ai provider you have an account with.</string>
+    <string name="AgentHundredsOfModels">hundreds of models</string>
+    <string name="AgentApiKey">api key</string>
+    <string name="AgentApiKeyHeader">api key</string>
+    <string name="AgentApiKeyPlaceholder">paste your new api key</string>
+    <string name="AgentApiKeyInvalid">invalid api key</string>
+    <string name="AgentApiKeyHint">get your api key or api token in your **ai provider’s settings**.</string>
+    <string name="AgentConnectProvider">connect %1$s</string>
+    <string name="AgentConnecting">connecting…</string>
+    <string name="AgentProviderUnavailable">the ai provider didn’t respond. please try again later.</string>
+    <string name="AgentNotAvailable">ai agents are not available yet.</string>
+    <string name="AgentAddAnotherProvider">add another provider</string>
+    <string name="AgentTapHoldToDelete">tap and hold to delete.</string>
+    <string name="AgentProviderConnected">%1$s connected!</string>
+    <string name="AgentProviderConnectedText">you can now use %1$s.</string>
+    <string name="AgentStart">start</string>
+    <string name="AgentModel">model</string>
+    <string name="AgentModelSearch">search models</string>
+    <string name="AgentModelsEmpty">no models found.</string>
+    <string name="AgentEffortTitle">reasoning effort</string>
+    <string name="AgentEffortFast">fast</string>
+    <string name="AgentEffortMedium">medium</string>
+    <string name="AgentEffortExpert">expert</string>
+    <string name="AgentEffortUltra">ultra</string>
+    <string name="AgentEffort">effort</string>
+    <string name="AgentModelsRecent">recent</string>
+    <string name="AgentModelsAll">all models</string>
+    <string name="WidgetStopped">widget stopped</string>
+    <string name="WidgetLoading">loading widget…</string>
+    <string name="WidgetLoadFailed">widget failed to load</string>
+    <string name="WidgetOpenLinkTitle">open link</string>
+    <string name="WidgetOpenLinkText">this widget wants to open:\n%1$s</string>
+    <string name="WidgetTextCopied">copied: %1$s</string>
+    <string name="NewContactPhoneNotOnTelegram">this phone number is not on telegram. **invite &gt;**</string>
+    <string name="NewContactPhoneInContacts">this phone number is already in your contacts. **view &gt;**</string>
+    <string name="NewContactPhoneOnTelegram">this phone number is on telegram.</string>
+    <string name="StoryPrivacyGroupNoContacts">all group members that are not in your contact list.</string>
+    <string name="StoryPrivacyGroupNonContacts_one">%1$d member is not in your contact list</string>
+    <string name="StoryPrivacyGroupNonContacts_other">%1$d members are not in your contact list</string>
+    <string name="StoryPrivacyGroupAddContacts_one">add %1$d contact</string>
+    <string name="StoryPrivacyGroupAddContacts_other">add %1$d contacts</string>
+    <string name="ForwardHideSenderNamePremium">subscribe to **telegram premium** to forward formatted messages without the sender’s name.</string>
+    <string name="StoryEditWaitUpload">wait until current upload is complete</string>
+    <string name="UnsupportedContent">unsupported content</string>
+    <string name="LocationPoweredBy">powered by</string>
+    <string name="SettingsExperimental">experimental</string>
+    <string name="FpnvConsentTitle">log in with sim card</string>
+    <string name="FpnvConsentText">telegram can confirm the phone number of this sim card with your carrier and log you in without a code.</string>
+    <string name="FpnvConsentContinue">continue</string>
+    <string name="FpnvConsentCarrier">carrier</string>
+    <string name="FpnvConsentSimSlot">sim slot</string>
+    <string name="FpnvConsentSimSlotValue">sim %1$d</string>
+    <string name="FpnvConsentPhoneNumber">phone number</string>
+    <!-- Speech to Text -->
+    <string name="SpeechToTextTitle">speech to text</string>
+    <string name="SpeechToTextSettingsSubtitle">voice message transcription and dictation</string>
+    <string name="SpeechToTextSettings">settings</string>
+    <string name="SpeechToTextAutoDetect">auto-detect</string>
+    <string name="SpeechToTextOnDevice">on-device transcription</string>
+    <string name="SpeechToTextOnDeviceInfo">voice messages are transcribed on this device. private: nothing leaves it.</string>
+    <string name="SpeechToTextLearnMore">**learn more** &gt;</string>
+    <string name="SpeechToTextLanguages">languages</string>
+    <string name="SpeechToTextGoogleFallback">fallback to google</string>
+    <string name="SpeechToTextGoogleFallbackInfo">for other languages, the app can use system speech recognition. this might send your voice data to google or other vendor servers.</string>
+    <string name="SpeechToTextDeleteModels">delete all models</string>
+    <string name="SpeechToTextDeleteTranscriptions">delete all local transcriptions</string>
+    <string name="SpeechToTextTranscriptionsDeleted_one">%1$d local transcription deleted</string>
+    <string name="SpeechToTextTranscriptionsDeleted_other">%1$d local transcriptions deleted</string>
+    <string name="SpeechToTextDownload">download</string>
+    <string name="SpeechToTextUpdate">update</string>
+    <string name="SpeechToTextPrivacyTitle">private by design</string>
+    <string name="SpeechToTextPrivacySubtitle">voice messages turn into text\nright here, on your device.</string>
+    <string name="SpeechToTextPrivacyOnPhone">recognized on your device</string>
+    <string name="SpeechToTextPrivacyOnPhoneText">speech turns into text right on this device, even offline.</string>
+    <string name="SpeechToTextPrivacyNothingLeaves">nothing leaves the device</string>
+    <string name="SpeechToTextPrivacyNothingLeavesText">your voice and its text are never sent to a server for this.</string>
+    <string name="SpeechToTextPrivacyCompact">compact languages</string>
+    <string name="SpeechToTextPrivacyCompactText">about 30 mb per language. keep only the ones you need.</string>
+    <string name="SpeechToTextPrivacyDemo">hey! running ten minutes late, see you at the café near the station</string>
+    <string name="SpeechToTextListening">listening…</string>
+    <string name="SpeechToTextDownloadingModel">downloading model…</string>
+    <string name="SpeechToTextDownloadingModels">downloading models… %1$d / %2$d mb</string>
+    <string name="SpeechToTextDownloadProgress">%1$d / %2$d mb</string>
+    <string name="SpeechToTextDetecting">detecting…</string>
+    <string name="SpeechToTextNoText">no text recognized</string>
+    <string name="SpeechToTextEnhance">enhance</string>
+    <string name="SpeechToTextEnhancing">enhancing…</string>
+    <string name="SpeechToTextApplyingStyle">%1$s…</string>
+    <string name="SpeechToTextAllStyles">all styles</string>
+    <string name="SpeechToTextSendAsText">send as text</string>
+    <string name="SpeechToTextLiveCaptions">live captions</string>
+    <string name="SpeechToTextLiveCaptionsOn">enabled</string>
+    <string name="SpeechToTextLiveCaptionsOff">disabled</string>
 
   <!-- new from translations.telegram.org -->
 
@@ -12454,6 +12804,10 @@ list of reactions.</string>
   <string name="BotEmojiStatusSetRequestForMinute_few">%d minutes</string>
   <string name="BotEmojiStatusSetRequestForMinute_many">%d minutes</string>
   <string name="BotInvite">add to group</string>
+  <string name="BotInviteDoneMany_zero">%1$d users were invited to **%2$s**.</string>
+  <string name="BotInviteDoneMany_two">%1$d users were invited to **%2$s**.</string>
+  <string name="BotInviteDoneMany_few">%1$d users were invited to **%2$s**.</string>
+  <string name="BotInviteDoneMany_many">%1$d users were invited to **%2$s**.</string>
   <string name="BotMessagePreview">message preview</string>
   <string name="BotMoreTabs_zero">%2$s &amp; %1$d others</string>
   <string name="BotMoreTabs_two">%2$s &amp; %1$d others</string>
@@ -13437,6 +13791,9 @@ list of reactions.</string>
   <string name="GiftOfferHours_many">%d hours</string>
   <string name="GiftOfferOfferedTextStars">**%1$s** offered you **%2$s stars** for **%3$s**.</string>
   <string name="GiftOfferOfferedTextTON">**%1$s** offered you **%2$s grams** for **%3$s**.</string>
+  <string name="GiftOnchainOfferOwnerReceivesNoFee">the owner will receive **%1$s gram**.</string>
+  <string name="GiftOnchainSellReceive">you will receive **%1$s gram** after the %2$s fee.</string>
+  <string name="GiftOnchainSellReceiveNoFee">you will receive **%1$s gram**.</string>
   <string name="GiftPremiumGiftsSent_zero">gifts sent!</string>
   <string name="GiftPremiumGiftsSent_two">gifts sent!</string>
   <string name="GiftPremiumGiftsSent_few">gifts sent!</string>
@@ -13904,6 +14261,7 @@ list of reactions.</string>
   <string name="NearbyPeopleGreetingsMessage">%1$s is %2$s</string>
   <string name="NearbyPlaces">or choose a place</string>
   <string name="NearbyStartGroup">start group</string>
+  <string name="NearbyVenue">or choose a venue</string>
   <string name="NetworkUsageMobile">mobile</string>
   <string name="NetworkUsageRoaming">roaming</string>
   <string name="NetworkUsageWiFi">wi-fi</string>
@@ -13937,6 +14295,7 @@ list of reactions.</string>
   <string name="NoOtherSessionsInfo">you can log in to telegram from other mobile, tablet and desktop devices, using the same phone number. all your data will be instantly synchronized.</string>
   <string name="NoOtherWebSessions">no active logins.</string>
   <string name="NoOtherWebSessionsInfo">you can log in on websites that support signing in with telegram.</string>
+  <string name="NoPlacesFoundInfo">there are no matches with **%1$s** near you.</string>
   <string name="NoPublicStoriesTitle">no public stories</string>
   <string name="NoRecentGIFs">no recent gifs</string>
   <string name="NoRecentPhotos">no recent photos</string>
@@ -14177,6 +14536,7 @@ list of reactions.</string>
   <string name="PinnedMessagesCount_few">%1$d pinned messages</string>
   <string name="PinnedMessagesCount_many">%1$d pinned messages</string>
   <string name="PinnedPoll">pinned poll</string>
+  <string name="PlacesInThisArea">places in this area</string>
   <string name="PlayEmojiInKeyboard">emoji panel animations</string>
   <string name="PleaseEnterFirstPassword">enter a password</string>
   <string name="PleaseEnterPassword">enter your new password</string>
@@ -14323,6 +14683,10 @@ list of reactions.</string>
   <string name="QRCodePermissionNoCamera">telegram needs access to your camera so that you can scan qr codes.</string>
   <string name="Question">question</string>
   <string name="QuickReplyCustom">custom message...</string>
+  <string name="QuickReplyDefault1">can\'t talk now. what\'s up?</string>
+  <string name="QuickReplyDefault2">i\'ll call you right back.</string>
+  <string name="QuickReplyDefault3">i\'ll call you later.</string>
+  <string name="QuickReplyDefault4">can\'t talk now. call me later?</string>
   <string name="QuizInfo">polls in quiz mode have one correct answer. users can\'t revoke their answers.</string>
   <string name="ReEnterYourPasscode">re-enter your new passcode</string>
   <string name="Reacted_zero">%1$s reacted</string>
@@ -14646,6 +15010,10 @@ list of reactions.</string>
   <string name="SmsSubscribeTitle">premium for free</string>
   <string name="SmsToS">terms of service</string>
   <string name="SmsTotalSent">total sms sent</string>
+  <string name="SpeechToTextTranscriptionsDeleted_zero">%1$d local transcriptions deleted</string>
+  <string name="SpeechToTextTranscriptionsDeleted_two">%1$d local transcriptions deleted</string>
+  <string name="SpeechToTextTranscriptionsDeleted_few">%1$d local transcriptions deleted</string>
+  <string name="SpeechToTextTranscriptionsDeleted_many">%1$d local transcriptions deleted</string>
   <string name="SponsoredMessageAlertText">unlike other apps, telegram never uses your private data to target ads. no user data is mined or analyzed to display ads, and every user viewing a channel on telegram sees the same sponsored message. we believe that everyone has the right to privacy, and technological platforms should respect that.</string>
   <string name="SponsoredMessageAlertTitle">sponsored messages</string>
   <string name="SponsoredMessageInfoDescription1">unlike other apps, telegram never uses your private data to target ads. sponsored messages on telegram are based solely on the topic of the public channels in which they are shown. this means that no user data is mined or analyzed to display ads, and every user viewing a channel on telegram sees the same sponsored messages.</string>
@@ -14982,6 +15350,14 @@ list of reactions.</string>
   <string name="StoryPrivacyEveryoneExclude_two">everyone (-%d)</string>
   <string name="StoryPrivacyEveryoneExclude_few">everyone (-%d)</string>
   <string name="StoryPrivacyEveryoneExclude_many">everyone (-%d)</string>
+  <string name="StoryPrivacyGroupAddContacts_zero">add %1$d contacts</string>
+  <string name="StoryPrivacyGroupAddContacts_two">add %1$d contacts</string>
+  <string name="StoryPrivacyGroupAddContacts_few">add %1$d contacts</string>
+  <string name="StoryPrivacyGroupAddContacts_many">add %1$d contacts</string>
+  <string name="StoryPrivacyGroupNonContacts_zero">%1$d members are not in your contact list</string>
+  <string name="StoryPrivacyGroupNonContacts_two">%1$d members are not in your contact list</string>
+  <string name="StoryPrivacyGroupNonContacts_few">%1$d members are not in your contact list</string>
+  <string name="StoryPrivacyGroupNonContacts_many">%1$d members are not in your contact list</string>
   <string name="StoryPrivacyOptionExcludePeople_zero">except %d people</string>
   <string name="StoryPrivacyOptionExcludePeople_two">except %d people</string>
   <string name="StoryPrivacyOptionExcludePeople_few">except %d people</string>
@@ -15058,6 +15434,7 @@ list of reactions.</string>
   <string name="TaggedMessages_few">%1$d messages</string>
   <string name="TaggedMessages_many">%1$d messages</string>
   <string name="TapOnThePencil">tap on the pencil to start a new chat</string>
+  <string name="TapToSendLocation">tap to send this location</string>
   <string name="TapToViewAsList">tap to view as a list.</string>
   <string name="TelegramContacts_zero">%1$d contacts on telegram</string>
   <string name="TelegramContacts_two">%1$d contacts on telegram</string>
