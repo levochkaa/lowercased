@@ -8,7 +8,7 @@ from unittest.mock import Mock
 
 from scripts.telegram_session import is_authenticated, save_session
 from scripts.telegram_sync import (
-    ImportPreview, PhrasePage, TelegramClient, compare_export, phrase_key, unused_plural_forms, values_by_key, verify_result,
+    ImportPreview, PhrasePage, TelegramClient, compare_export, import_payload, phrase_key, unused_plural_forms, values_by_key, verify_result,
 )
 
 
@@ -23,6 +23,17 @@ class PreviewTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "another language"):
             ImportPreview('<div class="tr-change-keys-block"><div class="tr-plain-key-row" '
                           'data-lang="en" data-key="Key"></div></div>', "weba")
+
+    def test_import_payload_drops_only_template_plural_forms(self):
+        xml = ('<resources>\n  <string name="Count_one">%d item</string>\n  <string name="Count_other">%d items</string>\n'
+               '  <!-- note -->\n  <string name="Count_few">%d items</string>\n  <string name="Lost_few">kept</string>\n</resources>\n')
+        self.assertEqual(values_by_key(import_payload(xml, "xml"), "xml"),
+                         {"Count_one": "%d item", "Count_other": "%d items", "Lost_few": "kept"})
+        self.assertIn("<!-- note -->", import_payload(xml, "xml"))
+        strings = ('"Ios_1" = "one";\n"Ios_any" = "any";\n"Ios_3_10" = "few";\n"Ios_many" = "many";\n'
+                   '"lng#one" = "a";\n"lng#other" = "b";\n"lng#zero" = "c";\n"Plain" = "p";\n')
+        self.assertEqual(list(values_by_key(import_payload(strings, "strings"), "strings")),
+                         ["Ios_1", "Ios_any", "lng#one", "lng#other", "Plain"])
 
     def test_unknown_import_row_is_not_silently_ignored(self):
         with self.assertRaisesRegex(ValueError, "Unrecognized"):

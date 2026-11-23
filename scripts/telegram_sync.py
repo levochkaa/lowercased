@@ -347,9 +347,44 @@ def verify_result(client, target, expected, remote, remaining=None):
             "status": "mismatch" if unresolved else "verified_with_exceptions" if protected or template_only or verified_on_site else "verified"}
 
 
+def template_plural_forms(keys):
+    """Plural categories English never uses; they come from the source templates."""
+    keys = set(keys)
+    forms = set()
+    for key in keys:
+        match = re.fullmatch(r"(.+)([_#])(zero|two|few|many)", key)
+        if match and {match[1] + match[2] + "one", match[1] + match[2] + "other"} <= keys:
+            forms.add(key)
+            continue
+        match = re.fullmatch(r"(.+)_(0|2|3_10|many)", key)
+        if match and {match[1] + "_1", match[1] + "_any"} <= keys:
+            forms.add(key)
+    return forms
+
+
+def import_payload(text, fmt):
+    # Telegram imports a plural phrase without an existing translation as <no value>
+    # when the file also carries these template forms. Existing phrases ignore them.
+    drop = template_plural_forms(localization.entry_keys(text, fmt))
+    if fmt == "xml":
+        def replace(match):
+            if match["start"] and localization.XML_NAME_RE.search(match["start"]).group(2) in drop:
+                return ""
+            return match.group(0)
+
+        result = localization.XML_STRING_RE.sub(replace, text)
+    else:
+        result = "".join("" if match["key"] in drop else match.group(0)
+                         for match in localization.strings_tokens(text))
+    if localization.entry_keys(result, fmt) != [key for key in localization.entry_keys(text, fmt) if key not in drop]:
+        raise ValueError("Import payload lost keys other than template plural forms")
+    return result
+
+
 def sync_platform(client, target, publish, verify_only, batch_size):
     pack, output, fmt = target
     expected = (ROOT / "lowercased-en" / output).read_text(encoding="utf-8")
+    payload = import_payload(expected, fmt)
     report = {"platform": pack, "source": localization.find_file(ROOT / "en", pack, fmt).name}
     filename, remote = client.export(target, "before")
     report["before_export"] = filename
@@ -357,7 +392,7 @@ def sync_platform(client, target, publish, verify_only, batch_size):
     if verify_only:
         report.update(verify_result(client, target, expected, remote))
         return report
-    config, import_id, preview = client.preview(target, expected)
+    config, import_id, preview = client.preview(target, payload)
     actions = preview.actionable()
     report["planned"] = {method: len(keys) for method, keys in actions.items()}
     report["skipped_removals"] = preview.rows.get("removeImportedKeys", [])
@@ -374,7 +409,7 @@ def sync_platform(client, target, publish, verify_only, batch_size):
     report["applied"] = {}
     for method, keys in actions.items():
         report["applied"][method] = client.apply(config, pack, import_id, method, keys, batch_size)
-    _, _, remaining = client.preview(target, expected)
+    _, _, remaining = client.preview(target, payload)
     report["remaining"] = remaining.actionable()
     filename, remote = client.export(target, "after")
     report["after_export"] = filename
